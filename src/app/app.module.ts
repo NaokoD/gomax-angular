@@ -9,6 +9,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { CinemaModule } from './cinema/cinema.module';
+import { SiegeModule } from './siege/siege.module';
+import { SalleModule } from './salle/salle.module';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { CinemaModule } from './cinema/cinema.module';
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
-    CinemaModule
+    CinemaModule,
+    SiegeModule,
+    SalleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
