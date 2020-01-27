@@ -15,6 +15,7 @@ import { MatListModule } from '@angular/material/list';
 
 
 
+
 @NgModule({
   declarations: [],
   imports: [
@@ -27,8 +28,12 @@ import { MatListModule } from '@angular/material/list';
     MatFormFieldModule,
     MatSelectModule,
     MatGridListModule,
+<<<<<<< HEAD
     MatTableModule,
     MatListModule,
+=======
+    MatTableModule
+>>>>>>> e4e664f8bfa6c54bf2aa8d0c10e6d4b10af1114f
   ],
   exports: [
     MatMenuModule,
@@ -39,9 +44,13 @@ import { MatListModule } from '@angular/material/list';
     MatFormFieldModule,
     MatSelectModule,
     MatGridListModule,
+<<<<<<< HEAD
     MatTableModule,
     MatListModule
 
+=======
+    MatTableModule
+>>>>>>> e4e664f8bfa6c54bf2aa8d0c10e6d4b10af1114f
   ]
 })
 export class MaterialModule { }

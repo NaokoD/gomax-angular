@@ -15,6 +15,9 @@ import { FilmListComponent } from './film/components/film-list/film-list.compone
 import { FilmCardComponent } from './film/components/film-card/film-card.component';
 import { SeanceListComponent } from './seance/components/seance-list/seance-list.component';
 import { SeanceModule } from './seance/seance.module';
+import { CinemaModule } from './cinema/cinema.module';
+import { SiegeModule } from './siege/siege.module';
+import { SalleModule } from './salle/salle.module';
 
 
 
@@ -38,6 +41,9 @@ import { SeanceModule } from './seance/seance.module';
     HttpClientModule,
     SeanceModule,
 
+    CinemaModule,
+    SiegeModule,
+    SalleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
