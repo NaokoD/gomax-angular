@@ -1,0 +1,52 @@
+{
+    "films": [
+        {
+            "id": 1,
+            "titre": "Bad Boys 3",
+            "categorie": "action",
+            "duree": 120,
+            "urlImg": "https://via.placeholder.com/240x325",
+            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+        },
+        {
+            "id": 2,
+            "titre": "Jumanji",
+            "categorie": "comedie",
+            "duree": 85,
+            "urlImg": "https://via.placeholder.com/240x325",
+            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+        },
+        {
+            "id": 3,
+            "titre": "Les incognitos",
+            "categorie": "cartoon",
+            "duree": 75,
+            "urlImg": "https://via.placeholder.com/240x325",
+            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+        },
+        {
+            "id": 4,
+            "titre": "Joker",
+            "categorie": "action",
+            "duree": 200,
+            "urlImg": "https://via.placeholder.com/240x325",
+            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+        },
+        {
+            "id": 5,
+            "titre": "1917",
+            "categorie": "action",
+            "duree": 180,
+            "urlImg": "https://via.placeholder.com/240x325",
+            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+        },
+        {
+            "id": 6,
+            "titre": "Star Wars",
+            "categorie": "action",
+            "duree": 120,
+            "urlImg": "https://via.placeholder.com/240x325",
+            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+        }
+    ]
+}
