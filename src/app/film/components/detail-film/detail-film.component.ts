@@ -3,6 +3,8 @@ import { FilmService } from '../../services/film.service';
 import { Film } from '../../models/film';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 
+import { Seance } from 'src/app/seance/models/seance';
+
 
 @Component({
   selector: 'app-detail-film',
@@ -12,6 +14,7 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
 export class DetailFilmComponent implements OnInit {
 
   film: Film;
+  seance: Seance;
   router: any;
 
   constructor(private route: ActivatedRoute, private FilmService: FilmService) { }

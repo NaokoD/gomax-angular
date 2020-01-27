@@ -14,15 +14,15 @@ import { SallePlanComponent } from './salle/components/salle-plan/salle-plan.com
 const routes: Routes = [
   { path: '', component: FilmDashboardComponent },
   { path: 'details/:id', component: DetailFilmComponent },
-  { path: 'details/:id/plan', component: SallePlanComponent },
+  { path: 'details/:id/plan/:id', component: SallePlanComponent },
   { path: 'seances', component: SeanceListComponent },
   // path: '', component: HomeComponent },
   { path: 'snacks', loadChildren: './snack/snack.module#SnackModule' },
   { path: 'cinema', component: CinemaListComponent },
   { path: 'siege', component: SiegeRowComponent },
   { path: 'plan', component: SallePlanComponent },
-  { path: 'cinema', component: CinemaListComponent},
-  { path: 'tarif', component: TarifListComponent}
+  { path: 'cinema', component: CinemaListComponent },
+  { path: 'tarif', component: TarifListComponent }
 ];
 
 @NgModule({

@@ -17,3 +17,21 @@ mat-card {
     background: lightblue;
     width: 250px;
 }
+
+.detailFilm {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    float: left;
+    width: 30%;
+    margin: auto;
+
+}
+
+aside {
+    float: right;
+    width: 63%;
+    margin: auto;
+}

@@ -6,7 +6,7 @@
             "categorie": "action",
             "duree": 120,
             "urlImg": "https://via.placeholder.com/240x325",
-            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit ."
         },
         {
             "id": 2,
@@ -58,18 +58,18 @@
             "horaire": "20H15"
         },
         {
-            "id": 1,
-            "date": "mardi",
+            "id": 2,
+            "date": "lundi",
             "salleId": "2",
             "filmId": "4",
-            "horaire": "20H15"
+            "horaire": "21H15"
         },
         {
-            "id": 1,
-            "date": "mercredi",
+            "id": 3,
+            "date": "lundi",
             "salleId": "2",
             "filmId": "4",
-            "horaire": "20H15"
+            "horaire": "22H15"
         }
     ]
 }
