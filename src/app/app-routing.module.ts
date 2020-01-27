@@ -9,11 +9,8 @@ import { SiegeRowComponent } from './siege/components/siege-row/siege-row.compon
 import { SallePlanComponent } from './salle/components/salle-plan/salle-plan.component';
 
 
-
-
-
-
 const routes: Routes = [
+
 
 
   { path: '', component: FilmDashboardComponent },
@@ -21,6 +18,9 @@ const routes: Routes = [
   { path: 'seances', component: SeanceListComponent },
   // path: '', component: HomeComponent },
 
+
+
+  { path: 'snacks', loadChildren: './snack/snack.module#SnackModule' },
 
   { path: 'cinema', component: CinemaListComponent },
   { path: 'siege', component: SiegeRowComponent },

@@ -14,43 +14,41 @@ import { MatListModule } from '@angular/material/list';
 
 
 
+import { MatChipsModule } from '@angular/material/chips';
+
 
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    MatMenuModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatGridListModule,
-<<<<<<< HEAD
-    MatTableModule,
-    MatListModule,
-=======
-    MatTableModule
->>>>>>> e4e664f8bfa6c54bf2aa8d0c10e6d4b10af1114f
-  ],
-  exports: [
-    MatMenuModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatGridListModule,
-<<<<<<< HEAD
-    MatTableModule,
-    MatListModule
+    declarations: [],
+    imports: [
+        CommonModule,
+        MatMenuModule,
+        MatIconModule,
+        MatToolbarModule,
+        MatCardModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatGridListModule,
+        MatTableModule,
+        MatListModule,
 
-=======
-    MatTableModule
->>>>>>> e4e664f8bfa6c54bf2aa8d0c10e6d4b10af1114f
-  ]
+        MatChipsModule,
+
+    ],
+    exports: [
+        MatMenuModule,
+        MatIconModule,
+        MatToolbarModule,
+        MatCardModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatGridListModule,
+        MatTableModule,
+        MatListModule,
+        MatChipsModule
+
+    ]
 })
 export class MaterialModule { }

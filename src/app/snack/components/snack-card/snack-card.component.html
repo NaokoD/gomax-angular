@@ -1,0 +1,22 @@
+<mat-card class="snack-card">
+    <mat-card-header>
+        <mat-card-title>
+            {{ snack.name | uppercase }}
+        </mat-card-title>
+        <mat-card-subtitle>
+            {{ snack.size | lowercase }}
+        </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="snack-image" src="{{ snack.image }}">
+
+    <mat-card-content>
+        {{ snack.price | currency:'EUR' }}
+    </mat-card-content>
+    <mat-card-actions>
+        <div class="button-row">
+            <button name="plus" mat-mini-fab color="primary">+</button>
+            <mat-chip name="qte" color="accent">0</mat-chip>
+            <button name="moins" mat-mini-fab color="primary">-</button>
+        </div>
+    </mat-card-actions>
+</mat-card>

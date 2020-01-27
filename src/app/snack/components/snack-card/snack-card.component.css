@@ -1,0 +1,14 @@
+.snack-card {
+    max-width: 300px;
+    margin: 15px;
+}
+
+.snack-image {
+    background-size: cover;
+}
+
+
+.button-row button {
+  margin: 10px;
+ 
+}
