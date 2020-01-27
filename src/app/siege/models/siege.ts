@@ -3,5 +3,5 @@ export class Siege {
         public id: string,
         public type: string,
         public available : boolean
-    ){}
+    ) {}
 }

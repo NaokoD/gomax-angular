@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Siege } from '../../models/siege';
 import { SiegeRow } from '../../models/siege-row';
 
 @Component({

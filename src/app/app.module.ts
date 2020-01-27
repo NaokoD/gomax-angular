@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
@@ -16,11 +15,10 @@ import { FilmCardComponent } from './film/components/film-card/film-card.compone
 
 import { SnackModule } from './snack/snack.module';
 import { CinemaModule } from './cinema/cinema.module';
+import { TarifListComponent } from './components/tarif-list/tarif-list.component';
 import { SiegeModule } from './siege/siege.module';
 import { SalleModule } from './salle/salle.module';
 import { SeanceModule } from './seance/seance.module'
-
-
 
 @NgModule({
   declarations: [
@@ -28,6 +26,7 @@ import { SeanceModule } from './seance/seance.module'
     HeaderComponent,
     FooterComponent,
     HomeComponent,
+    TarifListComponent,
     DetailFilmComponent,
     FilmDashboardComponent,
     FilmListComponent,
