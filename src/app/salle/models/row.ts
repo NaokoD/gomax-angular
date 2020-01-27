@@ -1,4 +1,4 @@
-import { Siege } from 'src/app/siege/models/siege';
+import { Siege } from '../../siege/models/siege';
 
 export class Row {
     constructor(

@@ -7,6 +7,7 @@ import { FilmCardComponent } from './components/film-card/film-card.component';
 import { FilmDashboardComponent } from './components/film-dashboard/film-dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from '../material.module';
+import { SeanceModule } from '../seance/seance.module';
 
 
 
@@ -17,13 +18,13 @@ import { MaterialModule } from '../material.module';
     FilmCardComponent,
     FilmDashboardComponent,
     DetailFilmComponent,
-    
   ],
   imports: [
     MaterialModule,
     CommonModule,
     HttpClientModule,
-    FilmRoutingModule
+    FilmRoutingModule,
+    SeanceModule
   ],
   exports: [
     DetailFilmComponent,

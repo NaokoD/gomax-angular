@@ -48,5 +48,28 @@
             "urlImg": "https://via.placeholder.com/240x325",
             "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
         }
+    ],
+    "seances": [
+        {
+            "id": 1,
+            "date": "lundi",
+            "salleId": "2",
+            "filmId": "4",
+            "horaire": "20H15"
+        },
+        {
+            "id": 1,
+            "date": "mardi",
+            "salleId": "2",
+            "filmId": "4",
+            "horaire": "20H15"
+        },
+        {
+            "id": 1,
+            "date": "mercredi",
+            "salleId": "2",
+            "filmId": "4",
+            "horaire": "20H15"
+        }
     ]
 }

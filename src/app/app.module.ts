@@ -35,7 +35,6 @@ import { FilmModule } from './film/film.module';
     CinemaModule,
     SiegeModule,
     SalleModule,
-    SeanceModule,
     FilmModule
   ],
   providers: [],

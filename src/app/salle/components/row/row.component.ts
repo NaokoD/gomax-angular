@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Siege } from 'src/app/siege/models/siege';
+import { Row } from '../../models/row';
 
 @Component({
   selector: 'app-row',
@@ -8,7 +8,7 @@ import { Siege } from 'src/app/siege/models/siege';
 })
 export class RowComponent implements OnInit {
   @Input()
-  row : Siege[];
+  row : Row;
   
   constructor() { }
 
