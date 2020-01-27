@@ -9,13 +9,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { CinemaModule } from './cinema/cinema.module';
+import { TarifListComponent } from './components/tarif-list/tarif-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    TarifListComponent
   ],
   imports: [
     BrowserModule,

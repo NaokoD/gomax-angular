@@ -6,7 +6,7 @@ export class Cinema {
         public nom: string,
         public adresse: string,
         public codePostal: string,
-        public ville: string,
+        public ville: string
         //public salles : Salle[]
     ){}
 }
