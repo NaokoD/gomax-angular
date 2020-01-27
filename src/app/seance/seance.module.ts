@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { SeanceRoutingModule } from './seance-routing.module';
 import { SeanceCardComponent } from './components/seance-card/seance-card.component';
 import { SeanceDashboardComponent } from './components/seance-dashboard/seance-dashboard.component';
