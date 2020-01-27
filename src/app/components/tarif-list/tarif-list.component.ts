@@ -28,26 +28,26 @@ export class TarifListComponent implements OnInit {
     ]
   }
 
-  private add(id:number): void{
+  private add(tarif : Tarif): void{
     for(let i:number = 0; i<this.places.length; i++){
-      if(this.places[i].idTarif==id){
+      if(this.places[i].idTarif==tarif.id){
         this.places[i].quantite++;
         //console.log(this.places);
       }
     }
   }
   
-  private getPlacesByTarif(id : number): number{
+  private getPlacesByTarif(tarif : Tarif): number{
     for(let i:number = 0; i<this.places.length; i++){
-      if(this.places[i].idTarif==id){
+      if(this.places[i].idTarif==tarif.id){
         return this.places[i].quantite;
       };
     };
   };
 
-  private drop(id:number){
+  private drop(tarif : Tarif){
     for(let i:number = 0; i<this.places.length; i++){
-      if(this.places[i].idTarif==id){
+      if(this.places[i].idTarif==tarif.id){
         if(this.places[i].quantite >0){
         this.places[i].quantite--;
         //console.log(this.places);

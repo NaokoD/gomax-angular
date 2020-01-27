@@ -17,7 +17,11 @@ export class SiegeComponent implements OnInit {
 
   private toggleAvailability(siege : Siege) : void {
     console.log(siege.id);
-    siege.available === true ? siege.available = false : siege.available = true;
+    if(siege.available === true){
+      siege.available = null;
+    } else if(siege.available === null){
+      siege.available = true;
+    }
   }
 
 }
