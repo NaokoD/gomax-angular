@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Row } from '../../models/row';
+import {SalleService} from '../../services/salle.service';
+import {Salle} from '../../models/salle';
+import {Plan} from '../../models/plan';
 
 @Component({
   selector: 'app-salle-plan',
@@ -7,7 +10,8 @@ import { Row } from '../../models/row';
   styleUrls: ['./salle-plan.component.css']
 })
 export class SallePlanComponent implements OnInit {
-plan: Row[] = [
+plan: Plan;
+/*= [
     {
       id: 'A', sieges : [
         {id: '1', type: 'basic', available: true},
@@ -104,12 +108,19 @@ plan: Row[] = [
         {id: '48', type: 'basic', available: true}
       ]
     }
-  ];
+  ];*/
 
-  constructor() {
+  constructor(private salleService: SalleService) {
    }
 
   ngOnInit() {
+    this.loadSallePlan(1);
   }
 
+  private loadSallePlan(id: number): void {
+    this.salleService.getSalleById(id).subscribe((data: Salle) => {
+      this.plan = data.plan;
+      console.log(data.plan);
+    });
+  }
 }

@@ -8,10 +8,7 @@ import { FilmDashboardComponent } from './components/film-dashboard/film-dashboa
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from '../material.module';
 import { SeanceModule } from '../seance/seance.module';
-
-
-
-
+g
 @NgModule({
   declarations: [
     FilmListComponent,
@@ -28,7 +25,7 @@ import { SeanceModule } from '../seance/seance.module';
   ],
   exports: [
     DetailFilmComponent,
-    FilmDashboardComponent,
+    FilmDashboardComponent
   ],
 })
 export class FilmModule { }
