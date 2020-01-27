@@ -9,6 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
 
 
@@ -32,6 +33,7 @@ import { MatChipsModule } from '@angular/material/chips';
         MatGridListModule,
         MatTableModule,
         MatListModule,
+        MatTabsModule,
 
         MatChipsModule,
 
@@ -47,7 +49,8 @@ import { MatChipsModule } from '@angular/material/chips';
         MatGridListModule,
         MatTableModule,
         MatListModule,
-        MatChipsModule
+        MatChipsModule,
+        MatTabsModule
 
     ]
 })

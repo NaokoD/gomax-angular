@@ -13,12 +13,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { FilmDashboardComponent } from './film/components/film-dashboard/film-dashboard.component';
 import { FilmListComponent } from './film/components/film-list/film-list.component';
 import { FilmCardComponent } from './film/components/film-card/film-card.component';
-import { SeanceListComponent } from './seance/components/seance-list/seance-list.component';
-import { SeanceModule } from './seance/seance.module';
+
 import { SnackModule } from './snack/snack.module';
 import { CinemaModule } from './cinema/cinema.module';
 import { SiegeModule } from './siege/siege.module';
 import { SalleModule } from './salle/salle.module';
+import { SeanceModule } from './seance/seance.module'
 
 
 
@@ -32,7 +32,7 @@ import { SalleModule } from './salle/salle.module';
     FilmDashboardComponent,
     FilmListComponent,
     FilmCardComponent,
-    SeanceListComponent
+
   ],
   imports: [
     BrowserModule,
@@ -41,6 +41,8 @@ import { SalleModule } from './salle/salle.module';
     AppRoutingModule,
     HttpClientModule,
     SeanceModule,
+
+
 
     SnackModule,
     CinemaModule,

@@ -9,6 +9,7 @@ import { FilmDashboardComponent } from './components/film-dashboard/film-dashboa
 
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from '../material.module';
+import { SeanceModule } from '../seance/seance.module';
 
 
 
@@ -26,6 +27,8 @@ import { MaterialModule } from '../material.module';
     HttpClientModule,
     FilmRoutingModule,
     FilmDashboardComponent,
+    SeanceModule
+
 
 
 

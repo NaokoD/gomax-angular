@@ -1,0 +1,22 @@
+<div style="width: 200px;">
+    <mat-card class="seance-card">
+        <mat-card-content>
+            <h1>{{ seance.date }}</h1>
+        </mat-card-content>
+        <mat-card-content>
+            <h3>{{ seance.horaire }}</h3>
+        </mat-card-content>
+        <mat-card-content>
+            <h3>{{ seance.filmId }}</h3>
+        </mat-card-content>
+        <mat-card-content>
+            <h3>{{ seance.salleId }}</h3>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <div class="example-button-row">
+                <button class="btn" mat-raised-button color="accent" [routerLink]="['plan']">Réserver</button>
+            </div>
+        </mat-card-actions>
+    </mat-card><br>
+</div>
