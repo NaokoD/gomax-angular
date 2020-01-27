@@ -5,8 +5,10 @@ import { HomeComponent } from './components/home/home.component';
 
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: '', component: HomeComponent},
+  { path: 'snacks', loadChildren: './snack/snack.module#SnackModule' },
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  //{ path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
