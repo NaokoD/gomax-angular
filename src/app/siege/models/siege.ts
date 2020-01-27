@@ -1,8 +1,7 @@
-import { SiegeType } from './siege-type';
-
 export class Siege {
     constructor (
-        public id: number,
-        public type: SiegeType
+        public id: string,
+        public type: string,
+        public available : boolean
     ){}
 }

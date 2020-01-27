@@ -1,0 +1,86 @@
+<salle>
+  <row id="A">
+    <seat type=0>1</seat>
+    <seat type=0>2</seat>
+    <corridor></corridor>
+    <seat type=1>3</seat>
+    <seat type=1>4</seat>
+    <seat type=1>5</seat>
+    <seat type=1>6</seat>
+    <seat type=1>7</seat>
+    <seat type=1>8</seat>
+    <corridor></corridor>
+    <seat type=0>9</seat>
+    <seat type=0>10</seat>
+  </row>
+  <row id="B">
+    <seat type=0>1</seat>
+    <seat type=0>2</seat>
+    <corridor></corridor>
+    <seat type=0>3</seat>
+    <seat type=0>4</seat>
+    <seat type=0>5</seat>
+    <seat type=0>6</seat>
+    <seat type=0>7</seat>
+    <seat type=0>8</seat>
+    <corridor></corridor>
+    <seat type=0>9</seat>
+    <seat type=0>10</seat>
+  </row>
+  <row id="C">
+    <seat type=0>1</seat>
+    <seat type=0>2</seat>
+    <corridor></corridor>
+    <seat type=0>3</seat>
+    <seat type=0>4</seat>
+    <seat type=0>5</seat>
+    <seat type=0>6</seat>
+    <seat type=0>7</seat>
+    <seat type=0>8</seat>
+    <corridor></corridor>
+    <seat type=0>9</seat>
+    <seat type=0>10</seat>
+  </row>
+  <row id="D">
+    <seat type=0>1</seat>
+    <seat type=0>2</seat>
+    <corridor></corridor>
+    <seat type=0>3</seat>
+    <seat type=0>4</seat>
+    <seat type=0>5</seat>
+    <seat type=0>6</seat>
+    <seat type=0>7</seat>
+    <seat type=0>8</seat>
+    <corridor></corridor>
+    <seat type=0>9</seat>
+    <seat type=0>10</seat>
+  </row>
+  <row id="E">
+    <seat type=0>1</seat>
+    <seat type=0>2</seat>
+    <corridor></corridor>
+    <seat type=0>3</seat>
+    <seat type=0>4</seat>
+    <seat type=0>5</seat>
+    <seat type=0>6</seat>
+    <seat type=0>7</seat>
+    <seat type=0>8</seat>
+    <corridor></corridor>
+    <seat type=0>9</seat>
+    <seat type=0>10</seat>
+  </row>
+  <row id="F">
+    <seat type=0>1</seat>
+    <seat type=0>2</seat>
+    <corridor></corridor>
+    <seat type=0>3</seat>
+    <seat type=0>4</seat>
+    <seat type=0>5</seat>
+    <seat type=0>6</seat>
+    <seat type=0>7</seat>
+    <seat type=0>8</seat>
+    <corridor></corridor>
+    <seat type=0>9</seat>
+    <seat type=0>10</seat>
+  </row>
+</salle>

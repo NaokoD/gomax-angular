@@ -1,1 +1,21 @@
+<<<<<<< HEAD
 <p>siege-row works!</p>
+=======
+<!--<p>siege-row works!</p>-->
+<div class="row">
+ <!-- <div *ngFor="let siege of " class="siege">
+    <svg class="seat" width="40" height="40">
+      <rect class="seat" width="40" height="40"/>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+  </div>-->
+  <ng-container *ngFor="let siege of row.sieges">
+    <ng-container *ngIf="siege.type === 'corridor'">
+      <app-siege [ngStyle]="{'fill': 'none'}" [siege]=siege></app-siege>
+    </ng-container>
+    <ng-container *ngIf="siege.type !== 'corridor'">
+      <app-siege [ngStyle]="{'fill': siege.available === true ? 'yellow' : ' black'}" [siege]=siege></app-siege>
+    </ng-container>
+  </ng-container>
+</div>
+>>>>>>> refs/remotes/origin/dev

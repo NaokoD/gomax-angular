@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Siege } from '../../models/siege';
 
 @Component({
@@ -7,11 +7,12 @@ import { Siege } from '../../models/siege';
   styleUrls: ['./siege.component.css']
 })
 export class SiegeComponent implements OnInit {
-siege : Siege;
+  @Input()
+  siege: Siege;
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
 }
-
