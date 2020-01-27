@@ -20,8 +20,6 @@ import { TarifListComponent } from './components/tarif-list/tarif-list.component
 import { SiegeModule } from './siege/siege.module';
 import { SalleModule } from './salle/salle.module';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +40,6 @@ import { SalleModule } from './salle/salle.module';
     AppRoutingModule,
     HttpClientModule,
     SeanceModule,
-
     SnackModule,
     CinemaModule,
     SiegeModule,

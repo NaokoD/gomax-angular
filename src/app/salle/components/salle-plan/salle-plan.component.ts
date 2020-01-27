@@ -7,9 +7,6 @@ import { SiegeRow } from '../../../siege/models/siege-row';
   styleUrls: ['./salle-plan.component.css']
 })
 export class SallePlanComponent implements OnInit {
-<<<<<<< HEAD
-  
-=======
 plan: SiegeRow[] = [
     {
       id: 'A', sieges : [
@@ -77,7 +74,6 @@ plan: SiegeRow[] = [
   }
   ];
 
->>>>>>> refs/remotes/origin/dev
   constructor() { }
 
   ngOnInit() {
