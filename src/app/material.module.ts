@@ -9,7 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatChipsModule } from '@angular/material/chips';
-
+import { MatTableModule } from '@angular/material';
 
 
 @NgModule({
@@ -24,7 +24,8 @@ import { MatChipsModule } from '@angular/material/chips';
     MatFormFieldModule,
     MatSelectModule,
     MatGridListModule,
-    MatChipsModule
+    MatChipsModule,
+    MatTableModule
   ],
   exports: [
     MatMenuModule,
@@ -35,8 +36,8 @@ import { MatChipsModule } from '@angular/material/chips';
     MatFormFieldModule,
     MatSelectModule,
     MatGridListModule,
-    MatChipsModule
-
+    MatChipsModule,
+    MatTableModule
   ]
 })
 export class MaterialModule { }

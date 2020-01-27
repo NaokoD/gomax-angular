@@ -9,6 +9,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { SnackModule } from './snack/snack.module';
+import { CinemaModule } from './cinema/cinema.module';
+import { SiegeModule } from './siege/siege.module';
+import { SalleModule } from './salle/salle.module';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +26,10 @@ import { SnackModule } from './snack/snack.module';
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
-    SnackModule
+    SnackModule,
+    CinemaModule,
+    SiegeModule,
+    SalleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
