@@ -72,6 +72,10 @@
       "horaire": "20H15"
     }
   ],
+  "tarifs" : [
+    {"id":1, "libelle" : "Normal", "montant":12},
+    {"id":2, "libelle" : "Reduit", "montant":6}
+  ],
   "salles": [
     {
       "id": 1,

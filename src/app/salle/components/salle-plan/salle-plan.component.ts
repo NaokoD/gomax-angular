@@ -118,9 +118,14 @@ plan: Plan;
   }
 
   private loadSallePlan(id: number): void {
-    this.salleService.getSalleById(id).subscribe((data: Salle) => {
-      this.plan = data.plan;
-      console.log(data.plan);
-    });
+    this.salleService.getSalleById(id).
+      subscribe({
+        next: x => {
+          this.plan = x.plan;
+          console.log(x.plan);
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
   }
 }

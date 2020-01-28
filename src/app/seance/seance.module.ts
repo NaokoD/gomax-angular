@@ -14,18 +14,12 @@ import { MaterialModule } from '../material.module';
   imports: [
     CommonModule,
     SeanceRoutingModule,
-    MaterialModule,
-
-
-
+    MaterialModule
   ],
   exports: [
     SeanceListComponent,
     SeanceCardComponent,
     SeanceDashboardComponent
-
-
-
   ],
 })
 export class SeanceModule { }

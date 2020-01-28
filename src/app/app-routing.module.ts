@@ -14,6 +14,7 @@ import { SallePlanComponent } from './salle/components/salle-plan/salle-plan.com
 const routes: Routes = [
   { path: '', component: FilmDashboardComponent },
   { path: 'details/:id', component: DetailFilmComponent },
+  { path: 'details/:id/tarif', component: TarifListComponent },
   { path: 'details/:id/plan', component: SallePlanComponent },
   { path: 'seances', component: SeanceListComponent },
   // path: '', component: HomeComponent },
