@@ -19,17 +19,13 @@ export class FilmService {
   constructor(private http: HttpClient) { }
 
   getFilmsViewObservable(id: number): Observable<Film> {
-    return this.http.get<Film>('http://localhost:3400/films/' + id);
+    return this.http.get<Film>(`${environment.apiBaseUrl}/films/${id}`);
   }
 
   getFilmsObservable(): Observable<Film[]> {
-    return this.http.get<Film[]>('http://localhost:3400/films');
+    return this.http.get<Film[]>(`${environment.apiBaseUrl}/films`);
   }
-
-  getFilmsPromise(): Promise<Film[]> {
-    return this.http.get<Film[]>('http://localhost:3400/films').toPromise();
-  }
-
+  
   demoObservable() {
     // create a simple observable
     // define a stream, that emits 3 values

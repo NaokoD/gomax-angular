@@ -1,10 +1,11 @@
-import { Siege } from 'src/app/siege/models/siege';
+import { Siege } from '../../siege/models/siege';
+import { Plan } from './plan';
 
 export class Salle {
     constructor(
         public id: number,
-        public plan: string,
+        public plan: Plan,
         public numero: number,
-        public sieges: Siege[]
+        public sieges: number[]
     ){}
 }
