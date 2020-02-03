@@ -117,12 +117,12 @@ plan: Plan;
     this.loadSallePlan(1);
   }
 
-  private loadSallePlan(id: number): void {
+  loadSallePlan(id: number): void {
     this.salleService.getSalleById(id).
       subscribe({
-        next: x => {
-          this.plan = x.plan;
-          console.log(x.plan);
+        next: res => {
+          this.plan = res.plan;
+          console.log(res.plan);
         },
         error: e => console.log(e),
         complete: () => console.log('Complete')

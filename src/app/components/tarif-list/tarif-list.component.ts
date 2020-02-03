@@ -22,7 +22,7 @@ export class TarifListComponent implements OnInit {
     this.loadTarifs();
   }
 
-  private add(tarif : Tarif): void{
+ add(tarif : Tarif): void{
     for(let i:number = 0; i<this.places.length; i++){
       if(this.places[i].idTarif==tarif.id){
         this.places[i].quantite++;
@@ -30,7 +30,7 @@ export class TarifListComponent implements OnInit {
     }
   }
   
-  private getPlacesByTarif(tarif : Tarif): number{
+  getPlacesByTarif(tarif : Tarif): number{
     for(let i:number = 0; i<this.places.length; i++){
       if(this.places[i].idTarif==tarif.id){
         return this.places[i].quantite;
@@ -38,7 +38,7 @@ export class TarifListComponent implements OnInit {
     };
   };
 
-  private drop(tarif : Tarif){
+  drop(tarif : Tarif){
     for(let i:number = 0; i<this.places.length; i++){
       if(this.places[i].idTarif==tarif.id){
         if(this.places[i].quantite >0){

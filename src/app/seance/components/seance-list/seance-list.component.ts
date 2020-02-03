@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChildren, QueryList } from '@angular/core';
 import { Seance } from '../../models/seance';
 import { SeanceService } from '../../services/seance.service';
-import { Observable } from 'rxjs';
+import { filter } from 'rxjs/operators';
 import { SeanceCardComponent } from '../seance-card/seance-card.component';
 
 
@@ -12,12 +12,8 @@ import { SeanceCardComponent } from '../seance-card/seance-card.component';
 })
 export class SeanceListComponent implements OnInit {
 
-  seances: Seance[] = [
-    { id: 1, date: 'lundi', salleId: '2', filmId: '4', horaire: '20H15' },
-    { id: 2, date: 'mardi', salleId: '2', filmId: '5', horaire: '20H15' }
-  ];
+  seances: Seance[];
 
-  seances$: Observable<Seance[]>;
   @ViewChildren(SeanceCardComponent)
   seancesQuery: QueryList<SeanceCardComponent>;
 
@@ -29,14 +25,19 @@ export class SeanceListComponent implements OnInit {
    * Description
    */
   ngOnInit() {
-    this.loadSeancesObservable();
+    this.loadSeances();
   }
 
-  loadSeancesObservable() {
-    this.seanceService.getSeancesObservable()
-      .subscribe(res => this.seances = res);
-
-    this.seances$ = this.seanceService.getSeancesObservable();
+  loadSeances() {
+    this.seanceService.getSeances()
+      .subscribe({
+        next : res => {
+          this.seances = res;
+          console.log(res)
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
   }
 
 }

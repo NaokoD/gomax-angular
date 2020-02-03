@@ -27,23 +27,23 @@ export class SnackDashboardComponent implements OnInit {
 
   //snackInc: Snack[] = new Array();
 
-  constructor(private panierService: PanierService) { }
+  constructor(/*private panierService: PanierService*/) { }
 
   ngOnInit() {
 
   }
 
-  filtrerSnacksIncrementes(snack: Snack) {
+  // filtrerSnacksIncrementes(snack: Snack) {
 
-    for (let i = 0; i < this.snackList.snacks.length; i++) {
-      let snack = this.snackList.snacks[i];
-      if (snack.qte > 0) { //
-        //this.snackInc.push(snack)
-        this.panierService.panier.commandeSnack.push(snack);
-      }
-    }
-    this.btnDisabled = !this.btnDisabled;
-  }
+  //   for (let i = 0; i < this.snackList.snacks.length; i++) {
+  //     let snack = this.snackList.snacks[i];
+  //     if (snack.qte > 0) { //
+  //       //this.snackInc.push(snack)
+  //       this.panierService.panier.commandeSnack.push(snack);
+  //     }
+  //   }
+  //   this.btnDisabled = !this.btnDisabled;
+  // }
 
   // listeSnacksPanier() {
   // }

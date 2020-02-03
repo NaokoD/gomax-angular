@@ -53,22 +53,22 @@
         {
             "id": 1,
             "date": "lundi",
-            "salleId": "2",
-            "filmId": "4",
+            "salleId": 2,
+            "filmId": 4,
             "horaire": "20H15"
         },
         {
             "id": 1,
             "date": "mardi",
-            "salleId": "2",
-            "filmId": "4",
+            "salleId": 2,
+            "filmId": 4,
             "horaire": "20H15"
         },
         {
             "id": 1,
             "date": "mercredi",
-            "salleId": "2",
-            "filmId": "4",
+            "salleId": 2,
+            "filmId": 4,
             "horaire": "20H15"
         }
     ],

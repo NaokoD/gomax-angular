@@ -3,7 +3,6 @@ import { Snack } from '../../models/snack';
 import { SnackService } from '../../services/snack.service';
 import { SnackCardComponent } from '../snack-card/snack-card.component';
 import { Observable } from 'rxjs/internal/Observable';
-//import { Observable } from '../../../../assets/images/pop_salt_m.jpg';
 
 
 
@@ -42,25 +41,19 @@ export class SnackListComponent implements OnInit {
   constructor(private snackService: SnackService) { }
 
   ngOnInit() {
-    this.loadSnacksObservable();
-    this.loadSnack();
+    this.loadSnacks();
   }
 
-  loadSnacksPromise() {
-    this.snackService.getSnacksPromise()
-      .then(res => {
-        console.log('mon résultat', res);
-      });
-  }
-
-  loadSnacksObservable() {
+  loadSnacks() {
     // observable.subscribe
-    this.snackService.getSnacksObservable()
-      .subscribe(
-        res => this.snacks = res);
-  }
-
-  loadSnack() {
-    this.snacks$ = this.snackService.getSnacksObservable();
-  }
+    this.snackService.getSnacks()
+      .subscribe({
+        next : res => {
+          this.snacks = res;
+          console.log(res)
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
+    }
 }
