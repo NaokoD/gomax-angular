@@ -19,6 +19,8 @@ import { CinemaModule } from './cinema/cinema.module';
 import { TarifListComponent } from './components/tarif-list/tarif-list.component';
 import { SiegeModule } from './siege/siege.module';
 import { SalleModule } from './salle/salle.module';
+import { PanierComponent } from './components/panier/panier.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { SalleModule } from './salle/salle.module';
     FilmDashboardComponent,
     FilmListComponent,
     FilmCardComponent,
-    SeanceListComponent
+    SeanceListComponent,
+    PanierComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,8 @@ import { SalleModule } from './salle/salle.module';
     SnackModule,
     CinemaModule,
     SiegeModule,
-    SalleModule
+    SalleModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

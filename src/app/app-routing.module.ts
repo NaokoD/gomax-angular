@@ -8,6 +8,7 @@ import { CinemaListComponent } from './cinema/components/cinema-list/cinema-list
 import { TarifListComponent } from './components/tarif-list/tarif-list.component';
 import { SiegeRowComponent } from './siege/components/siege-row/siege-row.component';
 import { SallePlanComponent } from './salle/components/salle-plan/salle-plan.component';
+import { PanierComponent } from './components/panier/panier.component';
 
 
 
@@ -20,8 +21,9 @@ const routes: Routes = [
   { path: 'cinema', component: CinemaListComponent },
   { path: 'siege', component: SiegeRowComponent },
   { path: 'plan', component: SallePlanComponent },
-  { path: 'cinema', component: CinemaListComponent},
-  { path: 'tarif', component: TarifListComponent}
+  { path: 'cinema', component: CinemaListComponent },
+  { path: 'tarif', component: TarifListComponent },
+  { path: 'panier', component: PanierComponent }
 ];
 
 @NgModule({

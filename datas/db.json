@@ -48,5 +48,103 @@
             "urlImg": "https://via.placeholder.com/240x325",
             "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
         }
+    ],
+    "snacks": [
+        {
+            "id": 1,
+            "name": "popcorn salé",
+            "image": "/assets/images/pop_salt_m.jpg",
+            "size": "moyen",
+            "price": 2.5,
+            "category": "popcorn"
+        },
+        {
+            "id": 2,
+            "name": "popcorn salé",
+            "image": "/assets/images/pop_salt_g.jpg",
+            "size": "grand",
+            "price": 3.5,
+            "category": "popcorn"
+        },
+        {
+            "id": 3,
+            "name": "popcorn caramel",
+            "image": "/assets/images/popcorn_caramel_m.jpg",
+            "size": "moyen",
+            "price": 2.5,
+            "category": "popcorn"
+        },
+        {
+            "id": 4,
+            "name": "popcorn caramel",
+            "image": "/assets/images/popcorn_caramel_g.jpg",
+            "size": "grand",
+            "price": 3.5,
+            "category": "popcorn"
+        },
+        {
+            "id": 5,
+            "name": "coca-cola",
+            "image": "/assets/images/coke_m.jpg",
+            "size": "moyen",
+            "price": 2.5,
+            "category": "boissons"
+        },
+        {
+            "id": 6,
+            "name": "coca_cola",
+            "image": "/assets/images/coke_g.jpg",
+            "size": "grand",
+            "price": 3.5,
+            "category": "boissons"
+        },
+        {
+            "id": 7,
+            "name": "fanta",
+            "image": "/assets/images/fanta_m.jpg",
+            "size": "moyen",
+            "price": 2.5,
+            "category": "boissons"
+        },
+        {
+            "id": 8,
+            "name": "fanta",
+            "image": "/assets/images/fanta_g.jpg",
+            "size": "grand",
+            "price": 3.5,
+            "category": "boissons"
+        },
+        {
+            "id": 9,
+            "name": "sprite",
+            "image": "/assets/images/sprite_m.jpg",
+            "size": "moyen",
+            "price": 2.5,
+            "category": "boissons"
+        },
+        {
+            "id": 10,
+            "name": "sprite",
+            "size": "grand",
+            "image": "/assets/images/sprite_g.jpg",
+            "price": 3.5,
+            "category": "boissons"
+        },
+        {
+            "id": 11,
+            "name": "magnum",
+            "image": "/assets/images/magnum_classic.jpg",
+            "type": "classic",
+            "price": 2.5,
+            "category": "glaces"
+        },
+        {
+            "id": 12,
+            "name": "cornetto",
+            "image": "/assets/images/cornetto_vanille.jpg",
+            "type": "vanille",
+            "price": 2.5,
+            "category": "glaces"
+        }
     ]
 }

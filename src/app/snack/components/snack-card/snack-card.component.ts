@@ -7,16 +7,25 @@ import { Snack } from '../../models/snack';
   styleUrls: ['./snack-card.component.css']
 })
 export class SnackCardComponent implements OnInit {
+
+  btnDisabled = false;
+
   @Input()
   snack: Snack;
 
   constructor() { }
 
   ngOnInit() {
+    this.snack.qte = 0;
   }
 
+  actionBtnPlus() {
+    this.snack.qte++;
+  }
 
-
+  actionBtnMoins() {
+    this.snack.qte--;
+  }
 
 
 
