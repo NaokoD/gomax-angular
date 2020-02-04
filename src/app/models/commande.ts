@@ -9,6 +9,7 @@ export class Commande {
         public idSeance : number,
         public sieges : Siege[],
         public places : Place[],
-        public snacks : Snack[]        
+        public snacks : Snack[],
+        public createdOn : Date        
     ) {}
 }

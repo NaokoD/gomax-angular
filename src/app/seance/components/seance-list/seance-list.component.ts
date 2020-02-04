@@ -3,6 +3,7 @@ import { Seance } from '../../models/seance';
 import { SeanceService } from '../../services/seance.service';
 import { filter } from 'rxjs/operators';
 import { SeanceCardComponent } from '../seance-card/seance-card.component';
+import { ActivatedRoute, Router, Params } from '@angular/router';
 
 
 @Component({
@@ -19,13 +20,26 @@ export class SeanceListComponent implements OnInit {
 
   // create attribute => <portee> <nom>:<type>
   // Angular use constructor for DI
-  constructor(private seanceService: SeanceService) { }
+  constructor(private route: ActivatedRoute, private seanceService: SeanceService) { }
 
   /**
    * Description
    */
   ngOnInit() {
-    this.loadSeances();
+    const id: number = this.route.snapshot.params.id;
+    this.loadSeancesByFilm(id);
+  }
+
+  loadSeancesByFilm(idFilm : number) {
+    this.seanceService.getSeancesByFilm(idFilm)
+      .subscribe({
+        next : res => {
+          this.seances = res;
+          console.log(res)
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
   }
 
   loadSeances() {

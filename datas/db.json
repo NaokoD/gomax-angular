@@ -58,17 +58,24 @@
             "horaire": "20H15"
         },
         {
-            "id": 1,
+            "id": 2,
             "date": "mardi",
             "salleId": 2,
-            "filmId": 4,
+            "filmId": 3,
             "horaire": "20H15"
         },
         {
-            "id": 1,
+            "id": 3,
             "date": "mercredi",
-            "salleId": 2,
-            "filmId": 4,
+            "salleId": 1,
+            "filmId": 2,
+            "horaire": "20H15"
+        },
+        {
+            "id": 4,
+            "date": "mardi",
+            "salleId": 1,
+            "filmId": 1,
             "horaire": "20H15"
         }
     ],
@@ -92,62 +99,62 @@
                     "id": "A",
                     "sieges": [
                         {
-                            "id": "1",
+                            "id": 1,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "2",
+                            "id": 2,
                             "type": "handicap",
                             "available": true
                         },
                         {
-                            "id": "3",
+                            "id": 3,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "4",
+                            "id": 4,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "5",
+                            "id": 5,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "6",
+                            "id": 6,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "7",
+                            "id": 7,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "8",
+                            "id": 8,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "9",
+                            "id": 9,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "10",
+                            "id": 10,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "11",
+                            "id": 11,
                             "type": "handicap",
                             "available": true
                         },
                         {
-                            "id": "12",
+                            "id": 12,
                             "type": "basic",
                             "available": true
                         }
@@ -157,62 +164,62 @@
                     "id": "B",
                     "sieges": [
                         {
-                            "id": "13",
+                            "id": 13,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "14",
+                            "id": 14,
                             "type": "handicap",
                             "available": false
                         },
                         {
-                            "id": "15",
+                            "id": 15,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "16",
+                            "id": 16,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "17",
+                            "id": 17,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "18",
+                            "id": 18,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "19",
+                            "id": 19,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "20",
+                            "id": 20,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "21",
+                            "id": 21,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "22",
+                            "id": 22,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "23",
+                            "id": 23,
                             "type": "handicap",
                             "available": true
                         },
                         {
-                            "id": "24",
+                            "id": 24,
                             "type": "basic",
                             "available": true
                         }
@@ -222,62 +229,62 @@
                     "id": "C",
                     "sieges": [
                         {
-                            "id": "25",
+                            "id": 25,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "26",
+                            "id": 26,
                             "type": "handicap",
                             "available": false
                         },
                         {
-                            "id": "27",
+                            "id": 27,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "28",
+                            "id": 28,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "29",
+                            "id": 29,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "30",
+                            "id": 30,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "31",
+                            "id": 31,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "32",
+                            "id": 32,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "33",
+                            "id": 33,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "34",
+                            "id": 34,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "35",
+                            "id": 35,
                             "type": "handicap",
                             "available": true
                         },
                         {
-                            "id": "36",
+                            "id": 36,
                             "type": "basic",
                             "available": true
                         }
@@ -287,62 +294,62 @@
                     "id": "D",
                     "sieges": [
                         {
-                            "id": "37",
+                            "id": 37,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "38",
+                            "id": 38,
                             "type": "handicap",
                             "available": false
                         },
                         {
-                            "id": "39",
+                            "id": 39,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "40",
+                            "id": 40,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "41",
+                            "id": 41,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "42",
+                            "id": 42,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "43",
+                            "id": 43,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "44",
+                            "id": 44,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "45",
+                            "id": 45,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "46",
+                            "id": 46,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "47",
+                            "id": 47,
                             "type": "handicap",
                             "available": true
                         },
                         {
-                            "id": "48",
+                            "id": 48,
                             "type": "basic",
                             "available": true
                         }
@@ -417,62 +424,62 @@
                     "id": "E",
                     "sieges": [
                         {
-                            "id": "37",
+                            "id": 49,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "38",
+                            "id": 50,
                             "type": "handicap",
                             "available": false
                         },
                         {
-                            "id": "39",
+                            "id": 51,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "40",
+                            "id": 52,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "41",
+                            "id": 53,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "42",
+                            "id": 54,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "43",
+                            "id": 55,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "44",
+                            "id": 56,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "45",
+                            "id": 57,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "46",
+                            "id": 58,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "47",
+                            "id": 59,
                             "type": "handicap",
                             "available": true
                         },
                         {
-                            "id": "48",
+                            "id": 60,
                             "type": "basic",
                             "available": true
                         }
@@ -493,62 +500,62 @@
                     "id": "A",
                     "sieges": [
                         {
-                            "id": "1",
+                            "id": 1,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "2",
+                            "id": 2,
                             "type": "handicap",
                             "available": true
                         },
                         {
-                            "id": "3",
+                            "id": 3,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "4",
+                            "id": 4,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "5",
+                            "id": 5,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "6",
+                            "id": 6,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "7",
+                            "id": 7,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "8",
+                            "id": 8,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "9",
+                            "id": 9,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "10",
+                            "id": 10,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "11",
+                            "id": 11,
                             "type": "handicap",
                             "available": true
                         },
                         {
-                            "id": "12",
+                            "id": 12,
                             "type": "basic",
                             "available": true
                         }
@@ -558,62 +565,62 @@
                     "id": "B",
                     "sieges": [
                         {
-                            "id": "13",
+                            "id": 13,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "14",
+                            "id": 14,
                             "type": "handicap",
                             "available": false
                         },
                         {
-                            "id": "15",
+                            "id": 15,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "16",
+                            "id": 16,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "17",
+                            "id": 17,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "18",
+                            "id": 18,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "19",
+                            "id": 19,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "20",
+                            "id": 20,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "21",
+                            "id": 21,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "22",
+                            "id": 22,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "23",
+                            "id": 23,
                             "type": "handicap",
                             "available": true
                         },
                         {
-                            "id": "24",
+                            "id": 24,
                             "type": "basic",
                             "available": true
                         }
@@ -623,62 +630,62 @@
                     "id": "C",
                     "sieges": [
                         {
-                            "id": "25",
+                            "id": 25,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "26",
+                            "id": 26,
                             "type": "handicap",
                             "available": false
                         },
                         {
-                            "id": "27",
+                            "id": 27,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "28",
+                            "id": 28,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "29",
+                            "id": 29,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "30",
+                            "id": 30,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "31",
+                            "id": 31,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "32",
+                            "id": 32,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "33",
+                            "id": 33,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "34",
+                            "id": 34,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "35",
+                            "id": 35,
                             "type": "handicap",
                             "available": true
                         },
                         {
-                            "id": "36",
+                            "id": 36,
                             "type": "basic",
                             "available": true
                         }
@@ -688,62 +695,62 @@
                     "id": "D",
                     "sieges": [
                         {
-                            "id": "37",
+                            "id": 37,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "38",
+                            "id": 38,
                             "type": "handicap",
                             "available": false
                         },
                         {
-                            "id": "39",
+                            "id": 39,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "40",
+                            "id": 40,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "41",
+                            "id": 41,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "42",
+                            "id": 42,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "43",
+                            "id": 43,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "44",
+                            "id": 44,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "45",
+                            "id": 45,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "46",
+                            "id": 46,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "47",
+                            "id": 47,
                             "type": "handicap",
                             "available": true
                         },
                         {
-                            "id": "48",
+                            "id": 48,
                             "type": "basic",
                             "available": true
                         }
@@ -818,62 +825,62 @@
                     "id": "E",
                     "sieges": [
                         {
-                            "id": "49",
+                            "id": 49,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "50",
+                            "id": 50,
                             "type": "handicap",
                             "available": false
                         },
                         {
-                            "id": "51",
+                            "id": 51,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "52",
+                            "id": 52,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "53",
+                            "id": 53,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "54",
+                            "id": 54,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "55",
+                            "id": 55,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "56",
+                            "id": 56,
                             "type": "basic",
                             "available": true
                         },
                         {
-                            "id": "57",
+                            "id": 57,
                             "type": "basic",
                             "available": false
                         },
                         {
-                            "id": "58",
+                            "id": 58,
                             "type": "corridor",
                             "available": true
                         },
                         {
-                            "id": "59",
+                            "id": 59,
                             "type": "handicap",
                             "available": true
                         },
                         {
-                            "id": "60",
+                            "id": 60,
                             "type": "basic",
                             "available": true
                         }
