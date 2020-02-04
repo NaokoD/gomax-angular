@@ -51,21 +51,21 @@
     ],
     "seances": [
         {
-            "id": 1,
+            "idSeance": 1,
             "date": "lundi",
             "salleId": "2",
             "filmId": "4",
             "horaire": "20H15"
         },
         {
-            "id": 2,
+            "idSeance": 2,
             "date": "lundi",
             "salleId": "2",
             "filmId": "4",
             "horaire": "21H15"
         },
         {
-            "id": 3,
+            "idSeance": 3,
             "date": "lundi",
             "salleId": "2",
             "filmId": "4",

@@ -30,6 +30,14 @@ export class SnackListComponent implements OnInit {
     // new Snack(13, 'cornetto', "../../../../assets/images/cornetto_chocolat.jpg", "chocolat", 2.5, "glaces")
 
   ];
+
+
+
+
+
+
+
+  console
   snacks$: Observable<Snack[]>;
 
   //count: number;

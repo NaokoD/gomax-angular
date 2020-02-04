@@ -13,8 +13,8 @@ import { SeanceCardComponent } from '../seance-card/seance-card.component';
 export class SeanceListComponent implements OnInit {
 
   seances: Seance[] = [
-    { id: 1, date: 'lundi', salleId: '2', filmId: '4', horaire: '20H15' },
-    { id: 2, date: 'mardi', salleId: '2', filmId: '5', horaire: '20H15' }
+    { idSeance: 1, date: 'lundi', salleId: '2', filmId: '4', horaire: '20H15' },
+    { idSeance: 2, date: 'mardi', salleId: '2', filmId: '5', horaire: '20H15' }
   ];
 
   seances$: Observable<Seance[]>;
