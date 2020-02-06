@@ -18,6 +18,8 @@ export class SeanceDashboardComponent implements OnInit {
   @ViewChild(SeanceListComponent, { static: false, read: true })
   seanceListElementRef: ElementRef;
 
+
+
   constructor() { }
 
   ngOnInit() {

@@ -1,6 +1,6 @@
 export class Seance {
     constructor(
-        public id: number,
+        public idSeance: number,
         public date: string,
         public salleId: number,
         public filmId: number,

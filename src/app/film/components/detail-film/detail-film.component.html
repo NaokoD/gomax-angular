@@ -2,24 +2,26 @@
     <button mat-raised-button color="accent" [routerLink]="['']">Retour</button>
 </div>
 
-<div *ngIf="film" class="container">
+<div class="container"></div>
+
+<div *ngIf="film">
     <h1>{{ film.titre }}</h1>
     <div class="detailFilm">
-        <div>
+        <section>
             <mat-card class="example-card">
                 <img mat-card-image src="https://via.placeholder.com/240x325" alt="image film">
                 <mat-card-content>
 
                 </mat-card-content>
             </mat-card>
-        </div>
-        <div>
+        </section>
+        <aside>
             <mat-list>
                 <mat-list-item> Résumé: <br> {{ film.resume }} </mat-list-item><br>
                 <mat-list-item> Catégorie: <br> {{ film.categorie }} </mat-list-item><br>
                 <mat-list-item> Durée:<br> {{ film.duree }} min </mat-list-item>
             </mat-list>
-        </div>
+        </aside>
 
     </div>
 

@@ -13,7 +13,14 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
 })
 export class SeanceListComponent implements OnInit {
 
+<<<<<<< HEAD
   seances: Seance[];
+=======
+  seances: Seance[] = [
+    { idSeance: 1, date: 'lundi', salleId: '2', filmId: '4', horaire: '20H15' },
+    { idSeance: 2, date: 'mardi', salleId: '2', filmId: '5', horaire: '20H15' }
+  ];
+>>>>>>> 97e58ca4c71521e24a76f55b34b735bcf890f3ff
 
   @ViewChildren(SeanceCardComponent)
   seancesQuery: QueryList<SeanceCardComponent>;
