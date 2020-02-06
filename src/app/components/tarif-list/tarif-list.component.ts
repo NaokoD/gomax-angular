@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Tarif } from 'src/app/models/tarif';
 import { Place } from 'src/app/models/place';
+import { TarifService } from 'src/app/services/tarif.service';
 
 @Component({
   selector: 'app-tarif-list',
@@ -8,31 +9,23 @@ import { Place } from 'src/app/models/place';
   styleUrls: ['./tarif-list.component.css']
 })
 export class TarifListComponent implements OnInit {
-  places : Place[];
-  
-  tarifs : Tarif[] = [
-    {id:1, libelle : 'Normal', montant:12},
-    {id:2, libelle : 'Reduit', montant:6}
-  ];
+  places : Place[] = [];
+  tarifs : Tarif[];
 
   displayedColumns: string[] = ['libelle', 'montant', 'moins', 'quantite', 'plus', 'total'];
 
-  constructor() {
+  constructor(private tarifService: TarifService) {
     
   }
 
   ngOnInit() {
-    this.places = [
-      {quantite:0, idTarif:1},
-      {quantite:0, idTarif:2}
-    ]
+    this.loadTarifs();
   }
 
   private add(tarif : Tarif): void{
     for(let i:number = 0; i<this.places.length; i++){
       if(this.places[i].idTarif==tarif.id){
         this.places[i].quantite++;
-        //console.log(this.places);
       }
     }
   }
@@ -54,6 +47,27 @@ export class TarifListComponent implements OnInit {
         }
       }
     }
-  } 
-
+  }
+  
+  private loadTarifs() : void {
+    this.tarifService.getTarifs().
+    subscribe({
+      next: x => {
+        this.tarifs = x;
+        console.log(x);
+      },
+      error: e => console.log(e),
+      complete: () => {
+        console.log(this.places)
+        for(let i of this.tarifs){
+          console.log(i);
+          this.places.push(
+            {quantite : 0, idTarif : i.id}
+          );
+          console.log(this.places)
+        };
+        console.log('Oberver got a complete notification')
+      }
+    });    
+  }
 }

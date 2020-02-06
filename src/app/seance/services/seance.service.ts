@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Seance } from '../models/seance';
 import { Observable, of } from 'rxjs';
 import { map, filter, reduce } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,15 +13,11 @@ export class SeanceService {
   constructor(private http: HttpClient) { }
 
   getSeancesViewObservable(id: number): Observable<Seance> {
-    return this.http.get<Seance>('http://localhost:3400/seances/' + id);
+    return this.http.get<Seance>(`${environment.apiBaseUrl}/seances/${id}`);
   }
 
   getSeancesObservable(): Observable<Seance[]> {
-    return this.http.get<Seance[]>('http://localhost:3400/seances');
-  }
-
-  getSeancesPromise(): Promise<Seance[]> {
-    return this.http.get<Seance[]>('http://localhost:3400/seances').toPromise();
+    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances`);
   }
 
   demoObservable() {

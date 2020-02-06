@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Row } from '../../models/row';
+import {SalleService} from '../../services/salle.service';
+import {Salle} from '../../models/salle';
+import {Plan} from '../../models/plan';
 
 @Component({
   selector: 'app-salle-plan',
@@ -7,7 +10,8 @@ import { Row } from '../../models/row';
   styleUrls: ['./salle-plan.component.css']
 })
 export class SallePlanComponent implements OnInit {
-plan: Row[] = [
+plan: Plan;
+/*= [
     {
       id: 'A', sieges : [
         {id: '1', type: 'basic', available: true},
@@ -40,44 +44,88 @@ plan: Row[] = [
         {id: '24', type: 'basic', available: true}
       ]
     },
-  {
-    id: 'C', sieges : [
-      {id: '25', type: 'basic', available: true},
-      {id: '26', type: 'handicap', available: false},
-      {id: '27', type: 'basic', available: true},
-      {id: '28', type: 'corridor', available: true},
-      {id: '29', type: 'basic', available: false},
-      {id: '30', type: 'basic', available: false},
-      {id: '31', type: 'basic', available: true},
-      {id: '32', type: 'basic', available: true},
-      {id: '33', type: 'basic', available: false},
-      {id: '34', type: 'corridor', available: true},
-      {id: '35', type: 'handicap', available: true},
-      {id: '36', type: 'basic', available: true}
-    ]
-  },
-  {
-    id: 'D', sieges : [
-      {id: '37', type: 'basic', available: true},
-      {id: '38', type: 'handicap', available: false},
-      {id: '39', type: 'basic', available: true},
-      {id: '40', type: 'corridor', available: true},
-      {id: '41', type: 'basic', available: false},
-      {id: '42', type: 'basic', available: false},
-      {id: '43', type: 'basic', available: true},
-      {id: '44', type: 'basic', available: true},
-      {id: '45', type: 'basic', available: false},
-      {id: '46', type: 'corridor', available: true},
-      {id: '47', type: 'handicap', available: true},
-      {id: '48', type: 'basic', available: true}
-    ]
-  }
-  ];
+    {
+      id: 'C', sieges : [
+        {id: '25', type: 'basic', available: true},
+        {id: '26', type: 'handicap', available: false},
+        {id: '27', type: 'basic', available: true},
+        {id: '28', type: 'corridor', available: true},
+        {id: '29', type: 'basic', available: false},
+        {id: '30', type: 'basic', available: false},
+        {id: '31', type: 'basic', available: true},
+        {id: '32', type: 'basic', available: true},
+        {id: '33', type: 'basic', available: false},
+        {id: '34', type: 'corridor', available: true},
+        {id: '35', type: 'handicap', available: true},
+        {id: '36', type: 'basic', available: true}
+      ]
+    },
+    {
+      id: 'D', sieges : [
+        {id: '37', type: 'basic', available: true},
+        {id: '38', type: 'handicap', available: false},
+        {id: '39', type: 'basic', available: true},
+        {id: '40', type: 'corridor', available: true},
+        {id: '41', type: 'basic', available: false},
+        {id: '42', type: 'basic', available: false},
+        {id: '43', type: 'basic', available: true},
+        {id: '44', type: 'basic', available: true},
+        {id: '45', type: 'basic', available: false},
+        {id: '46', type: 'corridor', available: true},
+        {id: '47', type: 'handicap', available: true},
+        {id: '48', type: 'basic', available: true}
+      ]
+    },
+    {
+      id: null, sieges : [
+        {id: null, type: 'corridor', available: true},
+        {id: null, type: 'corridor', available: false},
+        {id: null, type: 'corridor', available: true},
+        {id: null, type: 'corridor', available: true},
+        {id: null, type: 'corridor', available: false},
+        {id: null, type: 'corridor', available: false},
+        {id: null, type: 'corridor', available: true},
+        {id: null, type: 'corridor', available: true},
+        {id: null, type: 'corridor', available: false},
+        {id: null, type: 'corridor', available: true},
+        {id: null, type: 'corridor', available: true},
+        {id: null, type: 'corridor', available: true}
+      ]
+    },
+    {
+      id: 'E', sieges : [
+        {id: '37', type: 'basic', available: true},
+        {id: '38', type: 'handicap', available: false},
+        {id: '39', type: 'basic', available: true},
+        {id: '40', type: 'corridor', available: true},
+        {id: '41', type: 'basic', available: false},
+        {id: '42', type: 'basic', available: false},
+        {id: '43', type: 'basic', available: true},
+        {id: '44', type: 'basic', available: true},
+        {id: '45', type: 'basic', available: false},
+        {id: '46', type: 'corridor', available: true},
+        {id: '47', type: 'handicap', available: true},
+        {id: '48', type: 'basic', available: true}
+      ]
+    }
+  ];*/
 
-  constructor() {
+  constructor(private salleService: SalleService) {
    }
 
   ngOnInit() {
+    this.loadSallePlan(1);
   }
 
+  private loadSallePlan(id: number): void {
+    this.salleService.getSalleById(id).
+      subscribe({
+        next: x => {
+          this.plan = x.plan;
+          console.log(x.plan);
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
+  }
 }

@@ -32,14 +32,6 @@ export class FilmListComponent implements OnInit {
     this.loadFilmsObservable();
   }
 
-  loadFilmsPromise() {
-    this.filmService.getFilmsPromise()
-      .then(res => {
-        console.log('mon résultat', res);
-        this.films = res;
-      });
-  }
-
   loadFilmsObservable() {
     this.filmService.getFilmsObservable()
       .subscribe(res => this.films = res);

@@ -1,14 +1,16 @@
+<p>seance-list works!</p>
+
 <mat-tab-group>
-    <mat-tab label="mon">
+    <mat-tab label="Lundi">
         <div class="film-list">
             <app-seance-card *ngFor="let s of seances" [seance]=s></app-seance-card>
         </div>
     </mat-tab>
-    <mat-tab label="tue"> Content 2 </mat-tab>
-    <mat-tab label="wed"> Content 3 </mat-tab>
-    <mat-tab label="thur"> Content 3 </mat-tab>
-    <mat-tab label="fri"> Content 3 </mat-tab>
-    <mat-tab label="sat"> Content 3 </mat-tab>
-    <mat-tab label="sun"> Content 3 </mat-tab>
+    <mat-tab label="Mardi">Séances du mardi </mat-tab>
+    <mat-tab label="Mercredi">Séances du mercredi </mat-tab>
+    <mat-tab label="Jeudi">Séances du jeudi </mat-tab>
+    <mat-tab label="Vendredi">Séances vendredi</mat-tab>
+    <mat-tab label="Samedi">Samedi</mat-tab>
+    <mat-tab label="Dimanche">Dimanche </mat-tab>
 
 </mat-tab-group>

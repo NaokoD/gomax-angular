@@ -14,9 +14,11 @@
     </mat-card-content>
     <mat-card-actions>
         <div class="button-row">
-            <button name="plus" mat-mini-fab color="primary">+</button>
-            <mat-chip name="qte" color="accent">0</mat-chip>
-            <button name="moins" mat-mini-fab color="primary">-</button>
+            <button (click)="actionBtnPlus($event)" name="plus" mat-mini-fab color="primary"
+                data-field="quant[0]">+</button>
+            {{snack.qte}}
+            <button (click)="actionBtnMoins($event)" name="moins" mat-mini-fab color="primary"
+                data-field="quant[0]">-</button>
         </div>
     </mat-card-actions>
 </mat-card>

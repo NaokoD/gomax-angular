@@ -32,14 +32,6 @@ export class SeanceListComponent implements OnInit {
     this.loadSeancesObservable();
   }
 
-  loadSeancesPromise() {
-    this.seanceService.getSeancesPromise()
-      .then(res => {
-        console.log('mon résultat', res);
-        this.seances = res;
-      });
-  }
-
   loadSeancesObservable() {
     this.seanceService.getSeancesObservable()
       .subscribe(res => this.seances = res);

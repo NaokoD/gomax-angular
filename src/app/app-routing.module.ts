@@ -8,6 +8,7 @@ import { CinemaListComponent } from './cinema/components/cinema-list/cinema-list
 import { TarifListComponent } from './components/tarif-list/tarif-list.component';
 import { RowComponent } from './salle/components/row/row.component';
 import { SallePlanComponent } from './salle/components/salle-plan/salle-plan.component';
+import { PanierComponent } from './components/panier/panier.component';
 
 
 
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: '', component: FilmDashboardComponent },
   { path: 'details/:id', component: DetailFilmComponent },
   { path: 'details/:id/plan/:idSeance', component: SallePlanComponent },
+  { path: 'details/:id/tarif', component: TarifListComponent },
   { path: 'seances', component: SeanceListComponent },
   // path: '', component: HomeComponent },
   { path: 'snacks', loadChildren: './snack/snack.module#SnackModule' },

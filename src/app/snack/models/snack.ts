@@ -6,7 +6,8 @@ export class Snack {
         public image: string,
         public size: string,
         public price: number,
-        public category: string
+        public category: string,
+        public qte: number
     ) { }
 
 }
