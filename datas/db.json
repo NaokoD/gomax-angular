@@ -156,6 +156,31 @@
           "qte": 3
         }
       ]
+    },
+    {
+      "id": 3,
+      "idClient": 1,
+      "idSeance": 2,
+      "tarifs": [
+        {
+          "id": 1,
+          "libelle": "Normal",
+          "montant": 12,
+          "quantite": 2
+        }
+      ],
+      "createdOn": "2020-02-06T12:11:06.726Z",
+      "snacks": [
+        {
+          "id": 2,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_g.jpg",
+          "size": "grand",
+          "price": 3.5,
+          "category": "popcorn",
+          "qte": 3
+        }
+      ]
     }
   ],
   "salles": [
