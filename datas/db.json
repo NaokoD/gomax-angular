@@ -92,6 +92,78 @@
     }
   ],
   "commandes": [
+    {
+      "id": 1,
+      "idClient": 1,
+      "idSeance": null,
+      "tarifs": [],
+      "createdOn": "2020-02-06T12:49:22.827Z",
+      "snacks": [
+        {
+          "id": 1,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_m.jpg",
+          "size": "moyen",
+          "price": 2.5,
+          "category": "popcorn",
+          "qte": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "idClient": 1,
+      "idSeance": null,
+      "tarifs": [],
+      "createdOn": "2020-02-06T12:49:32.434Z",
+      "snacks": [
+        {
+          "id": 1,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_m.jpg",
+          "size": "moyen",
+          "price": 2.5,
+          "category": "popcorn",
+          "qte": 3
+        },
+        {
+          "id": 1,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_m.jpg",
+          "size": "moyen",
+          "price": 2.5,
+          "category": "popcorn",
+          "qte": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "idClient": 1,
+      "idSeance": null,
+      "tarifs": [],
+      "createdOn": "2020-02-06T12:55:40.465Z",
+      "snacks": [
+        {
+          "id": 1,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_m.jpg",
+          "size": "moyen",
+          "price": 2.5,
+          "category": "popcorn",
+          "qte": 2
+        },
+        {
+          "id": 11,
+          "name": "magnum",
+          "image": "/assets/images/magnum_classic.jpg",
+          "type": "classic",
+          "price": 2.5,
+          "category": "glaces",
+          "qte": 3
+        }
+      ]
+    }
   ],
   "salles": [
     {

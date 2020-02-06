@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Tarif } from 'src/app/models/tarif';
-import { Place } from 'src/app/models/place';
 import { TarifService } from 'src/app/services/tarif.service';
 import { ActivatedRoute } from '@angular/router';
 import { CommandeService } from 'src/app/services/commande.service';
@@ -15,7 +14,7 @@ export class TarifListComponent implements OnInit {
   tarifs : Tarif[];
   idSeance : number;
 
-  displayedColumns: string[] = ['libelle', 'montant', 'moins', 'quantite', 'plus', 'total'];
+  displayedColumns: string[] = ['libelle', 'montant', 'quantite', 'total'];
 
   constructor(private route: ActivatedRoute, private tarifService: TarifService, private commandeService: CommandeService) {
     const id: string = this.route.snapshot.params.id;
@@ -27,7 +26,7 @@ export class TarifListComponent implements OnInit {
   }
 
  add(id : number): void{
-    console.log(id);
+    //console.log(id);
     for(let i of this.tarifs){
       if(i.id === id){
         if(i.quantite >= 0){
@@ -37,16 +36,8 @@ export class TarifListComponent implements OnInit {
     }
   }
   
-  /* getPlacesByTarif(tarif : Tarif): number{
-    for(let i:number = 0; i<this.places.length; i++){
-      if(this.places[i].tarif.id===tarif.id){
-        return this.places[i].quantite;
-      };
-    };
-  }; */
-
   drop(id : number) : void {
-    console.log(id);
+    //console.log(id);
     for(let i of this.tarifs){
       if(i.id === id){
         if(i.quantite > 0){
@@ -61,13 +52,13 @@ export class TarifListComponent implements OnInit {
     .subscribe({
       next: x => {
         this.tarifs = x;
-        console.log(x);
+        //console.log(x);
       },
       error: e => console.log(e),
       complete: () => {
         for(let i of this.tarifs){
           i.quantite=0;
-          console.log(i)
+          //console.log(i)
         } ;
         console.log('Oberver got a complete notification')
       }
