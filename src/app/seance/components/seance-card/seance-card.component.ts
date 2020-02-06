@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Seance } from '../../models/seance';
+import { CommandeService } from 'src/app/services/commande.service';
 
 @Component({
   selector: 'app-seance-card',
@@ -10,9 +11,14 @@ export class SeanceCardComponent implements OnInit {
   @Input()
   seance: Seance;
 
-  constructor() { }
+
+
+  constructor(/*private commandeService: CommandeService*/) { }
 
   ngOnInit() {
+  }
+
+  ajouterSeanceACommande(id : number){
   }
 
 }

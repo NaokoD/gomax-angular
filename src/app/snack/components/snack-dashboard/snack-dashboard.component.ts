@@ -1,8 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, Output } from '@angular/core';
 import { Snack } from '../../models/snack';
 import { SnackListComponent } from '../snack-list/snack-list.component';
-import { Panier } from 'src/app/models/panier';
-import { PanierService } from 'src/app/services/panier.service';
+import { CommandeService } from 'src/app/services/commande.service';
 
 @Component({
   selector: 'app-snack-dashboard',
@@ -25,27 +24,25 @@ export class SnackDashboardComponent implements OnInit {
   @ViewChild(SnackListComponent, { static: false, read: true })
   snackListElementRef: ElementRef;
 
-  //snackInc: Snack[] = new Array();
+  snacks : Snack[] = [];
 
-  constructor(private panierService: PanierService) { }
+  constructor(private commandeService : CommandeService) { }
 
   ngOnInit() {
 
   }
 
-  filtrerSnacksIncrementes(snack: Snack) {
-
-    for (let i = 0; i < this.snackList.snacks.length; i++) {
-      let snack = this.snackList.snacks[i];
-      if (snack.qte > 0) { //
-        //this.snackInc.push(snack)
-        this.panierService.panier.commandeSnack.push(snack);
+  filtrerSnacksIncrementes() {
+    for (let i of this.snackList.snacks) {
+      if (i.qte > 0) { 
+        this.snacks.push(i);
       }
     }
+    //console.log(this.snacks);
+    this.commandeService.commande.snacks=this.snacks;
+    //console.log(this.commandeService.commande)
+    this.commandeService.save();
     this.btnDisabled = !this.btnDisabled;
   }
-
-  // listeSnacksPanier() {
-  // }
 
 }

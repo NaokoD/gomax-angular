@@ -15,7 +15,7 @@ export class SiegeComponent implements OnInit {
   ngOnInit() {
   }
 
-  private toggleAvailability(siege : Siege) : void {
+  toggleAvailability(siege : Siege) : void {
     console.log(siege.id);
     if(siege.available === true){
       siege.available = null;
