@@ -33,12 +33,12 @@ export class SnackListComponent implements OnInit {
     // observable.subscribe
     this.snackService.getSnacks()
       .subscribe({
-        next : res => {
+        next: res => {
           this.snacks = res;
           console.log(res)
         },
         error: e => console.log(e),
         complete: () => console.log('Complete')
       });
-    }
+  }
 }
