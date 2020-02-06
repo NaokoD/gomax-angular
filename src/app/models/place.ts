@@ -1,6 +1,8 @@
+import { Tarif } from './tarif';
+
 export class Place {
     constructor(
-        public quantite: number,
-        public idTarif: number
+        public tarif : Tarif,
+        public quantite: number
     ){}
 }

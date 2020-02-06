@@ -21,7 +21,7 @@ export class SeanceService {
   }
 
   getSeancesByFilm(idFilm : number): Observable<Seance[]> {
-    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances?filmId=${idFilm}`);
+    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/films/${idFilm}/seances`);
   }
 
 }

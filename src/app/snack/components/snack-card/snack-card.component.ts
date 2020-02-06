@@ -20,11 +20,17 @@ export class SnackCardComponent implements OnInit {
   }
 
   actionBtnPlus() {
-    this.snack.qte++;
+    if(this.snack.qte >= 0) {
+      this.snack.qte++;
+      console.log(this.snack);
+    }
   }
 
   actionBtnMoins() {
-    this.snack.qte--;
+    if(this.snack.qte > 0) {
+      this.snack.qte--;
+      console.log(this.snack);
+    }
   }
 
 

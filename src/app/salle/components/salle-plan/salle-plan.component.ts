@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Row } from '../../models/row';
 import {SalleService} from '../../services/salle.service';
-import {Salle} from '../../models/salle';
 import {Plan} from '../../models/plan';
+import { ActivatedRoute } from '@angular/router';
+import { CommandeService } from 'src/app/services/commande.service';
 
 @Component({
   selector: 'app-salle-plan',
@@ -110,7 +111,7 @@ plan: Plan;
     }
   ];*/
 
-  constructor(private salleService: SalleService) {
+  constructor(private route: ActivatedRoute, private commandeService: CommandeService, private salleService: SalleService) {
    }
 
   ngOnInit() {
