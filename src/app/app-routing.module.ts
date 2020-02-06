@@ -8,7 +8,6 @@ import { CinemaListComponent } from './cinema/components/cinema-list/cinema-list
 import { TarifListComponent } from './components/tarif-list/tarif-list.component';
 import { RowComponent } from './salle/components/row/row.component';
 import { SallePlanComponent } from './salle/components/salle-plan/salle-plan.component';
-import { PanierComponent } from './components/panier/panier.component';
 
 
 

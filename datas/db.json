@@ -1,989 +1,998 @@
 {
-    "films": [
+  "films": [
+    {
+      "id": 1,
+      "titre": "Bad Boys 3",
+      "categorie": "action",
+      "duree": 120,
+      "urlImg": "https://via.placeholder.com/240x325",
+      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+    },
+    {
+      "id": 2,
+      "titre": "Jumanji",
+      "categorie": "comedie",
+      "duree": 85,
+      "urlImg": "https://via.placeholder.com/240x325",
+      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+    },
+    {
+      "id": 3,
+      "titre": "Les incognitos",
+      "categorie": "cartoon",
+      "duree": 75,
+      "urlImg": "https://via.placeholder.com/240x325",
+      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+    },
+    {
+      "id": 4,
+      "titre": "Joker",
+      "categorie": "action",
+      "duree": 200,
+      "urlImg": "https://via.placeholder.com/240x325",
+      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+    },
+    {
+      "id": 5,
+      "titre": "1917",
+      "categorie": "action",
+      "duree": 180,
+      "urlImg": "https://via.placeholder.com/240x325",
+      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+    },
+    {
+      "id": 6,
+      "titre": "Star Wars",
+      "categorie": "action",
+      "duree": 120,
+      "urlImg": "https://via.placeholder.com/240x325",
+      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+    }
+  ],
+  "seances": [
+    {
+      "id": 1,
+      "date": "lundi",
+      "salleId": 2,
+      "filmId": 4,
+      "horaire": "20H15"
+    },
+    {
+      "id": 2,
+      "date": "mardi",
+      "salleId": 2,
+      "filmId": 3,
+      "horaire": "20H15"
+    },
+    {
+      "id": 3,
+      "date": "mercredi",
+      "salleId": 1,
+      "filmId": 2,
+      "horaire": "20H15"
+    },
+    {
+      "id": 4,
+      "date": "mardi",
+      "salleId": 1,
+      "filmId": 1,
+      "horaire": "20H15"
+    }
+  ],
+  "tarifs": [
+    {
+      "id": 1,
+      "libelle": "Normal",
+      "montant": 12
+    },
+    {
+      "id": 2,
+      "libelle": "Reduit",
+      "montant": 6
+    }
+  ],
+  "commandes": [
+  ],
+  "salles": [
+    {
+      "id": 1,
+      "plan": [
         {
-            "id": 1,
-            "titre": "Bad Boys 3",
-            "categorie": "action",
-            "duree": 120,
-            "urlImg": "https://via.placeholder.com/240x325",
-            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit ."
+          "id": "A",
+          "sieges": [
+            {
+              "id": 1,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 2,
+              "type": "handicap",
+              "available": true
+            },
+            {
+              "id": 3,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 4,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 5,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 6,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 7,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 8,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 9,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 10,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 11,
+              "type": "handicap",
+              "available": true
+            },
+            {
+              "id": 12,
+              "type": "basic",
+              "available": true
+            }
+          ]
         },
         {
-            "id": 2,
-            "titre": "Jumanji",
-            "categorie": "comedie",
-            "duree": 85,
-            "urlImg": "https://via.placeholder.com/240x325",
-            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+          "id": "B",
+          "sieges": [
+            {
+              "id": 13,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 14,
+              "type": "handicap",
+              "available": false
+            },
+            {
+              "id": 15,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 16,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 17,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 18,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 19,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 20,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 21,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 22,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 23,
+              "type": "handicap",
+              "available": true
+            },
+            {
+              "id": 24,
+              "type": "basic",
+              "available": true
+            }
+          ]
         },
         {
-            "id": 3,
-            "titre": "Les incognitos",
-            "categorie": "cartoon",
-            "duree": 75,
-            "urlImg": "https://via.placeholder.com/240x325",
-            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+          "id": "C",
+          "sieges": [
+            {
+              "id": 25,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 26,
+              "type": "handicap",
+              "available": false
+            },
+            {
+              "id": 27,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 28,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 29,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 30,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 31,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 32,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 33,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 34,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 35,
+              "type": "handicap",
+              "available": true
+            },
+            {
+              "id": 36,
+              "type": "basic",
+              "available": true
+            }
+          ]
         },
         {
-            "id": 4,
-            "titre": "Joker",
-            "categorie": "action",
-            "duree": 200,
-            "urlImg": "https://via.placeholder.com/240x325",
-            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+          "id": "D",
+          "sieges": [
+            {
+              "id": 37,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 38,
+              "type": "handicap",
+              "available": false
+            },
+            {
+              "id": 39,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 40,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 41,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 42,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 43,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 44,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 45,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 46,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 47,
+              "type": "handicap",
+              "available": true
+            },
+            {
+              "id": 48,
+              "type": "basic",
+              "available": true
+            }
+          ]
         },
         {
-            "id": 5,
-            "titre": "1917",
-            "categorie": "action",
-            "duree": 180,
-            "urlImg": "https://via.placeholder.com/240x325",
-            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+          "id": null,
+          "sieges": [
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": false
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": false
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": false
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": false
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            }
+          ]
         },
         {
-            "id": 6,
-            "titre": "Star Wars",
-            "categorie": "action",
-            "duree": 120,
-            "urlImg": "https://via.placeholder.com/240x325",
-            "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+          "id": "E",
+          "sieges": [
+            {
+              "id": 49,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 50,
+              "type": "handicap",
+              "available": false
+            },
+            {
+              "id": 51,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 52,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 53,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 54,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 55,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 56,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 57,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 58,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 59,
+              "type": "handicap",
+              "available": true
+            },
+            {
+              "id": 60,
+              "type": "basic",
+              "available": true
+            }
+          ]
         }
-    ],
-    "seances": [
+      ],
+      "numero": 1,
+      "siege": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "plan": [
         {
-            "idSeance": 1,
-            "date": "lundi",
-            "salleId": "2",
-            "filmId": "4",
-            "horaire": "20H15"
+          "id": "A",
+          "sieges": [
+            {
+              "id": 1,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 2,
+              "type": "handicap",
+              "available": true
+            },
+            {
+              "id": 3,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 4,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 5,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 6,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 7,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 8,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 9,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 10,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 11,
+              "type": "handicap",
+              "available": true
+            },
+            {
+              "id": 12,
+              "type": "basic",
+              "available": true
+            }
+          ]
         },
         {
-            "idSeance": 2,
-            "date": "lundi",
-            "salleId": "2",
-            "filmId": "4",
-            "horaire": "21H15"
+          "id": "B",
+          "sieges": [
+            {
+              "id": 13,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 14,
+              "type": "handicap",
+              "available": false
+            },
+            {
+              "id": 15,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 16,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 17,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 18,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 19,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 20,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 21,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 22,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 23,
+              "type": "handicap",
+              "available": true
+            },
+            {
+              "id": 24,
+              "type": "basic",
+              "available": true
+            }
+          ]
         },
         {
-            "idSeance": 3,
-            "date": "lundi",
-            "salleId": "2",
-            "filmId": "4",
-            "horaire": "22H15"
+          "id": "C",
+          "sieges": [
+            {
+              "id": 25,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 26,
+              "type": "handicap",
+              "available": false
+            },
+            {
+              "id": 27,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 28,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 29,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 30,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 31,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 32,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 33,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 34,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 35,
+              "type": "handicap",
+              "available": true
+            },
+            {
+              "id": 36,
+              "type": "basic",
+              "available": true
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "sieges": [
+            {
+              "id": 37,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 38,
+              "type": "handicap",
+              "available": false
+            },
+            {
+              "id": 39,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 40,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 41,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 42,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 43,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 44,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 45,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 46,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 47,
+              "type": "handicap",
+              "available": true
+            },
+            {
+              "id": 48,
+              "type": "basic",
+              "available": true
+            }
+          ]
+        },
+        {
+          "id": null,
+          "sieges": [
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": false
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": false
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": false
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": false
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": null,
+              "type": "corridor",
+              "available": true
+            }
+          ]
+        },
+        {
+          "id": "E",
+          "sieges": [
+            {
+              "id": 49,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 50,
+              "type": "handicap",
+              "available": false
+            },
+            {
+              "id": 51,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 52,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 53,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 54,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 55,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 56,
+              "type": "basic",
+              "available": true
+            },
+            {
+              "id": 57,
+              "type": "basic",
+              "available": false
+            },
+            {
+              "id": 58,
+              "type": "corridor",
+              "available": true
+            },
+            {
+              "id": 59,
+              "type": "handicap",
+              "available": true
+            },
+            {
+              "id": 60,
+              "type": "basic",
+              "available": true
+            }
+          ]
         }
-    ],
-    "tarifs": [
-        {
-            "id": 1,
-            "libelle": "Normal",
-            "montant": 12
-        },
-        {
-            "id": 2,
-            "libelle": "Reduit",
-            "montant": 6
-        }
-    ],
-    "salles": [
-        {
-            "id": 1,
-            "plan": [
-                {
-                    "id": "A",
-                    "sieges": [
-                        {
-                            "id": "1",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "2",
-                            "type": "handicap",
-                            "available": true
-                        },
-                        {
-                            "id": "3",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "4",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "5",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "6",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "7",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "8",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "9",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "10",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "11",
-                            "type": "handicap",
-                            "available": true
-                        },
-                        {
-                            "id": "12",
-                            "type": "basic",
-                            "available": true
-                        }
-                    ]
-                },
-                {
-                    "id": "B",
-                    "sieges": [
-                        {
-                            "id": "13",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "14",
-                            "type": "handicap",
-                            "available": false
-                        },
-                        {
-                            "id": "15",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "16",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "17",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "18",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "19",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "20",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "21",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "22",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "23",
-                            "type": "handicap",
-                            "available": true
-                        },
-                        {
-                            "id": "24",
-                            "type": "basic",
-                            "available": true
-                        }
-                    ]
-                },
-                {
-                    "id": "C",
-                    "sieges": [
-                        {
-                            "id": "25",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "26",
-                            "type": "handicap",
-                            "available": false
-                        },
-                        {
-                            "id": "27",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "28",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "29",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "30",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "31",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "32",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "33",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "34",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "35",
-                            "type": "handicap",
-                            "available": true
-                        },
-                        {
-                            "id": "36",
-                            "type": "basic",
-                            "available": true
-                        }
-                    ]
-                },
-                {
-                    "id": "D",
-                    "sieges": [
-                        {
-                            "id": "37",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "38",
-                            "type": "handicap",
-                            "available": false
-                        },
-                        {
-                            "id": "39",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "40",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "41",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "42",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "43",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "44",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "45",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "46",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "47",
-                            "type": "handicap",
-                            "available": true
-                        },
-                        {
-                            "id": "48",
-                            "type": "basic",
-                            "available": true
-                        }
-                    ]
-                },
-                {
-                    "id": null,
-                    "sieges": [
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": false
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": false
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": false
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": false
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        }
-                    ]
-                },
-                {
-                    "id": "E",
-                    "sieges": [
-                        {
-                            "id": "37",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "38",
-                            "type": "handicap",
-                            "available": false
-                        },
-                        {
-                            "id": "39",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "40",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "41",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "42",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "43",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "44",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "45",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "46",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "47",
-                            "type": "handicap",
-                            "available": true
-                        },
-                        {
-                            "id": "48",
-                            "type": "basic",
-                            "available": true
-                        }
-                    ]
-                }
-            ],
-            "numero": 1,
-            "siege": [
-                1,
-                2,
-                3
-            ]
-        },
-        {
-            "id": 2,
-            "plan": [
-                {
-                    "id": "A",
-                    "sieges": [
-                        {
-                            "id": "1",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "2",
-                            "type": "handicap",
-                            "available": true
-                        },
-                        {
-                            "id": "3",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "4",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "5",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "6",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "7",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "8",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "9",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "10",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "11",
-                            "type": "handicap",
-                            "available": true
-                        },
-                        {
-                            "id": "12",
-                            "type": "basic",
-                            "available": true
-                        }
-                    ]
-                },
-                {
-                    "id": "B",
-                    "sieges": [
-                        {
-                            "id": "13",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "14",
-                            "type": "handicap",
-                            "available": false
-                        },
-                        {
-                            "id": "15",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "16",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "17",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "18",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "19",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "20",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "21",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "22",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "23",
-                            "type": "handicap",
-                            "available": true
-                        },
-                        {
-                            "id": "24",
-                            "type": "basic",
-                            "available": true
-                        }
-                    ]
-                },
-                {
-                    "id": "C",
-                    "sieges": [
-                        {
-                            "id": "25",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "26",
-                            "type": "handicap",
-                            "available": false
-                        },
-                        {
-                            "id": "27",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "28",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "29",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "30",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "31",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "32",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "33",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "34",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "35",
-                            "type": "handicap",
-                            "available": true
-                        },
-                        {
-                            "id": "36",
-                            "type": "basic",
-                            "available": true
-                        }
-                    ]
-                },
-                {
-                    "id": "D",
-                    "sieges": [
-                        {
-                            "id": "37",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "38",
-                            "type": "handicap",
-                            "available": false
-                        },
-                        {
-                            "id": "39",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "40",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "41",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "42",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "43",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "44",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "45",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "46",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "47",
-                            "type": "handicap",
-                            "available": true
-                        },
-                        {
-                            "id": "48",
-                            "type": "basic",
-                            "available": true
-                        }
-                    ]
-                },
-                {
-                    "id": null,
-                    "sieges": [
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": false
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": false
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": false
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": false
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": null,
-                            "type": "corridor",
-                            "available": true
-                        }
-                    ]
-                },
-                {
-                    "id": "E",
-                    "sieges": [
-                        {
-                            "id": "49",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "50",
-                            "type": "handicap",
-                            "available": false
-                        },
-                        {
-                            "id": "51",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "52",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "53",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "54",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "55",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "56",
-                            "type": "basic",
-                            "available": true
-                        },
-                        {
-                            "id": "57",
-                            "type": "basic",
-                            "available": false
-                        },
-                        {
-                            "id": "58",
-                            "type": "corridor",
-                            "available": true
-                        },
-                        {
-                            "id": "59",
-                            "type": "handicap",
-                            "available": true
-                        },
-                        {
-                            "id": "60",
-                            "type": "basic",
-                            "available": true
-                        }
-                    ]
-                }
-            ],
-            "numero": 2,
-            "siege": [
-                1,
-                2,
-                3
-            ]
-        }
-    ],
-    "snacks": [
-        {
-            "id": 1,
-            "name": "popcorn salé",
-            "image": "/assets/images/pop_salt_m.jpg",
-            "size": "moyen",
-            "price": 2.5,
-            "category": "popcorn"
-        },
-        {
-            "id": 2,
-            "name": "popcorn salé",
-            "image": "/assets/images/pop_salt_g.jpg",
-            "size": "grand",
-            "price": 3.5,
-            "category": "popcorn"
-        },
-        {
-            "id": 3,
-            "name": "popcorn caramel",
-            "image": "/assets/images/popcorn_caramel_m.jpg",
-            "size": "moyen",
-            "price": 2.5,
-            "category": "popcorn"
-        },
-        {
-            "id": 4,
-            "name": "popcorn caramel",
-            "image": "/assets/images/popcorn_caramel_g.jpg",
-            "size": "grand",
-            "price": 3.5,
-            "category": "popcorn"
-        },
-        {
-            "id": 5,
-            "name": "coca-cola",
-            "image": "/assets/images/coke_m.jpg",
-            "size": "moyen",
-            "price": 2.5,
-            "category": "boissons"
-        },
-        {
-            "id": 6,
-            "name": "coca_cola",
-            "image": "/assets/images/coke_g.jpg",
-            "size": "grand",
-            "price": 3.5,
-            "category": "boissons"
-        },
-        {
-            "id": 7,
-            "name": "fanta",
-            "image": "/assets/images/fanta_m.jpg",
-            "size": "moyen",
-            "price": 2.5,
-            "category": "boissons"
-        },
-        {
-            "id": 8,
-            "name": "fanta",
-            "image": "/assets/images/fanta_g.jpg",
-            "size": "grand",
-            "price": 3.5,
-            "category": "boissons"
-        },
-        {
-            "id": 9,
-            "name": "sprite",
-            "image": "/assets/images/sprite_m.jpg",
-            "size": "moyen",
-            "price": 2.5,
-            "category": "boissons"
-        },
-        {
-            "id": 10,
-            "name": "sprite",
-            "size": "grand",
-            "image": "/assets/images/sprite_g.jpg",
-            "price": 3.5,
-            "category": "boissons"
-        },
-        {
-            "id": 11,
-            "name": "magnum",
-            "image": "/assets/images/magnum_classic.jpg",
-            "type": "classic",
-            "price": 2.5,
-            "category": "glaces"
-        },
-        {
-            "id": 12,
-            "name": "cornetto",
-            "image": "/assets/images/cornetto_vanille.jpg",
-            "type": "vanille",
-            "price": 2.5,
-            "category": "glaces"
-        }
-    ]
+      ],
+      "numero": 2,
+      "siege": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": 1,
+      "name": "popcorn salé",
+      "image": "/assets/images/pop_salt_m.jpg",
+      "size": "moyen",
+      "price": 2.5,
+      "category": "popcorn"
+    },
+    {
+      "id": 2,
+      "name": "popcorn salé",
+      "image": "/assets/images/pop_salt_g.jpg",
+      "size": "grand",
+      "price": 3.5,
+      "category": "popcorn"
+    },
+    {
+      "id": 3,
+      "name": "popcorn caramel",
+      "image": "/assets/images/popcorn_caramel_m.jpg",
+      "size": "moyen",
+      "price": 2.5,
+      "category": "popcorn"
+    },
+    {
+      "id": 4,
+      "name": "popcorn caramel",
+      "image": "/assets/images/popcorn_caramel_g.jpg",
+      "size": "grand",
+      "price": 3.5,
+      "category": "popcorn"
+    },
+    {
+      "id": 5,
+      "name": "coca-cola",
+      "image": "/assets/images/coke_m.jpg",
+      "size": "moyen",
+      "price": 2.5,
+      "category": "boissons"
+    },
+    {
+      "id": 6,
+      "name": "coca_cola",
+      "image": "/assets/images/coke_g.jpg",
+      "size": "grand",
+      "price": 3.5,
+      "category": "boissons"
+    },
+    {
+      "id": 7,
+      "name": "fanta",
+      "image": "/assets/images/fanta_m.jpg",
+      "size": "moyen",
+      "price": 2.5,
+      "category": "boissons"
+    },
+    {
+      "id": 8,
+      "name": "fanta",
+      "image": "/assets/images/fanta_g.jpg",
+      "size": "grand",
+      "price": 3.5,
+      "category": "boissons"
+    },
+    {
+      "id": 9,
+      "name": "sprite",
+      "image": "/assets/images/sprite_m.jpg",
+      "size": "moyen",
+      "price": 2.5,
+      "category": "boissons"
+    },
+    {
+      "id": 10,
+      "name": "sprite",
+      "size": "grand",
+      "image": "/assets/images/sprite_g.jpg",
+      "price": 3.5,
+      "category": "boissons"
+    },
+    {
+      "id": 11,
+      "name": "magnum",
+      "image": "/assets/images/magnum_classic.jpg",
+      "type": "classic",
+      "price": 2.5,
+      "category": "glaces"
+    },
+    {
+      "id": 12,
+      "name": "cornetto",
+      "image": "/assets/images/cornetto_vanille.jpg",
+      "type": "vanille",
+      "price": 2.5,
+      "category": "glaces"
+    }
+  ]
 }

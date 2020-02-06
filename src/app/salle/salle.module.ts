@@ -5,6 +5,8 @@ import { SallePlanComponent } from './components/salle-plan/salle-plan.component
 import { SiegeModule } from '../siege/siege.module';
 import { RowComponent } from './components/row/row.component';
 import {HttpClientModule} from '@angular/common/http';
+import { SalleRoutingModule } from './salle-routing.module';
+import { MaterialModule } from '../material.module';
 
 
 @NgModule({
@@ -12,7 +14,9 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     CommonModule,
     SiegeModule,
-    HttpClientModule
+    HttpClientModule,
+    SalleRoutingModule,
+    MaterialModule
   ],
   exports: [
     SalleListComponent,

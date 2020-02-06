@@ -24,15 +24,19 @@ export class DetailFilmComponent implements OnInit {
     //this.route.paramMap.subscribe(params => paramId = parseInt(params.get('id'), 10));
 
     const id: number = this.route.snapshot.params.id;
-    this.loadGetFilmViewObservable(id);
+    this.loadFilmDetails(id);
   }
 
 
-  loadGetFilmViewObservable(id: number) {
-    this.FilmService.getFilmsViewObservable(id)
-      .subscribe(res => this.film = res);
-
-    //this.products$ = this.productService.getProductViewObservable();
+  loadFilmDetails(id: number) {
+    this.FilmService.getFilmById(id)
+    .subscribe({
+      next : res => {
+        this.film = res;
+        console.log(res)
+      },
+      error: e => console.log(e),
+      complete: () => console.log('Complete')
+    });
   }
-
 }

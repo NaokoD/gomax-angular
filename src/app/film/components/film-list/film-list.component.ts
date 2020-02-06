@@ -11,13 +11,7 @@ import { FilmService } from '../../services/film.service';
 })
 export class FilmListComponent implements OnInit {
 
-  films: Film[] = [
-    new Film(1, 'Joker', 'Action', 112, 'https://via.placeholder.com/240x325', ''),
-    new Film(2, 'Bad Boys 3', 'Action', 123, 'https://via.placeholder.com/240x325', ''),
-    new Film(3, 'Jumanji', 'Action', 120, 'https://via.placeholder.com/240x325', ''),
-    new Film(4, 'Les incognitos', 'Animation', 80, 'https://via.placeholder.com/240x325', '')
-  ];
-  films$: Observable<Film[]>;
+  films: Film[];
   @ViewChildren(FilmCardComponent)
   filmsQuery: QueryList<FilmCardComponent>;
 
@@ -29,14 +23,19 @@ export class FilmListComponent implements OnInit {
    * Description
    */
   ngOnInit() {
-    this.loadFilmsObservable();
+    this.loadFilms();
   }
 
-  loadFilmsObservable() {
-    this.filmService.getFilmsObservable()
-      .subscribe(res => this.films = res);
-
-    this.films$ = this.filmService.getFilmsObservable();
+  loadFilms() {
+    this.filmService.getFilms()
+      .subscribe({
+        next: res => {
+          this.films = res;
+          console.log(res);
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
   }
 
 
