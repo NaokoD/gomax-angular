@@ -8,6 +8,8 @@ import { CinemaListComponent } from './cinema/components/cinema-list/cinema-list
 import { TarifListComponent } from './components/tarif-list/tarif-list.component';
 import { RowComponent } from './salle/components/row/row.component';
 import { SallePlanComponent } from './salle/components/salle-plan/salle-plan.component';
+import { FilmSummaryComponent } from './film/components/film-summary/film-summary.component';
+
 import { CommandeSummaryComponent } from './components/commande-summary/commande-summary.component';
 
 
@@ -24,6 +26,7 @@ const routes: Routes = [
   { path: 'plan', component: SallePlanComponent },
   { path: 'cinema', component: CinemaListComponent },
   { path: 'tarif', component: TarifListComponent },
+  { path: 'summary/:id', component: FilmSummaryComponent },
   { path: 'summary', component: CommandeSummaryComponent }
 ];
 

@@ -1,17 +1,15 @@
 <mat-card class="film-card">
-    <mat-card-header class="imgHeader">
-        <img mat-card-image src="{{film.urlImg}}" alt="image film">
+    <mat-card-header>
+
     </mat-card-header>
+    <img class="film-img" mat-card-image src="{{ film.urlImg }}" alt="">
     <mat-card-content>
-        <h1>{{film.titre}}</h1>
-    </mat-card-content>
-    <mat-card-content>
-        <h3>{{film.categorie}}</h3>
+        <p>
+            {{ film.resume}}
+        </p>
     </mat-card-content>
     <mat-card-actions>
-        <div class="example-button-row">
-            <button class="btn" mat-raised-button color="accent" [routerLink]="['details/'+ film.id]">Infos &
-                séances</button>
-        </div>
+        <button class="btn" mat-raised-button color="accent" [routerLink]="['details/'+ film.id]">Infos &
+            séances</button>
     </mat-card-actions>
-</mat-card><br>
+</mat-card>
