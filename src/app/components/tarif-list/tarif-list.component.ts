@@ -8,11 +8,12 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-tarif-list',
   templateUrl: './tarif-list.component.html',
-  styleUrls: ['./tarif-list.component.css']
+  styleUrls: ['./tarif-list.component.css'],
 })
 export class TarifListComponent implements OnInit {
   tarifs : Tarif[];
   idSeance : number;
+  visible : boolean = true;
 
   displayedColumns: string[] = ['libelle', 'montant', 'quantite', 'total'];
 
@@ -22,7 +23,12 @@ export class TarifListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.loadTarifs();
+    if(this.commandeService.commande.tarifs.length > 0){
+      this.tarifs = this.commandeService.commande.tarifs;
+      this.visible = false;
+    }else{
+      this.loadTarifs();
+    }
   }
 
  add(id : number): void{
@@ -45,6 +51,15 @@ export class TarifListComponent implements OnInit {
         }
       }
     }
+  }
+  
+  getTotal() : number {
+    console.log(this.tarifs);
+    let somme = 0; 
+    for(let i of this.tarifs){
+      somme+= i.montant*i.quantite;
+    }
+    return somme;
   }
   
   private loadTarifs() : void {

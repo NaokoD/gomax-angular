@@ -163,6 +163,108 @@
           "qte": 3
         }
       ]
+    },
+    {
+      "id": 4,
+      "idClient": 1,
+      "idSeance": 1,
+      "tarifs": [
+        {
+          "id": 1,
+          "libelle": "Normal",
+          "montant": 12,
+          "quantite": 2
+        },
+        {
+          "id": 2,
+          "libelle": "Reduit",
+          "montant": 6,
+          "quantite": 1
+        }
+      ],
+      "createdOn": "2020-02-07T13:02:51.096Z",
+      "snacks": [
+        {
+          "id": 1,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_m.jpg",
+          "size": "moyen",
+          "price": 2.5,
+          "category": "popcorn",
+          "qte": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "idClient": 1,
+      "idSeance": 1,
+      "tarifs": [
+        {
+          "id": 1,
+          "libelle": "Normal",
+          "montant": 12,
+          "quantite": 3
+        },
+        {
+          "id": 2,
+          "libelle": "Reduit",
+          "montant": 6,
+          "quantite": 1
+        }
+      ],
+      "createdOn": "2020-02-07T13:03:26.609Z",
+      "snacks": [
+        {
+          "id": 1,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_m.jpg",
+          "size": "moyen",
+          "price": 2.5,
+          "category": "popcorn",
+          "qte": 3
+        },
+        {
+          "id": 2,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_g.jpg",
+          "size": "grand",
+          "price": 3.5,
+          "category": "popcorn",
+          "qte": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "idClient": 1,
+      "idSeance": 1,
+      "tarifs": [
+        {
+          "id": 1,
+          "libelle": "Normal",
+          "montant": 12,
+          "quantite": 4
+        },
+        {
+          "id": 2,
+          "libelle": "Reduit",
+          "montant": 6,
+          "quantite": 1
+        }
+      ],
+      "createdOn": "2020-02-07T13:05:21.024Z",
+      "snacks": [
+        {
+          "id": 2,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_g.jpg",
+          "size": "grand",
+          "price": 3.5,
+          "category": "popcorn",
+          "qte": 4
+        }
+      ]
     }
   ],
   "salles": [

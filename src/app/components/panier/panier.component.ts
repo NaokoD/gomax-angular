@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommandeService } from 'src/app/services/commande.service';
 import { Snack } from 'src/app/snack/models/snack';
+import { CommandeSummaryComponent } from '../commande-summary/commande-summary.component';
+import { Commande } from 'src/app/models/commande';
 
 @Component({
   selector: 'app-panier',
@@ -8,26 +10,34 @@ import { Snack } from 'src/app/snack/models/snack';
   styleUrls: ['./panier.component.css']
 })
 export class PanierComponent implements OnInit {
-
-  displayedColumns: string[] = ['nom', 'taille', 'prix', 'categorie', 'quantite'];
-  dataSource : Snack[] = [];
+  commande : Commande;
+  displayedColumns: string[] = ['nom', 'quantite', 'price', 'montant'];
+  snacks : Snack[] = [];
+  sommePanier = 0;
 
   constructor(private commandeService : CommandeService) {
-    this.dataSource = this.commandeService.commande.snacks;
-   }
-
-  ngOnInit() {
-
+    
   }
 
-  // totalLigne(Snack[]) {
-  //   let total = 0;
-  //   total = (this.snack.qte) * (this.snack.price);
-  // }
+  ngOnInit() {
+    this.loadCommandeById(1);
+  }
 
-  // totalCommande(Snack[]) {
-  //   let totalGlobal = 0;
-  //   totalGlobal = somme(total[]);
-  // }
+  loadCommandeById(id : number){
+    this.commandeService.getCommandeById(id)
+    .subscribe({
+      next: x => this.commande=x,
+      error : e => console.log(e),
+      complete : () => {
+        this.snacks = this.commande.snacks;
+        this.totalPanier(this.snacks);
+      }
+    })
+  }
 
+  totalPanier(snacks : Snack[]): void{
+    for(let i of snacks){
+      this.sommePanier+=i.qte*i.price;      
+    }
+  }
 }
