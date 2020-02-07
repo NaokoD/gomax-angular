@@ -17,6 +17,7 @@ import { SalleModule } from './salle/salle.module';
 import { FilmModule } from './film/film.module';
 import { CommandeSummaryComponent } from './components/commande-summary/commande-summary.component';
 import { FilmSummaryComponent } from './film/components/film-summary/film-summary.component';
+import { PanierComponent } from './components/panier/panier.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FilmSummaryComponent } from './film/components/film-summary/film-summar
     HomeComponent,
     TarifListComponent,
     CommandeSummaryComponent,
-    FilmSummaryComponent
+    FilmSummaryComponent,
+    PanierComponent
   ],
   imports: [
     BrowserModule,
