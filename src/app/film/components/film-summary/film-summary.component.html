@@ -1,0 +1,9 @@
+<p>film-summary works!</p>
+
+<div *ngIf="film" class="film-card">
+    <mat-card>
+        <img mat-card-image class="film-img" src="{{ film.urlImg }}" alt="image film">
+        <mat-card-subtitle>{{ film.titre }}</mat-card-subtitle>
+    </mat-card>
+
+</div>
