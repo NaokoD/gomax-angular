@@ -1,10 +1,6 @@
-<!-- <h1>Synchrone</h1> -->
 <div id="snack-list">
-    <app-snack-card *ngFor="let s of snacks" [snack]="s"></app-snack-card>
+    <app-snack-card *ngFor="let s of snacks" [snack]="s" (sommeChange)="getTotal($event)"></app-snack-card>
 </div>
-
-<!-- <h1>Observable (async)</h1>
-<div id="snack-list">
-    //async pipe => use Observable attribute 
-    <app-snack-card *ngFor="let s of snacks$ | async" [snack]="s"></app-snack-card>
-</div> -->
+<div class="total-list">
+    <p>Total : {{ this.total | currency:'EUR' }}</p>
+</div>

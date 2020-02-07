@@ -6,4 +6,17 @@
     text-align: center;
 }
 
+.total-list {
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(255, 217, 0);
+    justify-content: center;
+    border-radius: 10px;
+    width: 110px;
+    height: 45px;
+    padding: 7px;
+    font-weight: bold;
+    text-align: center;
+}
+
 

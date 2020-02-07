@@ -92,6 +92,40 @@
     }
   ],
   "commandes": [
+    {
+      "id": 1,
+      "idClient": 1,
+      "idSeance": 1,
+      "tarifs": [
+        {
+          "id": 1,
+          "libelle": "Normal",
+          "montant": 12,
+          "quantite": 3
+        }
+      ],
+      "createdOn": "2020-02-06T12:58:53.228Z",
+      "snacks": [
+        {
+          "id": 1,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_m.jpg",
+          "size": "moyen",
+          "price": 2.5,
+          "category": "popcorn",
+          "qte": 2
+        },
+        {
+          "id": 2,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_g.jpg",
+          "size": "grand",
+          "price": 3.5,
+          "category": "popcorn",
+          "qte": 2
+        }
+      ]
+    }
   ],
   "salles": [
     {
@@ -902,97 +936,74 @@
       "id": 1,
       "name": "popcorn salé",
       "image": "/assets/images/pop_salt_m.jpg",
-      "size": "moyen",
-      "price": 2.5,
-      "category": "popcorn"
+      "price": 2.5
     },
     {
       "id": 2,
       "name": "popcorn salé",
       "image": "/assets/images/pop_salt_g.jpg",
-      "size": "grand",
-      "price": 3.5,
-      "category": "popcorn"
+      "price": 3.5
     },
     {
       "id": 3,
       "name": "popcorn caramel",
       "image": "/assets/images/popcorn_caramel_m.jpg",
-      "size": "moyen",
-      "price": 2.5,
-      "category": "popcorn"
+      "price": 2.5
     },
     {
       "id": 4,
       "name": "popcorn caramel",
       "image": "/assets/images/popcorn_caramel_g.jpg",
       "size": "grand",
-      "price": 3.5,
-      "category": "popcorn"
+      "price": 3.5
     },
     {
       "id": 5,
       "name": "coca-cola",
       "image": "/assets/images/coke_m.jpg",
-      "size": "moyen",
-      "price": 2.5,
-      "category": "boissons"
+      "price": 2.5
     },
     {
       "id": 6,
       "name": "coca_cola",
       "image": "/assets/images/coke_g.jpg",
-      "size": "grand",
-      "price": 3.5,
-      "category": "boissons"
+      "price": 3.5
     },
     {
       "id": 7,
       "name": "fanta",
       "image": "/assets/images/fanta_m.jpg",
-      "size": "moyen",
-      "price": 2.5,
-      "category": "boissons"
+      "price": 2.5
     },
     {
       "id": 8,
       "name": "fanta",
       "image": "/assets/images/fanta_g.jpg",
-      "size": "grand",
-      "price": 3.5,
-      "category": "boissons"
+      "price": 3.5
     },
     {
       "id": 9,
       "name": "sprite",
       "image": "/assets/images/sprite_m.jpg",
-      "size": "moyen",
-      "price": 2.5,
-      "category": "boissons"
+      "price": 2.5
     },
     {
       "id": 10,
       "name": "sprite",
-      "size": "grand",
       "image": "/assets/images/sprite_g.jpg",
-      "price": 3.5,
-      "category": "boissons"
+      "price": 3.5
     },
     {
       "id": 11,
       "name": "magnum",
       "image": "/assets/images/magnum_classic.jpg",
-      "type": "classic",
-      "price": 2.5,
-      "category": "glaces"
+      "price": 2.5
     },
     {
       "id": 12,
       "name": "cornetto",
       "image": "/assets/images/cornetto_vanille.jpg",
-      "type": "vanille",
-      "price": 2.5,
-      "category": "glaces"
+      "price": 2.5
     }
   ]
 }
