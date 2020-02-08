@@ -1,15 +1,38 @@
-.menu {
-    float: left;
-    width: auto;
-    text-align: center;
+.afficheFilm {
+    margin-left: 60px;
 }
 
-.main {
-    float: left;
-    width: 100%;
-    padding: 0 20px;
-}
+
 
 .list {
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+
+.film-infos {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 800px) {
+    .film-infos {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+.btnBack {
+    width: 120px;
+    height: 50px;
+    font-size: large;
+}
+
+.btnBack:hover {
+    background-color: #FED740;
+    animation: mymove 2s;
+    animation-iteration-count: 1;
+    content: 'Retour';
 }

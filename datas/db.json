@@ -6,7 +6,7 @@
       "categorie": "action",
       "duree": 120,
       "urlImg": "/assets/images/film-img/bb3.jpg",
-      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+      "resume": "Les Bad Boys Mike Lowrey (Will Smith) et Marcus Burnett (Martin Lawrence) se retrouvent pour résoudre une ultime affaire dans le très attendu BAD BOYS FOR LIFE."
     },
     {
       "id": 2,
@@ -38,7 +38,7 @@
       "categorie": "action",
       "duree": 180,
       "urlImg": "/assets/images/film-img/1917.jpg",
-      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+      "resume": "Pris dans la tourmente de la Première Guerre Mondiale, Schofield et Blake, deux jeunes soldats britanniques, se voient assigner une mission à proprement parler impossible. Porteurs d'un message qui pourrait empêcher une attaque dévastatrice et la mort de centaines de soldats, dont le frère de Blake, ils se lancent dans une véritable course contre la montre, derrière les lignes ennemies."
     },
     {
       "id": 6,
@@ -265,6 +265,14 @@
           "qte": 4
         }
       ]
+    },
+    {
+      "id": 7,
+      "idClient": 1,
+      "idSeance": 1,
+      "tarifs": [],
+      "createdOn": "2020-02-08T11:11:57.211Z",
+      "snacks": []
     }
   ],
   "salles": [
