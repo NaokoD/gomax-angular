@@ -1,37 +1,15 @@
-.btn-warning {
-    display: block;
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-li {
-    list-style: none;
-}
-
-.btnLogin {
-    margin-right: 15px;
-}
-
-mat-card {
-    background: lightblue;
-    width: 250px;
-}
-
-.detailFilm {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section {
+.menu {
     float: left;
-    width: 30%;
-    margin: auto;
-
+    width: auto;
+    text-align: center;
 }
 
-aside {
-    float: right;
-    width: 63%;
-    margin: auto;
+.main {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.list {
+    margin-top: 20px;
 }

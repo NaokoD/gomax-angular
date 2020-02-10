@@ -32,4 +32,8 @@ export class CommandeService {
       complete: () => console.log("Saved")
     });
    }
+
+   getCommandeById(id : number) : Observable<Commande>{
+    return this.http.get<Commande>(`${environment.apiBaseUrl}/commandes/${id}`);
+   }
 }

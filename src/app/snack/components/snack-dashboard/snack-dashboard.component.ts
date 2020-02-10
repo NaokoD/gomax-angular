@@ -35,10 +35,17 @@ export class SnackDashboardComponent implements OnInit {
   }
 
   filtrerSnacksIncrementes() {
-    for (let i of this.snackList.snacks) {
-      if (i.qte > 0) {
-        this.snacks.push(i);
+    if (this.btnDisabled === false) {
+      for (let i of this.snackList.snacks) {
+        if (i.qte > 0) {
+          this.snacks.push(i);
+        }
       }
+      //console.log(this.snacks);
+      this.commandeService.commande.snacks = this.snacks;
+      //console.log(this.commandeService.commande)
+      this.commandeService.save();
+      this.btnDisabled = !this.btnDisabled;
     }
     //console.log(this.snacks);
     this.commandeService.commande.snacks = this.snacks;

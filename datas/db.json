@@ -5,7 +5,7 @@
       "titre": "Bad Boys 3",
       "categorie": "action",
       "duree": 120,
-      "urlImg": "https://via.placeholder.com/240x325",
+      "urlImg": "/assets/images/film-img/bb3.jpg",
       "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
     },
     {
@@ -13,7 +13,7 @@
       "titre": "Jumanji",
       "categorie": "comedie",
       "duree": 85,
-      "urlImg": "https://via.placeholder.com/240x325",
+      "urlImg": "/assets/images/film-img/jmj2.jpg",
       "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
     },
     {
@@ -21,7 +21,7 @@
       "titre": "Les incognitos",
       "categorie": "cartoon",
       "duree": 75,
-      "urlImg": "https://via.placeholder.com/240x325",
+      "urlImg": "/assets/images/film-img/lsin.jpg",
       "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
     },
     {
@@ -29,7 +29,7 @@
       "titre": "Joker",
       "categorie": "action",
       "duree": 200,
-      "urlImg": "https://via.placeholder.com/240x325",
+      "urlImg": "/assets/images/film-img/jk.jpg",
       "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
     },
     {
@@ -37,7 +37,7 @@
       "titre": "1917",
       "categorie": "action",
       "duree": 180,
-      "urlImg": "https://via.placeholder.com/240x325",
+      "urlImg": "/assets/images/film-img/1917.jpg",
       "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
     },
     {
@@ -45,7 +45,7 @@
       "titre": "Star Wars",
       "categorie": "action",
       "duree": 120,
-      "urlImg": "https://via.placeholder.com/240x325",
+      "urlImg": "/assets/images/film-img/sw.jpg",
       "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
     }
   ],
@@ -95,16 +95,56 @@
     {
       "id": 1,
       "idClient": 1,
-      "idSeance": 1,
-      "tarifs": [
+<<<<<<< HEAD
+=======
+      "idSeance": null,
+      "tarifs": [],
+      "createdOn": "2020-02-06T12:49:22.827Z",
+      "snacks": [
         {
           "id": 1,
-          "libelle": "Normal",
-          "montant": 12,
-          "quantite": 3
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_m.jpg",
+          "size": "moyen",
+          "price": 2.5,
+          "category": "popcorn",
+          "qte": 3
         }
-      ],
-      "createdOn": "2020-02-06T12:58:53.228Z",
+      ]
+    },
+    {
+      "id": 2,
+      "idClient": 1,
+      "idSeance": null,
+      "tarifs": [],
+      "createdOn": "2020-02-06T12:49:32.434Z",
+      "snacks": [
+        {
+          "id": 1,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_m.jpg",
+          "size": "moyen",
+          "price": 2.5,
+          "category": "popcorn",
+          "qte": 3
+        },
+        {
+          "id": 1,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_m.jpg",
+          "size": "moyen",
+          "price": 2.5,
+          "category": "popcorn",
+          "qte": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "idClient": 1,
+      "idSeance": null,
+      "tarifs": [],
+      "createdOn": "2020-02-06T12:55:40.465Z",
       "snacks": [
         {
           "id": 1,
@@ -116,13 +156,130 @@
           "qte": 2
         },
         {
+          "id": 11,
+          "name": "magnum",
+          "image": "/assets/images/magnum_classic.jpg",
+          "type": "classic",
+          "price": 2.5,
+          "category": "glaces",
+          "qte": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "idClient": 1,
+      "idSeance": 1,
+      "tarifs": [
+        {
+          "id": 1,
+          "libelle": "Normal",
+          "montant": 12,
+          "quantite": 2
+        },
+        {
+          "id": 2,
+          "libelle": "Reduit",
+          "montant": 6,
+          "quantite": 1
+        }
+      ],
+      "createdOn": "2020-02-07T13:02:51.096Z",
+      "snacks": [
+        {
+          "id": 1,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_m.jpg",
+          "size": "moyen",
+          "price": 2.5,
+          "category": "popcorn",
+          "qte": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "idClient": 1,
+>>>>>>> b92c57c5db9030cd2f83046317d090f0ad0b3308
+      "idSeance": 1,
+      "tarifs": [
+        {
+          "id": 1,
+          "libelle": "Normal",
+          "montant": 12,
+          "quantite": 3
+<<<<<<< HEAD
+        }
+      ],
+      "createdOn": "2020-02-06T12:58:53.228Z",
+=======
+        },
+        {
+          "id": 2,
+          "libelle": "Reduit",
+          "montant": 6,
+          "quantite": 1
+        }
+      ],
+      "createdOn": "2020-02-07T13:03:26.609Z",
+>>>>>>> b92c57c5db9030cd2f83046317d090f0ad0b3308
+      "snacks": [
+        {
+          "id": 1,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_m.jpg",
+          "size": "moyen",
+          "price": 2.5,
+          "category": "popcorn",
+<<<<<<< HEAD
+          "qte": 2
+=======
+          "qte": 3
+>>>>>>> b92c57c5db9030cd2f83046317d090f0ad0b3308
+        },
+        {
           "id": 2,
           "name": "popcorn salé",
           "image": "/assets/images/pop_salt_g.jpg",
           "size": "grand",
           "price": 3.5,
           "category": "popcorn",
+<<<<<<< HEAD
           "qte": 2
+=======
+          "qte": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "idClient": 1,
+      "idSeance": 1,
+      "tarifs": [
+        {
+          "id": 1,
+          "libelle": "Normal",
+          "montant": 12,
+          "quantite": 4
+        },
+        {
+          "id": 2,
+          "libelle": "Reduit",
+          "montant": 6,
+          "quantite": 1
+        }
+      ],
+      "createdOn": "2020-02-07T13:05:21.024Z",
+      "snacks": [
+        {
+          "id": 2,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_g.jpg",
+          "size": "grand",
+          "price": 3.5,
+          "category": "popcorn",
+          "qte": 4
+>>>>>>> b92c57c5db9030cd2f83046317d090f0ad0b3308
         }
       ]
     }

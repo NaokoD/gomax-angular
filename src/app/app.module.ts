@@ -16,6 +16,8 @@ import { SiegeModule } from './siege/siege.module';
 import { SalleModule } from './salle/salle.module';
 import { FilmModule } from './film/film.module';
 import { CommandeSummaryComponent } from './components/commande-summary/commande-summary.component';
+import { FilmSummaryComponent } from './film/components/film-summary/film-summary.component';
+import { PanierComponent } from './components/panier/panier.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { CommandeSummaryComponent } from './components/commande-summary/commande
     FooterComponent,
     HomeComponent,
     TarifListComponent,
-    CommandeSummaryComponent
+    CommandeSummaryComponent,
+    FilmSummaryComponent,
+    PanierComponent
   ],
   imports: [
     BrowserModule,

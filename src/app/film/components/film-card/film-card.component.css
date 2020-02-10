@@ -1,5 +1,17 @@
-.film-card {
+/* .film-card {
     width: auto;
     margin-left: 50px;
     text-align: center;
+} */
+
+
+.film-card {
+    max-width: 350px;
+    text-align: center;
+    margin-left: 50px;
+
+}
+
+.film-img {
+    background-size: auto;
 }
