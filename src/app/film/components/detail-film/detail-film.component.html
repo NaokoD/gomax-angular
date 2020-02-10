@@ -1,39 +1,43 @@
-<div class="example-button-row">
-    <button mat-raised-button color="accent" [routerLink]="['']">Retour</button>
-</div>
+<div class="container" style="margin-bottom: 20px;">
 
-<div class="container"></div>
+    <div class="example-button-row" style="margin-top: 10px; margin-left: 10px;">
+        <button class="btnBack" mat-raised-button [routerLink]="['']">
+            <mat-icon class="arrowBack">arrow_back</mat-icon>
+        </button>
 
-<div *ngIf="film">
-    <h1>{{ film.titre }}</h1>
+        <mat-icon></mat-icon>
+    </div>
 
-    <div style="overflow:auto">
-        <div class="menu">
-            <mat-card class="example-card">
-                <img style="width: 300px;" mat-card-image src="{{ film.urlImg }}" alt="image film">
-            </mat-card>
+    <div *ngIf="film">
+        <h1>{{ film.titre }}</h1>
+        <div class="film-infos">
+            <div class="afficheFilm">
+
+                <img style="width: 300px" mat-card-image src="{{ film.urlImg }}" alt="image film">
+
+            </div>
+
+            <div class="list">
+                <mat-list>
+
+                    <mat-list-item>
+                        <p>Catégorie: {{ film.categorie }}</p>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <p>Durée: {{ film.duree }} min</p>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <p>{{ film.resume }}</p>
+                    </mat-list-item>
+                </mat-list>
+            </div>
         </div>
+        <div>
+            <h1>Liste des séances</h1>
+
+            <app-seance-list></app-seance-list>
+        </div>
+
     </div>
-
-    <div>
-        <mat-list class="list">
-            <mat-list-item> Résumé: <br> {{ film.resume }} </mat-list-item><br><br>
-            <mat-list-item> Catégorie: <br> {{ film.categorie }} </mat-list-item><br>
-            <mat-list-item> Durée:<br> {{ film.duree }} min </mat-list-item>
-        </mat-list>
-    </div>
-
-    <div>
-        <h1>Liste des séances</h1>
-
-        <app-seance-list></app-seance-list>
-    </div>
-
-
-
-
-
-
-
 
 </div>

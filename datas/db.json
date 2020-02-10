@@ -6,47 +6,47 @@
       "categorie": "action",
       "duree": 120,
       "urlImg": "/assets/images/film-img/bb3.jpg",
-      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+      "resume": "Les Bad Boys Mike Lowrey (Will Smith) et Marcus Burnett (Martin Lawrence) se retrouvent pour résoudre une ultime affaire dans le très attendu BAD BOYS FOR LIFE."
     },
     {
       "id": 2,
       "titre": "Jumanji",
       "categorie": "comedie",
-      "duree": 85,
+      "duree": 123,
       "urlImg": "/assets/images/film-img/jmj2.jpg",
-      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+      "resume": "L'équipe est de retour mais le jeu a changé. Alors qu'ils retournent dans Jumanji pour secourir l'un des leurs, ils découvrent un monde totalement inattendu. Des déserts arides aux montagnes enneigées, les joueurs vont devoir braver des espaces inconnus et inexplorés, afin de sortir du jeu le plus dangereux du monde."
     },
     {
       "id": 3,
       "titre": "Les incognitos",
       "categorie": "cartoon",
-      "duree": 75,
+      "duree": 102,
       "urlImg": "/assets/images/film-img/lsin.jpg",
-      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+      "resume": "Le super espion Lance Sterling et le scientifique Walter Beckett ont des personnalités radicalement opposées. Lance est relax, cool et il a du style. Walter est  tout l'inverse. Certes, il n'est pas très à l'aise en société mais son intelligence et son génie créatif lui permettent d'imaginer les gadgets impressionnants que Lance utilise sur le terrain. Alors qu'une mission tourne mal, Walter et Lance vont devoir unir leurs forces. Si ce duo excentrique ne parvient pas à s'entraider, le monde est en danger !"
     },
     {
       "id": 4,
       "titre": "Joker",
       "categorie": "action",
-      "duree": 200,
+      "duree": 122,
       "urlImg": "/assets/images/film-img/jk.jpg",
-      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+      "resume": "Le film, qui relate une histoire originale inédite sur grand écran, se focalise sur la figure emblématique de l'ennemi juré de Batman. Il brosse le portrait d'Arthur Fleck, un homme sans concession méprisé par la société."
     },
     {
       "id": 5,
       "titre": "1917",
       "categorie": "action",
-      "duree": 180,
+      "duree": 120,
       "urlImg": "/assets/images/film-img/1917.jpg",
-      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+      "resume": "Pris dans la tourmente de la Première Guerre Mondiale, Schofield et Blake, deux jeunes soldats britanniques, se voient assigner une mission à proprement parler impossible. Porteurs d'un message qui pourrait empêcher une attaque dévastatrice et la mort de centaines de soldats, dont le frère de Blake, ils se lancent dans une véritable course contre la montre, derrière les lignes ennemies."
     },
     {
       "id": 6,
       "titre": "Star Wars",
       "categorie": "action",
-      "duree": 120,
+      "duree": 132,
       "urlImg": "/assets/images/film-img/sw.jpg",
-      "resume": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum sed odio voluptas fugit similique incidunt beatae ea? In ipsam totam atque nostrum excepturi illum voluptas maxime tenetur, cupiditate minus."
+      "resume": "La conclusion de la saga Skywalker. De nouvelles légendes vont naître dans cette bataille épique pour la liberté."
     }
   ],
   "seances": [
@@ -282,6 +282,14 @@
 >>>>>>> b92c57c5db9030cd2f83046317d090f0ad0b3308
         }
       ]
+    },
+    {
+      "id": 7,
+      "idClient": 1,
+      "idSeance": 1,
+      "tarifs": [],
+      "createdOn": "2020-02-08T11:11:57.211Z",
+      "snacks": []
     }
   ],
   "salles": [
