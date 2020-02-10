@@ -44,7 +44,6 @@ export class SnackListComponent implements OnInit {
         complete: () => console.log('Complete')
       });
   }
-<<<<<<< HEAD
 
   getTotal(somme: number) {
     this.total += somme;
@@ -54,6 +53,4 @@ export class SnackListComponent implements OnInit {
 
 
 
-=======
->>>>>>> b92c57c5db9030cd2f83046317d090f0ad0b3308
 }

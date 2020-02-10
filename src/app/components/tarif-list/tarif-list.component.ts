@@ -11,14 +11,9 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./tarif-list.component.css'],
 })
 export class TarifListComponent implements OnInit {
-<<<<<<< HEAD
   tarifs: Tarif[];
   idSeance: number;
-=======
-  tarifs : Tarif[];
-  idSeance : number;
-  visible : boolean = true;
->>>>>>> b92c57c5db9030cd2f83046317d090f0ad0b3308
+  visible: boolean = true;
 
   displayedColumns: string[] = ['libelle', 'montant', 'quantite', 'total'];
 
@@ -28,106 +23,61 @@ export class TarifListComponent implements OnInit {
   }
 
   ngOnInit() {
-    if(this.commandeService.commande.tarifs.length > 0){
+    if (this.commandeService.commande.tarifs.length > 0) {
       this.tarifs = this.commandeService.commande.tarifs;
       this.visible = false;
-    }else{
+    } else {
       this.loadTarifs();
     }
   }
 
-<<<<<<< HEAD
   add(id: number): void {
-    console.log(id);
+    //console.log(id);
     for (let i of this.tarifs) {
       if (i.id === id) {
         if (i.quantite >= 0) {
-=======
- add(id : number): void{
-    //console.log(id);
-    for(let i of this.tarifs){
-      if(i.id === id){
-        if(i.quantite >= 0){
->>>>>>> b92c57c5db9030cd2f83046317d090f0ad0b3308
           i.quantite++;
         }
       }
     }
   }
-<<<<<<< HEAD
-
-  /* getPlacesByTarif(tarif : Tarif): number{
-    for(let i:number = 0; i<this.places.length; i++){
-      if(this.places[i].tarif.id===tarif.id){
-        return this.places[i].quantite;
-      };
-    };
-  }; */
 
   drop(id: number): void {
-    console.log(id);
+    //console.log(id);
     for (let i of this.tarifs) {
       if (i.id === id) {
         if (i.quantite > 0) {
-=======
-  
-  drop(id : number) : void {
-    //console.log(id);
-    for(let i of this.tarifs){
-      if(i.id === id){
-        if(i.quantite > 0){
->>>>>>> b92c57c5db9030cd2f83046317d090f0ad0b3308
           i.quantite--;
         }
       }
     }
   }
-<<<<<<< HEAD
+
+  getTotal(): number {
+    console.log(this.tarifs);
+    let somme = 0;
+    for (let i of this.tarifs) {
+      somme += i.montant * i.quantite;
+    }
+    return somme;
+  }
 
   private loadTarifs(): void {
     this.tarifService.getTarifs()
       .subscribe({
         next: x => {
           this.tarifs = x;
-          console.log(x);
+          //console.log(x);
         },
         error: e => console.log(e),
         complete: () => {
           for (let i of this.tarifs) {
             i.quantite = 0;
-            console.log(i)
+            //console.log(i)
           };
           console.log('Oberver got a complete notification')
         }
       });
-=======
-  
-  getTotal() : number {
-    console.log(this.tarifs);
-    let somme = 0; 
-    for(let i of this.tarifs){
-      somme+= i.montant*i.quantite;
-    }
-    return somme;
-  }
-  
-  private loadTarifs() : void {
-    this.tarifService.getTarifs()
-    .subscribe({
-      next: x => {
-        this.tarifs = x;
-        //console.log(x);
-      },
-      error: e => console.log(e),
-      complete: () => {
-        for(let i of this.tarifs){
-          i.quantite=0;
-          //console.log(i)
-        } ;
-        console.log('Oberver got a complete notification')
-      }
-    });    
->>>>>>> b92c57c5db9030cd2f83046317d090f0ad0b3308
   }
 
   suivant() {
