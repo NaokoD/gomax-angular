@@ -91,224 +91,7 @@
       "montant": 6
     }
   ],
-  "commandes": [
-    {
-      "id": 1,
-      "idClient": 1,
-      "idSeance": null,
-      "tarifs": [],
-      "createdOn": "2020-02-06T12:49:22.827Z",
-      "snacks": [
-        {
-          "id": 1,
-          "name": "popcorn salé",
-          "image": "/assets/images/pop_salt_m.jpg",
-          "size": "moyen",
-          "price": 2.5,
-          "category": "popcorn",
-          "qte": 3
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "idClient": 1,
-      "idSeance": null,
-      "tarifs": [],
-      "createdOn": "2020-02-06T12:49:32.434Z",
-      "snacks": [
-        {
-          "id": 1,
-          "name": "popcorn salé",
-          "image": "/assets/images/pop_salt_m.jpg",
-          "size": "moyen",
-          "price": 2.5,
-          "category": "popcorn",
-          "qte": 3
-        },
-        {
-          "id": 1,
-          "name": "popcorn salé",
-          "image": "/assets/images/pop_salt_m.jpg",
-          "size": "moyen",
-          "price": 2.5,
-          "category": "popcorn",
-          "qte": 3
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "idClient": 1,
-      "idSeance": null,
-      "tarifs": [],
-      "createdOn": "2020-02-06T12:55:40.465Z",
-      "snacks": [
-        {
-          "id": 1,
-          "name": "popcorn salé",
-          "image": "/assets/images/pop_salt_m.jpg",
-          "size": "moyen",
-          "price": 2.5,
-          "category": "popcorn",
-          "qte": 2
-        },
-        {
-          "id": 11,
-          "name": "magnum",
-          "image": "/assets/images/magnum_classic.jpg",
-          "type": "classic",
-          "price": 2.5,
-          "category": "glaces",
-          "qte": 3
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "idClient": 1,
-      "idSeance": 1,
-      "tarifs": [
-        {
-          "id": 1,
-          "libelle": "Normal",
-          "montant": 12,
-          "quantite": 2
-        },
-        {
-          "id": 2,
-          "libelle": "Reduit",
-          "montant": 6,
-          "quantite": 1
-        }
-      ],
-      "createdOn": "2020-02-07T13:02:51.096Z",
-      "snacks": [
-        {
-          "id": 1,
-          "name": "popcorn salé",
-          "image": "/assets/images/pop_salt_m.jpg",
-          "size": "moyen",
-          "price": 2.5,
-          "category": "popcorn",
-          "qte": 3
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "idClient": 1,
-      "idSeance": 1,
-      "tarifs": [
-        {
-          "id": 1,
-          "libelle": "Normal",
-          "montant": 12,
-          "quantite": 3
-        },
-        {
-          "id": 2,
-          "libelle": "Reduit",
-          "montant": 6,
-          "quantite": 1
-        }
-      ],
-      "createdOn": "2020-02-07T13:03:26.609Z",
-      "snacks": [
-        {
-          "id": 1,
-          "name": "popcorn salé",
-          "image": "/assets/images/pop_salt_m.jpg",
-          "size": "moyen",
-          "price": 2.5,
-          "category": "popcorn",
-          "qte": 3
-        },
-        {
-          "id": 2,
-          "name": "popcorn salé",
-          "image": "/assets/images/pop_salt_g.jpg",
-          "size": "grand",
-          "price": 3.5,
-          "category": "popcorn",
-          "qte": 4
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "idClient": 1,
-      "idSeance": 1,
-      "tarifs": [
-        {
-          "id": 1,
-          "libelle": "Normal",
-          "montant": 12,
-          "quantite": 4
-        },
-        {
-          "id": 2,
-          "libelle": "Reduit",
-          "montant": 6,
-          "quantite": 1
-        }
-      ],
-      "createdOn": "2020-02-07T13:05:21.024Z",
-      "snacks": [
-        {
-          "id": 2,
-          "name": "popcorn salé",
-          "image": "/assets/images/pop_salt_g.jpg",
-          "size": "grand",
-          "price": 3.5,
-          "category": "popcorn",
-          "qte": 4
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "idClient": 1,
-      "idSeance": 1,
-      "tarifs": [],
-      "createdOn": "2020-02-08T11:11:57.211Z",
-      "snacks": []
-    },
-    {
-      "id": 8,
-      "idClient": 1,
-      "idSeance": 1,
-      "tarifs": [
-        {
-          "id": 1,
-          "libelle": "Normal",
-          "montant": 12,
-          "quantite": 2
-        }
-      ],
-      "createdOn": "2020-02-10T12:24:36.406Z",
-      "snacks": [
-        {
-          "id": 1,
-          "name": "popcorn salé",
-          "image": "/assets/images/pop_salt_m.jpg",
-          "size": "moyen",
-          "price": 2.5,
-          "category": "popcorn",
-          "qte": 1
-        },
-        {
-          "id": 2,
-          "name": "popcorn salé",
-          "image": "/assets/images/pop_salt_g.jpg",
-          "size": "grand",
-          "price": 3.5,
-          "category": "popcorn",
-          "qte": 1
-        }
-      ]
-    }
-  ],
+  "commandes": [],
   "salles": [
     {
       "id": 1,
@@ -1118,97 +901,74 @@
       "id": 1,
       "name": "popcorn salé",
       "image": "/assets/images/pop_salt_m.jpg",
-      "size": "moyen",
-      "price": 2.5,
-      "category": "popcorn"
+      "price": 2.5
     },
     {
       "id": 2,
       "name": "popcorn salé",
       "image": "/assets/images/pop_salt_g.jpg",
-      "size": "grand",
-      "price": 3.5,
-      "category": "popcorn"
+      "price": 3.5
     },
     {
       "id": 3,
       "name": "popcorn caramel",
       "image": "/assets/images/popcorn_caramel_m.jpg",
-      "size": "moyen",
-      "price": 2.5,
-      "category": "popcorn"
+      "price": 2.5
     },
     {
       "id": 4,
       "name": "popcorn caramel",
       "image": "/assets/images/popcorn_caramel_g.jpg",
       "size": "grand",
-      "price": 3.5,
-      "category": "popcorn"
+      "price": 3.5
     },
     {
       "id": 5,
       "name": "coca-cola",
       "image": "/assets/images/coke_m.jpg",
-      "size": "moyen",
-      "price": 2.5,
-      "category": "boissons"
+      "price": 2.5
     },
     {
       "id": 6,
       "name": "coca_cola",
       "image": "/assets/images/coke_g.jpg",
-      "size": "grand",
-      "price": 3.5,
-      "category": "boissons"
+      "price": 3.5
     },
     {
       "id": 7,
       "name": "fanta",
       "image": "/assets/images/fanta_m.jpg",
-      "size": "moyen",
-      "price": 2.5,
-      "category": "boissons"
+      "price": 2.5
     },
     {
       "id": 8,
       "name": "fanta",
       "image": "/assets/images/fanta_g.jpg",
-      "size": "grand",
-      "price": 3.5,
-      "category": "boissons"
+      "price": 3.5
     },
     {
       "id": 9,
       "name": "sprite",
       "image": "/assets/images/sprite_m.jpg",
-      "size": "moyen",
-      "price": 2.5,
-      "category": "boissons"
+      "price": 2.5
     },
     {
       "id": 10,
       "name": "sprite",
-      "size": "grand",
       "image": "/assets/images/sprite_g.jpg",
-      "price": 3.5,
-      "category": "boissons"
+      "price": 3.5
     },
     {
       "id": 11,
       "name": "magnum",
       "image": "/assets/images/magnum_classic.jpg",
-      "type": "classic",
-      "price": 2.5,
-      "category": "glaces"
+      "price": 2.5
     },
     {
       "id": 12,
       "name": "cornetto",
       "image": "/assets/images/cornetto_vanille.jpg",
-      "type": "vanille",
-      "price": 2.5,
-      "category": "glaces"
+      "price": 2.5
     }
   ]
 }

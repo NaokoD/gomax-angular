@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef, Output, EventEmitter } from '@angular/core';
 import { Snack } from '../../models/snack';
+//import { SnackListComponent } from '../snack-list/snack-list.component';
 
 @Component({
   selector: 'app-snack-card',
@@ -8,10 +9,15 @@ import { Snack } from '../../models/snack';
 })
 export class SnackCardComponent implements OnInit {
 
-  btnDisabled = false;
+  btnDisabled = false
+
+  somme: number = 0;
 
   @Input()
   snack: Snack;
+
+  @Output()
+  sommeChange = new EventEmitter();
 
   constructor() { }
 
@@ -20,19 +26,22 @@ export class SnackCardComponent implements OnInit {
   }
 
   actionBtnPlus() {
-    if(this.snack.qte >= 0) {
+    if (this.snack.qte >= 0) {
       this.snack.qte++;
       console.log(this.snack);
+      this.sommeChange.emit(this.snack.price);
+      console.log(this.somme);
     }
   }
 
   actionBtnMoins() {
-    if(this.snack.qte > 0) {
+    if (this.snack.qte > 0) {
       this.snack.qte--;
       console.log(this.snack);
+      this.sommeChange.emit(-this.snack.price);
+      console.log(this.somme);
+
     }
   }
-
-
 
 }

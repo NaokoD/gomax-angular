@@ -1,10 +1,8 @@
-import { Component, OnInit, ViewChildren, QueryList } from '@angular/core';
+import { Component, OnInit, ViewChildren, QueryList, Input } from '@angular/core';
 import { Snack } from '../../models/snack';
 import { SnackService } from '../../services/snack.service';
 import { SnackCardComponent } from '../snack-card/snack-card.component';
 import { Observable } from 'rxjs/internal/Observable';
-
-
 
 
 @Component({
@@ -14,6 +12,11 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class SnackListComponent implements OnInit {
   snacks: Snack[] = [];
+  total: number = 0;
+
+  //montant: SnackCardComponent;
+
+
 
   //count: number;
 
@@ -41,4 +44,13 @@ export class SnackListComponent implements OnInit {
         complete: () => console.log('Complete')
       });
   }
+
+  getTotal(somme: number) {
+    this.total += somme;
+  }
+
+
+
+
+
 }

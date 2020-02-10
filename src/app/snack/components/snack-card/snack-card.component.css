@@ -7,4 +7,7 @@
     background-size: cover;
 }
 
-
+.button-row button {
+  margin: 10px;
+ 
+}
