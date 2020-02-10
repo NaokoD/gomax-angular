@@ -12,15 +12,16 @@ export class CommandeService {
   commande: Commande ;
 
   constructor(private http: HttpClient) {
+    // noinspection UnterminatedStatementJS
     this.commande = new Commande(
       null,
       1,
       null,
       [],
       null
-    )
-    console.log(this.commande +' service')
-    //this.commande.idClient=1;
+    );
+    console.log(this.commande + 'service');
+    // this.commande.idClient=1;
    }
 
    save() {
@@ -28,12 +29,12 @@ export class CommandeService {
     this.commande.createdOn = new Date();
     this.http.post<Commande>(`${environment.apiBaseUrl}/commandes`, this.commande)
     .subscribe({
-      next: x => console.log("Saving"),
-      complete: () => console.log("Saved")
+      next: x => console.log('Saving'),
+      complete: () => console.log('Saved')
     });
    }
 
-   getCommandeById(id : number) : Observable<Commande>{
+   getCommandeById(id: number): Observable<Commande> {
     return this.http.get<Commande>(`${environment.apiBaseUrl}/commandes/${id}`);
    }
 }
