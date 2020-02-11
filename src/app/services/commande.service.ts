@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class CommandeService {
   commande: Commande ;
+  commandeCompleted : boolean = false;
 
   constructor(private http: HttpClient) {
     this.commande = new Commande(
