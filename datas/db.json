@@ -94,61 +94,93 @@
   "commandes": [
     {
       "id": 1,
-      "idClient": 1,
-      "idSeance": 1,
-      "tarifs": [
-        {
+      "client": {
           "id": 1,
-          "libelle": "Normal",
-          "montant": 12,
-          "quantite": 1
-        },
-        {
-          "id": 2,
-          "libelle": "Reduit",
-          "montant": 6,
-          "quantite": 1
-        }
-      ],
-      "createdOn": "2020-02-11T10:01:12.533Z",
-      "snacks": [
-        {
-          "id": 2,
-          "name": "popcorn salé",
-          "image": "/assets/images/pop_salt_g.jpg",
-          "price": 3.5,
-          "qte": 3
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "idClient": 1,
-      "idSeance": 1,
-      "tarifs": [
-        {
+          "nom": "DIA",
+          "prenom": "Yannick",
+          "email": "dia-yannick@gmail.com",
+          "dateDeNaissance": "2000-12-17",
+          "adresse": "cesi",
+          "cp": "31670",
+          "ville": "Labege",
+          "pays": "FRANCE",
+          "numeroDeFidelite": null
+      },
+      "seance": {
           "id": 1,
-          "libelle": "Normal",
-          "montant": 12,
-          "quantite": 1
-        },
-        {
-          "id": 2,
-          "libelle": "Reduit",
-          "montant": 6,
-          "quantite": 1
-        }
+          "date_seance": "2020-02-13",
+          "salle": {
+              "id": 1,
+              "plan": "Divers",
+              "numero": 1,
+              "cinema": {
+                  "id": 1,
+                  "nom": "GoMax Labege",
+                  "adresse": "adresse",
+                  "cp": "31670",
+                  "ville": "Labege"
+              }
+          },
+          "film": {
+              "id": 1,
+              "titre": "American History X",
+              "duree": 120,
+              "categorie": {
+                  "id": 1,
+                  "libelle": "Drama"
+              }
+          },
+          "horaire": {
+              "id": 1,
+              "horaire": "12:00:00"
+          }
+      },
+      "tarifs": {
+          "Tarif(id=1, libelle=Normal)": 2,
+          "Tarif(id=2, libelle=Réduit)": 1
+      },
+      "dateDeCreation": "2020-02-13",
+      "sieges": [
+          {
+              "id": 1,
+              "typeSiege": {
+                  "id": 1,
+                  "libelle": "Standard"
+              },
+              "salle": {
+                  "id": 1,
+                  "plan": "Divers",
+                  "numero": 1,
+                  "cinema": {
+                      "id": 1,
+                      "nom": "GoMax Labege",
+                      "adresse": "adresse",
+                      "cp": "31670",
+                      "ville": "Labege"
+                  }
+              }
+          },
+          {
+              "id": 2,
+              "typeSiege": {
+                  "id": 1,
+                  "libelle": "Standard"
+              },
+              "salle": {
+                  "id": 1,
+                  "plan": "Divers",
+                  "numero": 1,
+                  "cinema": {
+                      "id": 1,
+                      "nom": "GoMax Labege",
+                      "adresse": "adresse",
+                      "cp": "31670",
+                      "ville": "Labege"
+                  }
+              }
+          }
       ],
-      "createdOn": "2020-02-11T10:01:12.535Z",
-      "snacks": [
-        {
-          "id": 2,
-          "name": "popcorn salé",
-          "image": "/assets/images/pop_salt_g.jpg",
-          "price": 3.5,
-          "qte": 3
-        }
-      ]
+      "snacks": {}
     }
   ],
   "salles": [
