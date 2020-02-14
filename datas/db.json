@@ -91,7 +91,24 @@
       "montant": 6
     }
   ],
-  "commandes": [],
+  "commandes": [
+    {
+      "id": 1,
+      "idClient": 1,
+      "idSeance": null,
+      "tarifs": [],
+      "createdOn": "2020-02-11T10:19:01.283Z",
+      "snacks": []
+    },
+    {
+      "id": 2,
+      "idClient": 1,
+      "idSeance": null,
+      "tarifs": [],
+      "createdOn": "2020-02-11T10:19:01.385Z",
+      "snacks": []
+    }
+  ],
   "salles": [
     {
       "id": 1,
@@ -905,7 +922,7 @@
     },
     {
       "id": 2,
-      "name": "popcorn salé",
+      "name": "popcorn salé gd",
       "image": "/assets/images/pop_salt_g.jpg",
       "price": 3.5
     },
@@ -917,9 +934,8 @@
     },
     {
       "id": 4,
-      "name": "popcorn caramel",
+      "name": "popcorn caramel gd",
       "image": "/assets/images/popcorn_caramel_g.jpg",
-      "size": "grand",
       "price": 3.5
     },
     {
@@ -930,7 +946,7 @@
     },
     {
       "id": 6,
-      "name": "coca_cola",
+      "name": "coca_cola grand",
       "image": "/assets/images/coke_g.jpg",
       "price": 3.5
     },
@@ -942,7 +958,7 @@
     },
     {
       "id": 8,
-      "name": "fanta",
+      "name": "fanta grand",
       "image": "/assets/images/fanta_g.jpg",
       "price": 3.5
     },
@@ -954,19 +970,19 @@
     },
     {
       "id": 10,
-      "name": "sprite",
+      "name": "sprite grand",
       "image": "/assets/images/sprite_g.jpg",
       "price": 3.5
     },
     {
       "id": 11,
-      "name": "magnum",
+      "name": "magnum classic",
       "image": "/assets/images/magnum_classic.jpg",
       "price": 2.5
     },
     {
       "id": 12,
-      "name": "cornetto",
+      "name": "cornetto van/choc",
       "image": "/assets/images/cornetto_vanille.jpg",
       "price": 2.5
     }
