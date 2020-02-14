@@ -20,7 +20,8 @@ export class PanierComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.loadCommandeById(1);
+    this.snacks = this.commandeService.commande.snacks;
+    this.totalPanier(this.snacks);
   }
 
   loadCommandeById(id : number){

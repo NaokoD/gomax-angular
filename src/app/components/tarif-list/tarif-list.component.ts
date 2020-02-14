@@ -23,7 +23,7 @@ export class TarifListComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (this.commandeService.commande.tarifs.length > 0) {
+    if (this.commandeService.commandeCompleted === true) {
       this.tarifs = this.commandeService.commande.tarifs;
       this.visible = false;
     } else {

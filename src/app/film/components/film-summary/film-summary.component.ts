@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { FilmService } from '../../services/film.service';
 import { Film } from '../../models/film';
 import { ActivatedRoute } from '@angular/router';
@@ -13,14 +13,16 @@ export class FilmSummaryComponent implements OnInit {
   film: Film;
   router: any;
 
+  @Input()
+  id : number;
+
   constructor(private route: ActivatedRoute, private FilmService: FilmService) { }
 
   ngOnInit() {
     //let paramId: number;
     //this.route.paramMap.subscribe(params => paramId = parseInt(params.get('id'), 10));
 
-    const id: number = this.route.snapshot.params.id;
-    this.loadFilmDetails(id);
+    this.loadFilmDetails(this.id);
   }
 
 

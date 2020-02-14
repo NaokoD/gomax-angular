@@ -1,3 +1,8 @@
 h2 {
     text-align : center;
 }
+
+.example-button-row button,
+.example-button-row a {
+    width: 50%;
+}

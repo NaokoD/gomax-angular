@@ -95,18 +95,74 @@
     {
       "id": 1,
       "idClient": 1,
+<<<<<<< HEAD
       "idSeance": null,
       "tarifs": [],
       "createdOn": "2020-02-11T10:19:01.283Z",
       "snacks": []
+=======
+      "idSeance": 1,
+      "tarifs": [
+        {
+          "id": 1,
+          "libelle": "Normal",
+          "montant": 12,
+          "quantite": 1
+        },
+        {
+          "id": 2,
+          "libelle": "Reduit",
+          "montant": 6,
+          "quantite": 1
+        }
+      ],
+      "createdOn": "2020-02-11T10:01:12.533Z",
+      "snacks": [
+        {
+          "id": 2,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_g.jpg",
+          "price": 3.5,
+          "qte": 3
+        }
+      ]
+>>>>>>> 416daf7b222932584e371a3137c43c0dea0056ab
     },
     {
       "id": 2,
       "idClient": 1,
+<<<<<<< HEAD
       "idSeance": null,
       "tarifs": [],
       "createdOn": "2020-02-11T10:19:01.385Z",
       "snacks": []
+=======
+      "idSeance": 1,
+      "tarifs": [
+        {
+          "id": 1,
+          "libelle": "Normal",
+          "montant": 12,
+          "quantite": 1
+        },
+        {
+          "id": 2,
+          "libelle": "Reduit",
+          "montant": 6,
+          "quantite": 1
+        }
+      ],
+      "createdOn": "2020-02-11T10:01:12.535Z",
+      "snacks": [
+        {
+          "id": 2,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_g.jpg",
+          "price": 3.5,
+          "qte": 3
+        }
+      ]
+>>>>>>> 416daf7b222932584e371a3137c43c0dea0056ab
     }
   ],
   "salles": [
