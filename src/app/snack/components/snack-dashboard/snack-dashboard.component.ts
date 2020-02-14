@@ -47,11 +47,6 @@ export class SnackDashboardComponent implements OnInit {
       this.commandeService.save();
       this.btnDisabled = !this.btnDisabled;
     }
-    //console.log(this.snacks);
-    this.commandeService.commande.snacks = this.snacks;
-    //console.log(this.commandeService.commande)
-    this.commandeService.save();
-    this.btnDisabled = !this.btnDisabled;
   }
 
   sommeCommandeSnack() {
