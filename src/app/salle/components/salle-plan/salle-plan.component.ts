@@ -22,11 +22,14 @@ visible : boolean = true;
   }
 
   loadSallePlan(id: number): void {
-    this.salleService.getSalleById(id).
+    this.salleService.getPlanBySalleById(id).
       subscribe({
         next: res => {
-          this.plan = res.plan;
-          console.log(res.plan);
+          console.log(res.rows);
+          this.plan = res;
+          console.log(res);
+          console.log(this.plan);
+          console.log(this.plan.rows);
         },
         error: e => console.log(e),
         complete: () => console.log('Complete')
