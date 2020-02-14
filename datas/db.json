@@ -94,6 +94,7 @@
   "commandes": [
     {
       "id": 1,
+<<<<<<< HEAD
       "client": {
           "id": 1,
           "nom": "DIA",
@@ -107,6 +108,54 @@
           "numeroDeFidelite": null
       },
       "seance": {
+=======
+      "idClient": 1,
+<<<<<<< HEAD
+      "idSeance": null,
+      "tarifs": [],
+      "createdOn": "2020-02-11T10:19:01.283Z",
+      "snacks": []
+=======
+      "idSeance": 1,
+      "tarifs": [
+        {
+          "id": 1,
+          "libelle": "Normal",
+          "montant": 12,
+          "quantite": 1
+        },
+        {
+          "id": 2,
+          "libelle": "Reduit",
+          "montant": 6,
+          "quantite": 1
+        }
+      ],
+      "createdOn": "2020-02-11T10:01:12.533Z",
+      "snacks": [
+        {
+          "id": 2,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_g.jpg",
+          "price": 3.5,
+          "qte": 3
+        }
+      ]
+>>>>>>> 416daf7b222932584e371a3137c43c0dea0056ab
+    },
+    {
+      "id": 2,
+      "idClient": 1,
+<<<<<<< HEAD
+      "idSeance": null,
+      "tarifs": [],
+      "createdOn": "2020-02-11T10:19:01.385Z",
+      "snacks": []
+=======
+      "idSeance": 1,
+      "tarifs": [
+        {
+>>>>>>> 26653961020e3328243422bd27dd1465919d8149
           "id": 1,
           "date_seance": "2020-02-13",
           "salle": {
@@ -180,7 +229,21 @@
               }
           }
       ],
+<<<<<<< HEAD
       "snacks": {}
+=======
+      "createdOn": "2020-02-11T10:01:12.535Z",
+      "snacks": [
+        {
+          "id": 2,
+          "name": "popcorn salé",
+          "image": "/assets/images/pop_salt_g.jpg",
+          "price": 3.5,
+          "qte": 3
+        }
+      ]
+>>>>>>> 416daf7b222932584e371a3137c43c0dea0056ab
+>>>>>>> 26653961020e3328243422bd27dd1465919d8149
     }
   ],
   "salles": [
@@ -996,7 +1059,7 @@
     },
     {
       "id": 2,
-      "name": "popcorn salé",
+      "name": "popcorn salé gd",
       "image": "/assets/images/pop_salt_g.jpg",
       "price": 3.5
     },
@@ -1008,9 +1071,8 @@
     },
     {
       "id": 4,
-      "name": "popcorn caramel",
+      "name": "popcorn caramel gd",
       "image": "/assets/images/popcorn_caramel_g.jpg",
-      "size": "grand",
       "price": 3.5
     },
     {
@@ -1021,7 +1083,7 @@
     },
     {
       "id": 6,
-      "name": "coca_cola",
+      "name": "coca_cola grand",
       "image": "/assets/images/coke_g.jpg",
       "price": 3.5
     },
@@ -1033,7 +1095,7 @@
     },
     {
       "id": 8,
-      "name": "fanta",
+      "name": "fanta grand",
       "image": "/assets/images/fanta_g.jpg",
       "price": 3.5
     },
@@ -1045,19 +1107,19 @@
     },
     {
       "id": 10,
-      "name": "sprite",
+      "name": "sprite grand",
       "image": "/assets/images/sprite_g.jpg",
       "price": 3.5
     },
     {
       "id": 11,
-      "name": "magnum",
+      "name": "magnum classic",
       "image": "/assets/images/magnum_classic.jpg",
       "price": 2.5
     },
     {
       "id": 12,
-      "name": "cornetto",
+      "name": "cornetto van/choc",
       "image": "/assets/images/cornetto_vanille.jpg",
       "price": 2.5
     }

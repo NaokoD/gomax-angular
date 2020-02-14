@@ -4,18 +4,16 @@
             {{ snack.name | uppercase }}
         </mat-card-title>
     </mat-card-header>
-    <img mat-card-image class="snack-image" src="{{ snack.image }}">
+    <img mat-card-image class="snack-image" src="/assets/images/{{ snack.image }}">
 
     <mat-card-content>
         {{ snack.price | currency:'EUR' }}
     </mat-card-content>
     <mat-card-actions>
         <div class="button-row">
-            <button (click)="actionBtnPlus($event)" name="plus" mat-mini-fab color="primary"
-                data-field="quant[0]">+</button>
-            {{snack.qte}}
-            <button (click)="actionBtnMoins($event)" name="moins" mat-mini-fab color="primary"
-                data-field="quant[0]">-</button>
+            <button (click)="actionBtnPlus($event)" name="plus" mat-mini-fab data-field="quant[0]">+</button>
+            <span>{{snack.qte}}</span>
+            <button (click)="actionBtnMoins($event)" name="moins" mat-mini-fab data-field="quant[0]">-</button>
         </div>
     </mat-card-actions>
 </mat-card>
