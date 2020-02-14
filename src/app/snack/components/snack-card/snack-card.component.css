@@ -1,6 +1,9 @@
 .snack-card {
     max-width: 300px;
     margin: 15px;
+    background-color: black;
+    border-color: rgb(206, 153, 8);
+    border-style: dotted;
 }
 
 .snack-image {
@@ -9,5 +12,14 @@
 
 .button-row button {
   margin: 10px;
- 
+  color:black;
 }
+
+span {
+  color: white;
+}
+
+
+
+
+

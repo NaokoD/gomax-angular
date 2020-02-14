@@ -14,3 +14,8 @@ table {
 tr.mat-footer-row {
     font-weight: bold;
 }
+
+.example-button-row button,
+.example-button-row a {
+    width: 50%;
+}
