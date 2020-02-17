@@ -1,5 +1,6 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {Row} from '../../models/row';
+import { Siege } from 'src/app/siege/models/siege';
 
 @Component({
   selector: 'app-row',
@@ -17,10 +18,7 @@ export class RowComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.row);
-    this.rowSorted.id = this.row.id;
-    this.rowSorted.siege.push(this.row.siege[0]);
-    for (const i in this.row.siege) {
-            }
+    this.rowSorted = new Row(this.row.id, this.row.siege);
   }
 
 }

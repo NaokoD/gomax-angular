@@ -1,18 +1,9 @@
 <!-- <p>row-salle works!</p> -->
-<div class="row">
-  <!-- <div *ngFor="let siege of " class="siege">
-    <svg class="seat" width="40" height="40">
-      <rect class="seat" width="40" height="40"/>
-      Sorry, your browser does not support inline SVG.
+<div id="row">
+  <div class="row">
+    <svg width="75" height="75">
+      <text x="40" y="35" fill="yellow">{{rowSorted.id}}</text>
     </svg>
-  </div>-->
-
-  <ng-container *ngFor="let siege of row.siege">
-    <!--<ng-container *ngIf="any.isPrototypeOf(siege)">-->
-      <app-siege [ngStyle]="{'fill': 'yellow'}" [siege]=siege [rowId]=[row.id]></app-siege>
-    <!--</ng-container>-->
-    <!--<ng-container *ngIf="siege.type !== 'corridor'">
-      <app-siege [ngStyle]="{'fill': siege.available === true ? 'yellow' : ' black'}" [siege]=siege></app-siege>
-    </ng-container>-->
-  </ng-container>
+    <app-siege *ngFor="let siege of rowSorted.siege" [siege]=siege></app-siege>
+  </div>
 </div>

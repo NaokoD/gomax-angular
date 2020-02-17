@@ -10,14 +10,13 @@ export class SiegeComponent implements OnInit {
   @Input()
   siege: Siege;
 
-  @Input()
-  rowId: string;
-
   constructor() {
   }
 
   ngOnInit() {
-    console.log(this.rowId);
+    if(this.siege.type !== "none"){
+      this.siege.available = true;
+    }
   }
 
   toggleAvailability(siege: Siege): void {

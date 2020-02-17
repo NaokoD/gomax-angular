@@ -20,12 +20,21 @@ export class SalleService {
     return this.http.get<Salle>(`${environment.apiBaseUrl}/salles/${id}`);
   }
 
-  getPlanBySalleById(id: number): Observable<any> {
-    return this.http.get<any>(`${environment.apiBaseUrl}/salles/${id}/plan`);
+  getPlanBySalleById(id: number): Observable<Plan> {
+    return this.http.get<Plan>(`${environment.apiBaseUrl}/salles/${id}/plan`);
   }
 
   postSalle(salle: Salle): Observable<Salle> {
     return this.http.post<Salle>(`${environment.apiBaseUrl}/salles`, salle);
+  }
+
+  deleteSalle(id : number): Observable<number> {
+    return this.http.delete<number>(`${environment.apiBaseUrl}/salles/${id}`);
+
+  }
+
+  putSalle(salle: Salle): Observable<Salle> {
+    return this.http.put<Salle>(`${environment.apiBaseUrl}/salles`, salle);
   }
 
 }

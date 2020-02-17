@@ -24,17 +24,17 @@ visible: boolean = true;
   }
 
   loadSallePlan(id: number): void {
-    this.salleService.getSalleById(id).
+    this.salleService.getPlanBySalleById(id).
       subscribe({
         next: res => {
-          this.salle = res;
+          this.plan = res;
         },
         error: e => console.log(e),
         complete: () => {
           console.log('Complete');
-          this.plan = this.salle.plan;
           console.log(this.plan);
           console.log(this.plan.row);
+
         }
       });
   }
