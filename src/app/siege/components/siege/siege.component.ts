@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Siege } from '../../models/siege';
+import {Component, OnInit, Input} from '@angular/core';
+import {Siege} from '../../models/siege';
 
 @Component({
   selector: 'app-siege',
@@ -10,16 +10,20 @@ export class SiegeComponent implements OnInit {
   @Input()
   siege: Siege;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
   }
 
-  toggleAvailability(siege : Siege) : void {
+  ngOnInit() {
+    if(this.siege.type !== "none"){
+      this.siege.available = true;
+    }
+  }
+
+  toggleAvailability(siege: Siege): void {
     console.log(siege.id);
-    if(siege.available === true){
+    if (siege.available === true) {
       siege.available = null;
-    } else if(siege.available === null){
+    } else if (siege.available === null) {
       siege.available = true;
     }
   }

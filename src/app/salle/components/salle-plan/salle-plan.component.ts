@@ -4,6 +4,7 @@ import {SalleService} from '../../services/salle.service';
 import {Plan} from '../../models/plan';
 import { ActivatedRoute } from '@angular/router';
 import { CommandeService } from 'src/app/services/commande.service';
+import {Salle} from '../../models/salle';
 
 @Component({
   selector: 'app-salle-plan',
@@ -12,7 +13,8 @@ import { CommandeService } from 'src/app/services/commande.service';
 })
 export class SallePlanComponent implements OnInit {
 plan: Plan;
-visible : boolean = true;
+salle: Salle;
+visible: boolean = true;
 
   constructor(private route: ActivatedRoute, private commandeService: CommandeService, private salleService: SalleService) {
    }
@@ -22,14 +24,18 @@ visible : boolean = true;
   }
 
   loadSallePlan(id: number): void {
-    this.salleService.getSalleById(id).
+    this.salleService.getPlanBySalleById(id).
       subscribe({
         next: res => {
-          this.plan = res.plan;
-          console.log(res.plan);
+          this.plan = res;
         },
         error: e => console.log(e),
-        complete: () => console.log('Complete')
+        complete: () => {
+          console.log('Complete');
+          console.log(this.plan);
+          console.log(this.plan.row);
+
+        }
       });
   }
 }

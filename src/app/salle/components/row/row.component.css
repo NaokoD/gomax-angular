@@ -1,5 +1,12 @@
 .row {
     margin : 0 auto;
-    width: 400px;
+    width: 100%;
   }
+
+.rowId{
+  margin-right: 15%;
+}
   
+#row{
+  margin: auto;
+}
