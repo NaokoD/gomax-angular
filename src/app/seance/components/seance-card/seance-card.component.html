@@ -1,6 +1,7 @@
 <div class="example-button-row"
     style="margin-top: 8px; margin-left: 20px; display: inline-block; justify-content: flex-start;">
-    <div>
+    <div id="{{ seance.date_seance | date : 'EEEE'}}">
         <button mat-raised-button color="accent" [routerLink]="['tarif']">{{ seance.horaire.horaire }}</button>
+        <p> {{ seance.date_seance | date :'EEEE'}}</p>
     </div>
 </div>
