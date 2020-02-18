@@ -4,6 +4,5 @@ export class Horaire {
     constructor(
         public id: number,
         public horaire: Time
-
     ) { }
 }

@@ -4,6 +4,7 @@ import {TarifService} from 'src/app/services/tarif.service';
 import {ActivatedRoute} from '@angular/router';
 import {CommandeService} from 'src/app/services/commande.service';
 import {map} from 'rxjs/operators';
+import { Seance } from 'src/app/seance/models/seance';
 
 @Component({
   selector: 'app-tarif-list',
@@ -28,7 +29,9 @@ export class TarifListComponent implements OnInit {
       this.visible = false;
     } else {
       this.loadTarifs();
+      this.commandeService.getSiegesUsedByIdSeance(1);
     }
+
   }
 
   add(id: number): void {
@@ -60,7 +63,7 @@ export class TarifListComponent implements OnInit {
     return somme;
   }
 
-  private loadTarifs(): void {
+  loadTarifs(): void {
     this.tarifService.getTarifs()
       .subscribe({
         next: x => {
@@ -83,7 +86,10 @@ export class TarifListComponent implements OnInit {
         places.push(i);
       }
     }
-    this.commandeService.commande.seance.idSeance = this.idSeance;
+    this.commandeService.commande.seance = new Seance(1);
+    //this.idSeance;
+    console.log(this.commandeService.commande.seance);
     this.commandeService.commande.tarifs = places;
+    console.log(this.commandeService.commande.tarifs)
   }
 }

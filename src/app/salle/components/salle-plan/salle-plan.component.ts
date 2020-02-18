@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Row } from '../../models/row';
 import {SalleService} from '../../services/salle.service';
 import {Plan} from '../../models/plan';
 import { ActivatedRoute } from '@angular/router';
 import { CommandeService } from 'src/app/services/commande.service';
 import {Salle} from '../../models/salle';
+import { RowComponent } from '../row/row.component';
 
 @Component({
   selector: 'app-salle-plan',
@@ -21,11 +22,12 @@ visible: boolean = true;
 
   ngOnInit() {
     this.loadSallePlan(1);
+    console.log(this.commandeService.commande);
   }
 
   loadSallePlan(id: number): void {
-    this.salleService.getPlanBySalleById(id).
-      subscribe({
+    this.salleService.getPlanBySalleById(id)
+      .subscribe({
         next: res => {
           this.plan = res;
         },
@@ -34,7 +36,6 @@ visible: boolean = true;
           console.log('Complete');
           console.log(this.plan);
           console.log(this.plan.row);
-
         }
       });
   }

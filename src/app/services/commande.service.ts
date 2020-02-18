@@ -4,6 +4,8 @@ import {Observable} from 'rxjs';
 import {environment} from 'src/environments/environment';
 import {HttpClient} from '@angular/common/http';
 import {Client} from '../models/client';
+import { Siege } from '../siege/models/siege';
+import { map, catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +14,7 @@ import {Client} from '../models/client';
 export class CommandeService {
   commande: Commande;
   commandeCompleted: boolean = false;
+  siegesUsed : number[];
 
   constructor(private http: HttpClient) {
     // noinspection UnterminatedStatementJS
@@ -20,7 +23,8 @@ export class CommandeService {
       new Client(1),
       null,
       [],
-      null
+      null,
+      []
     );
     console.log(this.commande + 'service');
     // this.commande.idClient=1;
@@ -28,7 +32,7 @@ export class CommandeService {
 
   save() {
     console.log(this.commande);
-    this.commande.createdOn = new Date();
+    console.log(this.commande);
     this.http.post<Commande>(`${environment.apiBaseUrl}/commandes`, this.commande)
       .subscribe({
         next: x => console.log('Saving'),
@@ -44,4 +48,31 @@ export class CommandeService {
     return this.http.get<Commande[]>(`${environment.apiBaseUrl}/commandes`);
   }
 
+  getCommandesByIdSeance(idSeance : number): Observable<Commande[]> {
+    return this.http.get<Commande[]>(`${environment.apiBaseUrl}/commandes?seanceId=${idSeance}`);
+  }
+
+  getSiegesUsedByIdSeance(idSeance : number) : void{
+    let commandes : Commande[];
+    this.getCommandesByIdSeance(idSeance)
+    .subscribe({
+      next: commandesMap => {
+        commandes = commandesMap;
+        console.log(commandes);
+      },
+      error: e => console.log(e),
+      complete: () => {
+        console.log('Complete');
+        let sieges : number[] = [];
+        for(const commande of commandes){
+          if(commande.sieges.length>0){
+            for(const siege of commande.sieges)
+              sieges.push(Number(siege.id));
+          }
+        }
+        this.siegesUsed=sieges;
+        console.log(this.siegesUsed);
+      }
+    });
+  }
 }

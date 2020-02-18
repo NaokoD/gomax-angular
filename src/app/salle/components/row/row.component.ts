@@ -1,6 +1,7 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, ViewChildren, QueryList} from '@angular/core';
 import {Row} from '../../models/row';
 import { Siege } from 'src/app/siege/models/siege';
+import { SiegeComponent } from 'src/app/siege/components/siege/siege.component';
 
 @Component({
   selector: 'app-row',

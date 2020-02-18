@@ -1,5 +1,5 @@
 <h2>Plan de salle</h2>
-<div class="salle">
+<div class="salle" *ngIf="plan !== undefined">
     <app-row *ngFor="let r of plan.row" [row]=r></app-row>
 </div>
 <div class="example-button-row">
