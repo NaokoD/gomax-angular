@@ -30,13 +30,16 @@ export class DetailFilmComponent implements OnInit {
 
   loadFilmDetails(id: number) {
     this.FilmService.getFilmById(id)
-    .subscribe({
-      next : res => {
-        this.film = res;
-        console.log(res)
-      },
-      error: e => console.log(e),
-      complete: () => console.log('Complete')
-    });
+      .subscribe({
+        next: res => {
+          this.film = res;
+          console.log(res)
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
   }
+
+
+
 }

@@ -18,7 +18,8 @@ export class SeanceCardComponent implements OnInit {
   ngOnInit() {
   }
 
-  ajouterSeanceACommande(id : number){
+
+  ajouterSeanceACommande(id: number) {
   }
 
 }

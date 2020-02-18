@@ -1,9 +1,9 @@
-import {Component, OnInit} from '@angular/core';
-import {Tarif} from 'src/app/models/tarif';
-import {TarifService} from 'src/app/services/tarif.service';
-import {ActivatedRoute} from '@angular/router';
-import {CommandeService} from 'src/app/services/commande.service';
-import {map} from 'rxjs/operators';
+import { Component, OnInit } from '@angular/core';
+import { Tarif } from 'src/app/models/tarif';
+import { TarifService } from 'src/app/services/tarif.service';
+import { ActivatedRoute } from '@angular/router';
+import { CommandeService } from 'src/app/services/commande.service';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-tarif-list',
@@ -83,7 +83,7 @@ export class TarifListComponent implements OnInit {
         places.push(i);
       }
     }
-    this.commandeService.commande.seance.idSeance = this.idSeance;
+    this.commandeService.commande.seance.id = this.idSeance;
     this.commandeService.commande.tarifs = places;
   }
 }
