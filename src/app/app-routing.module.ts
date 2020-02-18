@@ -11,6 +11,8 @@ import { SallePlanComponent } from './salle/components/salle-plan/salle-plan.com
 import { FilmSummaryComponent } from './film/components/film-summary/film-summary.component';
 
 import { CommandeSummaryComponent } from './components/commande-summary/commande-summary.component';
+import { HoraireListComponent } from './horaire/components/horaire-list/horaire-list.component';
+import { HoraireCardComponent } from './horaire/components/horaire-card/horaire-card.component';
 
 
 const routes: Routes = [
@@ -27,7 +29,10 @@ const routes: Routes = [
   { path: 'cinema', component: CinemaListComponent },
   { path: 'tarif', component: TarifListComponent },
   { path: 'summary/:id', component: FilmSummaryComponent },
-  { path: 'summary', component: CommandeSummaryComponent }
+  { path: 'summary', component: CommandeSummaryComponent },
+  { path: 'horaires', component: HoraireListComponent },
+  { path: 'seances/films/:id', component: SeanceListComponent },
+
 ];
 
 @NgModule({

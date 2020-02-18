@@ -4,5 +4,5 @@
 }
 
 .mat-toolbar.mat-accent {
-    height: 100px;
-} 
+    height: fit-content
+}

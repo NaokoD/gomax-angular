@@ -1,10 +1,12 @@
 export class Film {
     constructor(
         public id: number,
-        public titre: string,
-        public categorie: string,
-        public duree: number,
-        public urlImg: string,
-        public resume: string
+        public Title: string,
+        public Runtime: string,
+        public Genre: string,
+        public Plot: string,
+        public Actors: string,
+        public Poster: string
+
     ) { }
 }

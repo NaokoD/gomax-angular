@@ -52,8 +52,16 @@ h1 {
     background-color: #FED740;
 }
 
-.sticky {
+.stickyBtn {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    position: fixed;
+    z-index: 1;
+    top: 105px;
+}
+
+
+
+p {
+    color: black;
 }

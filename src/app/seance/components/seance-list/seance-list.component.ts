@@ -4,6 +4,9 @@ import { SeanceService } from '../../services/seance.service';
 import { filter } from 'rxjs/operators';
 import { SeanceCardComponent } from '../seance-card/seance-card.component';
 import { ActivatedRoute, Router, Params } from '@angular/router';
+import { Horaire } from 'src/app/horaire/models/horaire';
+import { Salle } from 'src/app/salle/models/salle';
+import { Film } from 'src/app/film/models/film';
 
 
 @Component({
@@ -13,7 +16,11 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
 })
 export class SeanceListComponent implements OnInit {
 
+  films: Film[];
   seances: Seance[];
+  horaires: Horaire[];
+
+
 
   @ViewChildren(SeanceCardComponent)
   seancesQuery: QueryList<SeanceCardComponent>;
@@ -28,10 +35,11 @@ export class SeanceListComponent implements OnInit {
   ngOnInit() {
     const id: number = this.route.snapshot.params.id;
     this.loadSeancesByFilm(id);
+    /* this.loadSeances(); */
   }
 
-  loadSeancesByFilm(idFilm: number) {
-    this.seanceService.getSeancesByFilm(idFilm)
+  loadSeancesByFilm(id: number) {
+    this.seanceService.getSeancesByFilm(id)
       .subscribe({
         next: res => {
           this.seances = res;
