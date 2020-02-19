@@ -13,13 +13,14 @@ export class SeanceCardComponent implements OnInit {
 
 
 
-  constructor(/*private commandeService: CommandeService*/) { }
+  constructor(private commandeService: CommandeService) { }
 
   ngOnInit() {
   }
 
 
-  ajouterSeanceACommande(id: number) {
+  addSeanceToCommande(seance : Seance) {
+    this.commandeService.commande.seance = seance;
   }
 
 }

@@ -34,6 +34,17 @@ visible: boolean = true;
         error: e => console.log(e),
         complete: () => {
           console.log('Complete');
+          for(let i of this.plan.row){
+            i.siege.sort((obj1, obj2) => {
+              if (obj1.position > obj2.position) {
+                  return 1;
+              }
+              if (obj1.position < obj2.position) {
+                  return -1;
+              }
+              return 0;
+          });
+          }
           console.log(this.plan);
           console.log(this.plan.row);
         }
