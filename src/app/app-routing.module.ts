@@ -16,7 +16,7 @@ import { SalleListComponent } from './salle/components/salle-list/salle-list.com
 
 
 const routes: Routes = [
-  { path: '', component: FilmDashboardComponent },
+  
   { path: 'details/:id', component: DetailFilmComponent },
   { path: 'details/:id/plan/:idSeance', component: SallePlanComponent },
   { path: 'details/:id/tarif', component: TarifListComponent },
@@ -32,7 +32,7 @@ const routes: Routes = [
   { path: 'summary', component: CommandeSummaryComponent },
   { path: 'horaires', component: HoraireListComponent },
   { path: 'seances/films/:id', component: SeanceListComponent },
-
+  { path: '', component: FilmDashboardComponent }
 ];
 
 @NgModule({
