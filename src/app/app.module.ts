@@ -18,6 +18,7 @@ import { FilmModule } from './film/film.module';
 import { CommandeSummaryComponent } from './components/commande-summary/commande-summary.component';
 import { FilmSummaryComponent } from './film/components/film-summary/film-summary.component';
 import { PanierComponent } from './components/panier/panier.component';
+import { HoraireModule } from './horaire/horaire.module';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { PanierComponent } from './components/panier/panier.component';
     CinemaModule,
     SiegeModule,
     SalleModule,
-    FilmModule
+    FilmModule,
+    HoraireModule
   ],
   providers: [],
   bootstrap: [AppComponent]

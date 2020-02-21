@@ -1,86 +1,48 @@
-<salle>
-  <row id="A">
-    <seat type='0' number='1' position='1'></seat>
-    <seat type='0' number='2' position='2'></seat>
-    <corridor position='3'></corridor>
-    <seat type='1' number='3' position='4'></seat>
-    <seat type='1' number='4' position='5'></seat>
-    <seat type='1' number='5' position='6'></seat>
-    <seat type='1' number='6' position='7'></seat>
-    <seat type='1' number='7' position='8'></seat>
-    <seat type='1' number='8' position='9'></seat>
-    <corridor position='10'></corridor>
-    <seat type='0' number='9' position='11'></seat>
-    <seat type='0' number='10' position='12'></seat>
-  </row>
-  <row id="B">
-    <seat type='0' number='1' position='1'></seat>
-    <seat type='0' number='2' position='2'></seat>
-    <corridor position='3'></corridor>
-    <seat type='0' number='3' position='4'></seat>
-    <seat type='0' number='4' position='5'></seat>
-    <seat type='0' number='5' position='6'></seat>
-    <seat type='0' number='6' position='7'></seat>
-    <seat type='0' number='7' position='8'></seat>
-    <seat type='0' number='8' position='9'></seat>
-    <corridor position='10'></corridor>
-    <seat type='0' number='9' position='11'></seat>
-    <seat type='0' number='10' position='12'></seat>
-  </row>
-  <row id="C">
-    <seat type='0' number='1' position='1'></seat>
-    <seat type='0' number='2' position='2'></seat>
-    <corridor position='3'></corridor>
-    <seat type='0' number='3' position='4'></seat>
-    <seat type='0' number='4' position='5'></seat>
-    <seat type='0' number='5' position='6'></seat>
-    <seat type='0' number='6' position='7'></seat>
-    <seat type='0' number='7' position='8'></seat>
-    <seat type='0' number='8' position='9'></seat>
-    <corridor position='10'></corridor>
-    <seat type='0' number='9' position='11'></seat>
-    <seat type='0' number='10' position='12'></seat>
-  </row>
-  <row id="D">
-    <seat type='0' number='1' position='1'></seat>
-    <seat type='0' number='2' position='2'></seat>
-    <corridor position='3'></corridor>
-    <seat type='0' number='3' position='4'></seat>
-    <seat type='0' number='4' position='5'></seat>
-    <seat type='0' number='5' position='6'></seat>
-    <seat type='0' number='6' position='7'></seat>
-    <seat type='0' number='7' position='8'></seat>
-    <seat type='0' number='8' position='9'></seat>
-    <corridor position='10'></corridor>
-    <seat type='0' number='9' position='11'></seat>
-    <seat type='0' number='10' position='12'></seat>
-  </row>
-  <row id="E">
-    <seat type='0' number='1' position='1'></seat>
-    <seat type='0' number='2' position='2'></seat>
-    <corridor position='3'></corridor>
-    <seat type='0' number='3' position='4'></seat>
-    <seat type='0' number='4' position='5'></seat>
-    <seat type='0' number='5' position='6'></seat>
-    <seat type='0' number='6' position='7'></seat>
-    <seat type='0' number='7' position='8'></seat>
-    <seat type='0' number='8' position='9'></seat>
-    <corridor position='10'></corridor>
-    <seat type='0' number='9' position='11'></seat>
-    <seat type='0' number='10' position='12'></seat>
-  </row>
-  <row id="F">
-    <seat type='0' number='1' position='1'></seat>
-    <seat type='0' number='2' position='2'></seat>
-    <corridor position='3'></corridor>
-    <seat type='0' number='3' position='4'></seat>
-    <seat type='0' number='4' position='5'></seat>
-    <seat type='0' number='5' position='6'></seat>
-    <seat type='0' number='6' position='7'></seat>
-    <seat type='0' number='7' position='8'></seat>
-    <seat type='0' number='8' position='9'></seat>
-    <corridor position='10'></corridor>
-    <seat type='0' number='9' position='11'></seat>
-    <seat type='0' number='10' position='12'></seat>
-  </row>
-</salle>
+
+<plan>
+<row>
+  <id>A</id>
+  <element type='0' number='1' position='1'></element>
+  <element type='0' number='2' position='2'></element>
+  <element position='3'></element>
+  <element type='1' number='3' position='4'></element>
+  <element type='1' number='4' position='5'></element>
+  <element type='1' number='5' position='6'></element>
+  <element type='1' number='6' position='7'></element>
+  <element type='1' number='7' position='8'></element>
+  <element type='1' number='8' position='9'></element>
+  <element position='10'></element>
+  <element type='0' number='9' position='11'></element>
+  <element type='0' number='10' position='12'></element>
+</row>
+<row id="B">
+  <id>B</id>
+  <element type='0' number='1' position='1'></element>
+  <element type='0' number='2' position='2'></element>
+  <element position='3'></element>
+  <element type='0' number='3' position='4'></element>
+  <element type='0' number='4' position='5'></element>
+  <element type='0' number='5' position='6'></element>
+  <element type='0' number='6' position='7'></element>
+  <element type='0' number='7' position='8'></element>
+  <element type='0' number='8' position='9'></element>
+  <element position='10'></element>
+  <element type='0' number='9' position='11'></element>
+  <element type='0' number='10' position='12'></element>
+</row>
+<row>
+  <id>C</id>
+  <element type='0' number='1' position='1'></element>
+  <element type='0' number='2' position='2'></element>
+  <element position='3'></element>
+  <element type='0' number='3' position='4'></element>
+  <element type='0' number='4' position='5'></element>
+  <element type='0' number='5' position='6'></element>
+  <element type='0' number='6' position='7'></element>
+  <element type='0' number='7' position='8'></element>
+  <element type='0' number='8' position='9'></element>
+  <element position='10'></element>
+  <element type='0' number='9' position='11'></element>
+  <element type='0' number='10' position='12'></element>
+</row>
+</plan>

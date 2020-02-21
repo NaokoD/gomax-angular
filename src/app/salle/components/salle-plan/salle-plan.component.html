@@ -1,6 +1,10 @@
 <h2>Plan de salle</h2>
-<app-row *ngFor="let row of plan" [row]=row></app-row>
-<div class="example-button-row">
-    <button *ngIf="this.visible === true" mat-raised-button color="warn">Retour</button>
-    <button mat-raised-button color="primary" [routerLink]="['/snacks']">Suivant</button>
+<div class="plan">
+    <div class="salle" *ngIf="plan !== undefined">
+        <app-row *ngFor="let r of plan.row" [row]=r></app-row>
+    </div>
+    <div class="example-button-row">
+        <button class="btnRetour"*ngIf="this.visible === true" mat-raised-button color="warn">Retour</button>
+        <button mat-raised-button color="primary" class="btnSuivant" [routerLink]="['/snacks']">Suivant</button>
+    </div>
 </div>

@@ -9,6 +9,9 @@ import { MaterialModule } from '../material.module';
 
 
 
+
+
+
 @NgModule({
   declarations: [SeanceCardComponent, SeanceDashboardComponent, SeanceListComponent],
   imports: [
@@ -19,7 +22,7 @@ import { MaterialModule } from '../material.module';
   exports: [
     SeanceListComponent,
     SeanceCardComponent,
-    SeanceDashboardComponent
+    SeanceDashboardComponent,
   ],
 })
 export class SeanceModule { }

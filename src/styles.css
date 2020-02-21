@@ -51,7 +51,7 @@ table {
     main {
         width: 100%;
         top:145px; left:0;
-        bottom:115px;
+        /*bottom:115px;*/
         position: absolute;
         overflow:auto;
         }
@@ -63,5 +63,4 @@ table {
     bottom:0; left:0;
     }
     
-
 
