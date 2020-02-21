@@ -12,14 +12,10 @@ export class RowComponent implements OnInit {
   @Input()
   row: Row;
 
-  rowSorted: Row;
-
   constructor() {
   }
 
   ngOnInit() {
     console.log(this.row);
-    this.rowSorted = new Row(this.row.id, this.row.siege);
   }
-
 }

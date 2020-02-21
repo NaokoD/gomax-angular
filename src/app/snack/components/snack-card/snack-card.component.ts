@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ViewChild, ElementRef, Output, EventEmitter } from '@angular/core';
 import { Snack } from '../../models/snack';
-//import { SnackListComponent } from '../snack-list/snack-list.component';
+
 
 @Component({
   selector: 'app-snack-card',

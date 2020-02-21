@@ -17,29 +17,46 @@ export class SiegeComponent implements OnInit {
   ngOnInit() {
     if(this.siege.type !== "none"){
       this.siege.available = true;
-      console.log(this.commandeService.siegesUsed);
+      
       if(this.commandeService.commande.seance !== null){
         if(this.commandeService.siegesUsed.includes(Number(this.siege.id)))
         {
           this.siege.available = false;
-          console.log(this.siege);
+          
         }
       }
     }
   }
 
   toggleAvailability(siege: Siege): void {
-    console.log(siege.id);
+    
+    let indexSiege : number = this.checkSelectedSiege(this.commandeService.commande.sieges, siege.id);
+    
     if (siege.available === true) {
+      if(indexSiege === -1){
+        this.commandeService.commande.sieges.push(new Siege(siege.id));
+      }
       siege.available = null;
-      this.commandeService.commande.sieges.push(new Siege(siege.id));
-      console.log(this.commandeService.commande.sieges);
+      
     } else if (siege.available === null) {
+      if(indexSiege!==-1){
+        this.commandeService.commande.sieges.splice(indexSiege,1);
+      }
+      
       siege.available = true;
-      console.log(this.commandeService.commande.sieges.includes(siege));
-      this.commandeService.commande.sieges.splice(this.commandeService.commande.sieges.indexOf(siege),1);
-      console.log(this.commandeService.commande.sieges);
     }
+  }
+
+  checkSelectedSiege(sieges : Siege[], id : number) : number {
+    
+    for (let i : number = 0; i <sieges.length; i++) {
+      
+      
+      if(sieges[i].id===id){
+        return i;
+      }      
+    }
+    return -1;
   }
 
 }

@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpEventType } from '@angular/common/http';
 import { SeanceModule } from './seance/seance.module';
 import { SnackModule } from './snack/snack.module';
 import { CinemaModule } from './cinema/cinema.module';
@@ -46,6 +46,7 @@ import { FilmFormComponent } from './film/components/film-form/film-form.compone
     MaterialModule,
     AppRoutingModule,
     HttpClientModule,
+    //HttpEventType,
     SeanceModule,
     SnackModule,
     CinemaModule,

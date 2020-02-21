@@ -8,10 +8,10 @@ import { SnackDashboardComponent } from './components/snack-dashboard/snack-dash
 import { MaterialModule } from '../material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-//import { SnackDetailsComponent } from './components/product-details/product-details.component';
+import { SnackFormComponent } from './components/snack-form/snack-form.component';
 
 @NgModule({
-  declarations: [SnackCardComponent, SnackListComponent, SnackDashboardComponent],
+  declarations: [SnackCardComponent, SnackListComponent, SnackDashboardComponent, SnackFormComponent],
   imports: [
     CommonModule,
     SnackRoutingModule,

@@ -19,8 +19,6 @@ export class TarifListComponent implements OnInit {
   displayedColumns: string[] = ['libelle', 'montant', 'quantite', 'total'];
 
   constructor(private route: ActivatedRoute, private tarifService: TarifService, private commandeService: CommandeService) {
-    const id: string = this.route.snapshot.params.id;
-    this.idSeance = Number(id);
   }
 
   ngOnInit() {
@@ -86,7 +84,7 @@ export class TarifListComponent implements OnInit {
         places.push(i);
       }
     }
-    this.commandeService.commande.seance = new Seance(1);
+    // this.commandeService.commande.seance = new Seance(1);
     //this.idSeance;
     console.log(this.commandeService.commande.seance);
     this.commandeService.commande.tarifs = places;

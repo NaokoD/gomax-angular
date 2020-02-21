@@ -13,23 +13,16 @@ import { Observable } from 'rxjs/internal/Observable';
 export class SnackListComponent implements OnInit {
   snacks: Snack[] = [];
   total: number = 0;
-
-  //montant: SnackCardComponent;
-
-
-
-  //count: number;
+  snacks$: Observable<Snack[]>;
 
   @ViewChildren(SnackCardComponent)
   snacksQuery: QueryList<SnackCardComponent>;
-
-  // create attribut <portee> <nom>:<type>
-  // Angular use constructeur for DI
 
   constructor(private snackService: SnackService) { }
 
   ngOnInit() {
     this.loadSnacks();
+    this.loadPostSnack();
   }
 
   loadSnacks() {
@@ -49,8 +42,8 @@ export class SnackListComponent implements OnInit {
     this.total += somme;
   }
 
-
-
-
+  loadPostSnack() {
+    this.snacks$ = this.snackService.getSnacks();
+  }
 
 }

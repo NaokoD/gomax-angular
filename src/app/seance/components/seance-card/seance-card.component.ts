@@ -13,7 +13,7 @@ export class SeanceCardComponent implements OnInit {
 
 
   monday = 'monday';
-  constructor(/*private commandeService: CommandeService*/) { }
+  constructor(private commandeService: CommandeService) { }
 
   dateNow = new Date();
 
@@ -23,7 +23,8 @@ export class SeanceCardComponent implements OnInit {
 
   }
 
-  ajouterSeanceACommande(id: number) {
+  addSeanceToCommande(seance: Seance) {
+    this.commandeService.commande.seance = seance;
   }
 
 }

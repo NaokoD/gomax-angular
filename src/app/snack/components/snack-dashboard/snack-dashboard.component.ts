@@ -47,10 +47,6 @@ export class SnackDashboardComponent implements OnInit {
       this.commandeService.save();
       this.btnDisabled = !this.btnDisabled;
     }
-    //console.log(this.snacks);
-    this.commandeService.commande.snacks = this.snacks;
-    //console.log(this.commandeService.commande)
-    this.commandeService.save();
     this.btnDisabled = !this.btnDisabled;
   }
 
@@ -63,6 +59,12 @@ export class SnackDashboardComponent implements OnInit {
       }
     }
     console.log(this.somme);
+  }
+
+
+  addSnack(snack: Snack) {
+    console.log('snack submitted by form', snack);
+    this.snackList.snacks.push(snack);
   }
 
 }
