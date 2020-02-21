@@ -65,6 +65,12 @@ export class SnackDashboardComponent implements OnInit {
     console.log(this.somme);
   }
 
+
+  addSnack(snack: Snack) {
+    console.log('snack submitted by form', snack);
+    this.snackList.snacks.push(snack);
+  }
+
 }
 
 

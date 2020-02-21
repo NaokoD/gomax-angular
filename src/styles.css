@@ -10,11 +10,11 @@
     html, body { 
     margin:0; padding:0; width:100%; height:100%; 
     position: relative;
-    background-color: black;
+    background-color: white;
     }
 
 body {
-    color: white;
+    color: black;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 

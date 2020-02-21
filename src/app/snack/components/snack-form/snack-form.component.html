@@ -1,0 +1,17 @@
+<form *ngFor="let f of formGroup" [formGroup]="f" (ngSubmit)="saveSnack()">
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Nom du snack" name="name" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="coller l'url de l'image" name="image" formControlName="image">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Prix" name="price" formControlName="price">
+    </mat-form-field>
+
+    <!-- <button (click)="actionBtnPlusForm($event)" name="plus" mat-mini-fab data-field="quant[0]">+</button> -->
+    <br />
+    <button type="submit" mat-raised-button color="primary">Add snack</button>
+</form>

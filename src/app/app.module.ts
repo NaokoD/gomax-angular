@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpEventType } from '@angular/common/http';
 import { SeanceModule } from './seance/seance.module';
 import { SnackModule } from './snack/snack.module';
 import { CinemaModule } from './cinema/cinema.module';
@@ -19,6 +19,7 @@ import { CommandeSummaryComponent } from './components/commande-summary/commande
 import { FilmSummaryComponent } from './film/components/film-summary/film-summary.component';
 import { PanierComponent } from './components/panier/panier.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { PanierComponent } from './components/panier/panier.component';
     TarifListComponent,
     CommandeSummaryComponent,
     FilmSummaryComponent,
-    PanierComponent
+    PanierComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,7 @@ import { PanierComponent } from './components/panier/panier.component';
     MaterialModule,
     AppRoutingModule,
     HttpClientModule,
+    //HttpEventType,
     SeanceModule,
     SnackModule,
     CinemaModule,

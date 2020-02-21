@@ -19,6 +19,14 @@ export class SnackService {
     return this.http.get<Snack[]>(`${environment.apiBaseUrl}/snacks`);
   }
 
+  postSnack(snack: Snack) {
+    return this.http.post<Snack>(environment.apiBaseUrl + '/snacks', snack);
+  }
+
+  postListeSnacks(snacks: Snack[]): Observable<Snack[]> {
+    return this.http.post<Snack[]>(environment.apiBaseUrl + '/snacks', snacks);
+  }
+
 }
 
 

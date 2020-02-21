@@ -11,6 +11,7 @@ import { SallePlanComponent } from './salle/components/salle-plan/salle-plan.com
 import { FilmSummaryComponent } from './film/components/film-summary/film-summary.component';
 
 import { CommandeSummaryComponent } from './components/commande-summary/commande-summary.component';
+import { SnackFormComponent } from './snack/components/snack-form/snack-form.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'seances', component: SeanceListComponent },
   // path: '', component: HomeComponent },
   { path: 'snacks', loadChildren: './snack/snack.module#SnackModule' },
+  { path: 'admin-snacks', component: SnackFormComponent },
   { path: 'cinema', component: CinemaListComponent },
   { path: 'siege', component: RowComponent },
   { path: 'plan', component: SallePlanComponent },
