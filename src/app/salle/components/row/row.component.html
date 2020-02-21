@@ -1,9 +1,14 @@
 <!-- <p>row-salle works!</p> -->
 <div id="row">
   <div class="row">
-    <svg width="75" height="75">
+    <div class="rowName">
+      <h3>
+        {{row.id}}
+      </h3>
+    <!-- <svg width="75" height="75">
       <text x="40" y="35" fill="black">{{row.id}}</text>
-    </svg>
+    </svg> -->
+    </div>
     <app-siege *ngFor="let siege of row.siege" [siege]=siege></app-siege>
   </div>
 </div>

@@ -17,22 +17,12 @@ export class CommandeService {
   siegesUsed : number[];
 
   constructor(private http: HttpClient) {
-    // noinspection UnterminatedStatementJS
-    this.commande = new Commande(
-      null,
-      new Client(1),
-      null,
-      [],
-      null,
-      []
-    );
+    this.commande = new Commande();
+    this.commande.client = new Client(1);
     console.log(this.commande + 'service');
-    // this.commande.idClient=1;
   }
 
   save() {
-    console.log(this.commande);
-    console.log(this.commande);
     this.http.post<Commande>(`${environment.apiBaseUrl}/commandes`, this.commande)
       .subscribe({
         next: x => console.log('Saving'),

@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'details/:id/tarif', component: TarifListComponent },
   { path: 'seances', component: SeanceListComponent },
   { path: 'salles', component: SalleListComponent },
-  // path: '', component: HomeComponent },
+  { path: '', component: FilmDashboardComponent },
   { path: 'snacks', loadChildren: './snack/snack.module#SnackModule' },
   { path: 'admin-snacks', component: SnackFormComponent },
   { path: 'siege', component: RowComponent },

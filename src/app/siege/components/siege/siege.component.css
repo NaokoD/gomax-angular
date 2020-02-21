@@ -1,6 +1,11 @@
 .siege {
   /*background-color: black;*/
-  margin-left: 5px;
+  margin-left: 3px;
   display: inline-block;
-  fill : none;
+  /* fill : none;  */
+  /* display: block; */
+  height: 50px;
+  width: 30px;
+  border-radius: 7px;
+  /* transform: rotate(9deg); */
 }

@@ -10,3 +10,14 @@
 #row{
   margin: auto;
 }
+
+.rowName{
+  margin-left: 20px;
+  margin-right: 50px;
+  display: inline-block;
+  justify-content: center;
+}
+
+.rowName > h3 {
+  text-align: center;
+}
