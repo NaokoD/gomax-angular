@@ -13,6 +13,9 @@ import { FilmSummaryComponent } from './film/components/film-summary/film-summar
 import { CommandeSummaryComponent } from './components/commande-summary/commande-summary.component';
 import { HoraireListComponent } from './horaire/components/horaire-list/horaire-list.component';
 import { HoraireCardComponent } from './horaire/components/horaire-card/horaire-card.component';
+import { FilmFormComponent } from './film/components/film-form/film-form.component';
+import { SeanceDashboardComponent } from './seance/components/seance-dashboard/seance-dashboard.component';
+
 
 
 const routes: Routes = [
@@ -32,6 +35,10 @@ const routes: Routes = [
   { path: 'summary', component: CommandeSummaryComponent },
   { path: 'horaires', component: HoraireListComponent },
   { path: 'seances/films/:id', component: SeanceListComponent },
+  { path: 'film-form', component: FilmFormComponent },
+  { path: 'seances', component: SeanceDashboardComponent }
+
+
 
 ];
 

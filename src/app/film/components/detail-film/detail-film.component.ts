@@ -4,6 +4,7 @@ import { Film } from '../../models/film';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 
 import { Seance } from 'src/app/seance/models/seance';
+import { getLocaleDateTimeFormat } from '@angular/common';
 
 
 @Component({
@@ -17,11 +18,13 @@ export class DetailFilmComponent implements OnInit {
   seance: Seance;
   router: any;
 
+  monday = "Monday";
   constructor(private route: ActivatedRoute, private FilmService: FilmService) { }
 
   ngOnInit() {
     //let paramId: number;
     //this.route.paramMap.subscribe(params => paramId = parseInt(params.get('id'), 10));
+
 
     const id: number = this.route.snapshot.params.id;
     this.loadFilmDetails(id);

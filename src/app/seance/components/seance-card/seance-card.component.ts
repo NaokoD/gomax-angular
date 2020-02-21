@@ -12,12 +12,16 @@ export class SeanceCardComponent implements OnInit {
   seance: Seance;
 
 
-
+  monday = 'monday';
   constructor(/*private commandeService: CommandeService*/) { }
 
-  ngOnInit() {
-  }
+  dateNow = new Date();
 
+
+
+  ngOnInit() {
+
+  }
 
   ajouterSeanceACommande(id: number) {
   }

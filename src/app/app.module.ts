@@ -20,6 +20,12 @@ import { FilmSummaryComponent } from './film/components/film-summary/film-summar
 import { PanierComponent } from './components/panier/panier.component';
 import { HoraireModule } from './horaire/horaire.module';
 
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FilmFormComponent } from './film/components/film-form/film-form.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +35,10 @@ import { HoraireModule } from './horaire/horaire.module';
     TarifListComponent,
     CommandeSummaryComponent,
     FilmSummaryComponent,
-    PanierComponent
+    PanierComponent,
+    FilmFormComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -43,7 +52,9 @@ import { HoraireModule } from './horaire/horaire.module';
     SiegeModule,
     SalleModule,
     FilmModule,
-    HoraireModule
+    HoraireModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
