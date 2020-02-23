@@ -1,23 +1,21 @@
 .snack-card {
-    max-width: 300px;
-    margin: 15px;
-    background-color: black;
+  max-width: 300px;
+    margin: 15px; 
     border-color: rgb(206, 153, 8);
     border-style: dotted;
 }
 
-.snack-image {
-    background-size: cover;
-}
+img.mat-card-image {
+  max-width: 300px; 
+  max-height: 270px;
+}  
 
 .button-row button {
   margin: 10px;
   color:black;
 }
 
-span {
-  color: white;
-}
+
 
 
 

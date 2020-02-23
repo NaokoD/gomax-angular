@@ -4,5 +4,21 @@ h2 {
 
 .example-button-row button,
 .example-button-row a {
-    width: 50%;
+    width: 25%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    position: relative;
+}
+
+.salle{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.btnSuivant{
+    margin-left: 50%;
+}
+
+.plan {
+    align-content: center;
 }

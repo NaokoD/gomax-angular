@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { SeanceListComponent } from '../seance-list/seance-list.component';
+import { Seance } from '../../models/seance';
 
 @Component({
   selector: 'app-seance-dashboard',
@@ -7,6 +8,8 @@ import { SeanceListComponent } from '../seance-list/seance-list.component';
   styleUrls: ['./seance-dashboard.component.css']
 })
 export class SeanceDashboardComponent implements OnInit {
+
+  seance: Seance;
 
   @ViewChild('mainTitle', { static: false, read: ElementRef })
   mainTitle: ElementRef;

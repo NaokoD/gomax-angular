@@ -1,8 +1,6 @@
-.seat {
-}
-
 .siege {
   /*background-color: black;*/
   margin-left: 5px;
   display: inline-block;
+  fill : none;
 }
