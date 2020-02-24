@@ -11,52 +11,50 @@ export class SiegeComponent implements OnInit {
   @Input()
   siege: Siege;
 
-  constructor(private commandeService : CommandeService) {
+  constructor(private commandeService: CommandeService) {
   }
 
   ngOnInit() {
-    if(this.siege.type !== "none"){
-      this.siege.available = true;
-      
-      if(this.commandeService.commande.seance !== null){
-        if(this.commandeService.siegesUsed.includes(Number(this.siege.id)))
-        {
-          this.siege.available = false;
-          
-        }
-      }
-    }
+    this.setAvailabilityForSeat();
   }
 
   toggleAvailability(siege: Siege): void {
-    
-    let indexSiege : number = this.checkSelectedSiege(this.commandeService.commande.sieges, siege.id);
-    
+    const indexSiege: number = this.checkSelectedSiege(this.commandeService.commande.sieges, siege.id);
     if (siege.available === true) {
-      if(indexSiege === -1){
+      if (indexSiege === -1) {
         this.commandeService.commande.sieges.push(new Siege(siege.id));
+        siege.available = null;
       }
-      siege.available = null;
-      
     } else if (siege.available === null) {
-      if(indexSiege!==-1){
-        this.commandeService.commande.sieges.splice(indexSiege,1);
+      if (indexSiege !== -1) {
+        this.commandeService.commande.sieges.splice(indexSiege, 1);
+        siege.available = true;
       }
-      
-      siege.available = true;
     }
   }
 
-  checkSelectedSiege(sieges : Siege[], id : number) : number {
-    
-    for (let i : number = 0; i <sieges.length; i++) {
-      
-      
-      if(sieges[i].id===id){
-        return i;
-      }      
+  checkSelectedSiege(sieges: Siege[], id: number): number {
+    if (sieges !== null || sieges !== []) {
+      for (let i = 0; i < sieges.length; i++) {
+        if (sieges[i].id === id) {
+          return i;
+        }
+      }
     }
     return -1;
+  }
+
+  setAvailabilityForSeat() {
+    if (this.siege.type !== 'none') {
+      this.siege.available = true;
+      if (this.commandeService.commande.seance !== null || this.commandeService.siegesUsed !== []) {
+        for (const siegeUsedInSeance of this.commandeService.siegesUsed) {
+          if (siegeUsedInSeance.id === this.siege.id) {
+            this.siege.available = false;
+          }
+        }
+      }
+    }
   }
 
 }

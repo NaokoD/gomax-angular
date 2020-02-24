@@ -8,7 +8,6 @@ import { CinemaListComponent } from './components/cinema-list/cinema-list.compon
 const routes: Routes = [
   { path: 'form', component: CinemaFormComponent },
   { path: '', component: CinemaListComponent}
-  //{ path: 'details/:id', component: SnackDetailsComponent }
 ];
 
 @NgModule({

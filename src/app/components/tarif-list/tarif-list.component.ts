@@ -27,7 +27,7 @@ export class TarifListComponent implements OnInit {
       this.visible = false;
     } else {
       this.loadTarifs();
-      this.commandeService.getSiegesUsedByIdSeance(1);
+      this.loadSiegesUsedBySeance();
     }
 
   }
@@ -74,6 +74,16 @@ export class TarifListComponent implements OnInit {
           }
           console.log('Oberver got a complete notification');
         }
+      });
+  }
+
+  loadSiegesUsedBySeance(): void {
+    this.commandeService.getSiegesUsedByIdSeance(this.commandeService.commande.seance.id)
+      .subscribe({
+        next: x => {
+          this.commandeService.siegesUsed = x;
+        },
+        error: e => console.log(e)
       });
   }
 

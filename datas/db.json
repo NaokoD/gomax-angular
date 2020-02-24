@@ -49,13 +49,25 @@
       "resume": "La conclusion de la saga Skywalker. De nouvelles légendes vont naître dans cette bataille épique pour la liberté."
     }
   ],
+  "horaires": [
+    {
+      "id":1,
+      "horaire": "19:00:00"
+    }
+  ],
   "seances": [
     {
       "id": 1,
       "date": "lundi",
-      "salleId": 2,
-      "filmId": 4,
-      "horaire": "20H15"
+      "salle": {
+        "id":1
+      },
+      "film": {
+         "id":1
+      },
+      "horaire": {
+        "id":1
+      }
     },
     {
       "id": 2,
