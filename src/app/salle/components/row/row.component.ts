@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, ViewChildren, QueryList} from '@angular/core';
+import {Component, OnInit, Input, ViewChildren, QueryList, Output, EventEmitter} from '@angular/core';
 import {Row} from '../../models/row';
 import { Siege } from 'src/app/siege/models/siege';
 import { SiegeComponent } from 'src/app/siege/components/siege/siege.component';
@@ -12,10 +12,21 @@ export class RowComponent implements OnInit {
   @Input()
   row: Row;
 
+  @Input()
+  nbSieges: number;
+
+  @Output()
+  calculSiegesRestantsASelectionner = new EventEmitter();
+
   constructor() {
   }
 
   ngOnInit() {
     console.log(this.row);
   }
+
+  modifyQuantiteSiegesRestantes(x: number){
+    this.calculSiegesRestantsASelectionner.emit(x);
+  }
+
 }

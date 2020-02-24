@@ -16,12 +16,19 @@ export class SallePlanComponent implements OnInit {
 plan: Plan;
 salle: Salle;
 visible: boolean = true;
+nbDeSiegesASelectionner : number;
 
   constructor(private route: ActivatedRoute, private commandeService: CommandeService, private salleService: SalleService) {
    }
 
   ngOnInit() {
     this.loadSallePlan(1);
+    this.nbDeSiegesASelectionner = 0;
+    if(this.commandeService.commande.tarifs !== null || this.commandeService.commande.tarifs != []){
+      for(let tarif of this.commandeService.commande.tarifs){
+        this.nbDeSiegesASelectionner += tarif.quantite;
+      }
+    }
     console.log(this.commandeService.commande);
   }
 
@@ -49,5 +56,9 @@ visible: boolean = true;
           console.log(this.plan.row);
         }
       });
+  }
+
+  calculSieges(x : number){
+    this.nbDeSiegesASelectionner += x;
   }
 }

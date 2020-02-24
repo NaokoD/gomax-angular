@@ -9,6 +9,6 @@
       <text x="40" y="35" fill="black">{{row.id}}</text>
     </svg> -->
     </div>
-    <app-siege *ngFor="let siege of row.siege" [siege]=siege></app-siege>
+    <app-siege *ngFor="let siege of row.siege" [siege]=siege [nbSieges]="nbSieges" (calculSiegesRestants)="modifyQuantiteSiegesRestantes($event)"></app-siege>
   </div>
 </div>

@@ -1,7 +1,8 @@
 <h2>Plan de salle</h2>
 <div class="plan">
+    <p>{{nbDeSiegesASelectionner}}</p>
     <div class="salle" *ngIf="plan !== undefined">
-        <app-row *ngFor="let r of plan.row" [row]=r></app-row>
+        <app-row *ngFor="let r of plan.row" [row]=r [nbSieges]="nbDeSiegesASelectionner" (calculSiegesRestantsASelectionner)="calculSieges($event)"></app-row>
     </div>
     <div class="example-button-row">
         <button class="btnRetour"*ngIf="this.visible === true" mat-raised-button color="warn">Retour</button>

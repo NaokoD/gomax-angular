@@ -27,7 +27,7 @@ export class TarifListComponent implements OnInit {
       this.visible = false;
     } else {
       this.loadTarifs();
-      this.commandeService.getSiegesUsedByIdSeance(1);
+      this.loadSiegesUsedBySeance();
     }
 
   }
@@ -56,7 +56,6 @@ export class TarifListComponent implements OnInit {
 
   //Function pour récupérer le total
   getTotal(): number {
-    
     let somme = 0;
     for (const i of this.tarifs) {
       somme += i.montant * i.quantite;
@@ -81,7 +80,16 @@ export class TarifListComponent implements OnInit {
       });
   }
 
-  //Fonction pour passer à la page suivante
+  loadSiegesUsedBySeance(): void {
+    this.commandeService.getSiegesUsedByIdSeance(this.commandeService.commande.seance.id)
+      .subscribe({
+        next: x => {
+          this.commandeService.siegesUsed = x;
+        },
+        error: e => console.log(e)
+      });
+  }
+
   suivant() {
     const places: Tarif[] = [];
     for (const i of this.tarifs) {
