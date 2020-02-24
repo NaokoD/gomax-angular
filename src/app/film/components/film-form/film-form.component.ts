@@ -23,6 +23,8 @@ export class FilmFormComponent implements OnInit {
 
   filmForm: FormGroup;
 
+  formGroup: FormGroup[] = [];
+
   constructor(private filmService: FilmService) { }
 
   ngOnInit() {
@@ -44,9 +46,13 @@ export class FilmFormComponent implements OnInit {
 
     const film: Film = this.filmForm.value;
 
+    this.submitFilm.emit(film);
+
+    this.filmForm.reset();
+
     this.filmService.postFilm(film).subscribe(
-      f => {
-        console.log('res', f);
+      filmForm => {
+        console.log('res', filmForm);
         this.submitFilm.emit(film);
       }
     );

@@ -14,6 +14,8 @@
 
 .film-img {
     background-size: auto;
+    height: 425px;
+    width: 280px;
 }
 
 button:hover h2.new-label span {
