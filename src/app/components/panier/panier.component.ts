@@ -24,6 +24,7 @@ export class PanierComponent implements OnInit {
     this.totalPanier(this.snacks);
   }
 
+  //Fonction permettant de récupérer une commande par son id en BDD
   loadCommandeById(id : number){
     this.commandeService.getCommandeById(id)
     .subscribe({

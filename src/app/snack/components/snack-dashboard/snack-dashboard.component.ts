@@ -41,10 +41,7 @@ export class SnackDashboardComponent implements OnInit {
           this.snacks.push(i);
         }
       }
-      //console.log(this.snacks);
       this.commandeService.commande.snacks = this.snacks;
-      //console.log(this.commandeService.commande)
-      this.commandeService.save();
       this.btnDisabled = !this.btnDisabled;
     }
     this.btnDisabled = !this.btnDisabled;
@@ -55,7 +52,6 @@ export class SnackDashboardComponent implements OnInit {
       if (i.qte > 0) {
         let montant = i.qte * i.price;
         this.somme += montant;
-        // {{ montant | currency:'EUR' }}
       }
     }
     console.log(this.somme);

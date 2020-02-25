@@ -5,7 +5,7 @@ import { CinemaDetailsComponent } from './components/cinema-details/cinema-detai
 import { MaterialModule } from '../material.module';
 import { CinemaFormComponent } from './components/cinema-form/cinema-form.component';
 import { CinemaRoutingModule } from './cinema-routing.module';
-import { ReactiveFormsModule } from '@angular/forms';  
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
