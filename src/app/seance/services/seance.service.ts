@@ -20,8 +20,39 @@ export class SeanceService {
     return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances`);
   }
 
-  getSeancesByFilm(id: number): Observable<Seance[]> {
+  /* getSeancesByFilm(id: number): Observable<Seance[]> {
     return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances?idFilm=${id}`);
+  } */
+
+  /* getNbPlacesRestantesBySeanceById(id: number): Observable<Seance[]> {
+    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances?idFilm=${id}/nbPlacesRestantes`);
+  } */
+
+  getSeancesByFilmDuLundi(id: number): Observable<Seance[]> {
+    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances/lundi?id=${id}`);
+  }
+
+  getSeancesByFilmDuMardi(id: number): Observable<Seance[]> {
+    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances/mardi?id=${id}`);
+  }
+
+  getSeancesByFilmDuMercredi(id: number): Observable<Seance[]> {
+    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances/mercredi?id=${id}`);
+  }
+
+  getSeancesByFilmDuJeudi(id: number): Observable<Seance[]> {
+    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances/jeudi?id=${id}`);
+  }
+  getSeancesByFilmDuVendredi(id: number): Observable<Seance[]> {
+    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances/vendredi?id=${id}`);
+  }
+
+  getSeancesByFilmDuSamedi(id: number): Observable<Seance[]> {
+    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances/samedi?id=${id}`);
+  }
+
+  getSeancesByFilmDuDimanche(id: number): Observable<Seance[]> {
+    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances/dimanche?id=${id}`);
   }
 
 }
