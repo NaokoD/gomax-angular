@@ -44,7 +44,7 @@
 
 <div class="example-button-row">
   <button *ngIf="this.visible === true" mat-raised-button color="warn">Retour</button>
-  <button *ngIf="this.visible === true" mat-raised-button color="primary" (click)="suivant()" [routerLink]="['/plan']">
+  <button *ngIf="this.visible === true" mat-raised-button color="primary" class="btnSuivant" (click)="suivant()" [routerLink]="['/plan']">
     Suivant
   </button>
 </div>

@@ -16,7 +16,6 @@ export class CommandeService {
   commande: Commande;
   commandeCompleted: boolean = false;
   siegesUsed: Siege[];
-  commandeSaved: boolean = false;
 
   constructor(private http: HttpClient) {
     this.commande = new Commande(
@@ -31,11 +30,12 @@ export class CommandeService {
     //console.log(this.commande + 'service');
   }
 
-  save() {
+  save(){
     this.http.post<Commande>(`${environment.apiBaseUrl}/commandes`, this.commande)
       .subscribe({
         next: x => console.log('Saving'),
-        complete: () => this.commandeSaved = true
+        error: e => console.log(e),
+        complete: () => console.log("Commande Saved")
       });
   }
 

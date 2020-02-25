@@ -17,5 +17,12 @@ tr.mat-footer-row {
 
 .example-button-row button,
 .example-button-row a {
-    width: 50%;
+    width: 25%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    position: relative;
+}
+
+.btnSuivant{
+    margin-left: 50%;
 }

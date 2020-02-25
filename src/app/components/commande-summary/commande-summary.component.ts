@@ -32,9 +32,6 @@ film : Film;
 
   payer(){
     this.commandeService.save();
-    this.btnDisable = (this.commandeService.commandeSaved) ? true : false;
+    this.btnDisable = true;
   }
-
-
-
 }
