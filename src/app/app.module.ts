@@ -42,7 +42,6 @@ import { FilmFormComponent } from './film/components/film-form/film-form.compone
     MaterialModule,
     AppRoutingModule,
     HttpClientModule,
-    //HttpEventType,
     SeanceModule,
     SnackModule,
     CinemaModule,

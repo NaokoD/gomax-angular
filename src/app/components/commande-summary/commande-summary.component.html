@@ -1,19 +1,17 @@
-<h2>Récapitulatif de la commande</h2>
+<!--<h2>Récapitulatif de la commande</h2>-->
 
 <mat-toolbar color="primary">
-    <mat-toolbar-row>
-        <span>Votre commande s'élève à </span>
-        <span class="example-spacer"></span>
-        <span>{{totalCommande | currency}}</span>
-        <button mat-raised-button color="accent" (click)="payer()">Payer</button>
-    </mat-toolbar-row>
+    <span>Votre commande s'élève à </span>
+    <span class="example-spacer"></span>
+    <span>{{totalCommande | currency}}</span>
+    <button mat-raised-button color="accent" *ngIf="!btnDisable" (click)="payer()">Payer</button>
 </mat-toolbar>
 
 <mat-expansion-panel>
     <mat-expansion-panel-header>
     Film
     </mat-expansion-panel-header>
-    <app-film-summary [id]="1"></app-film-summary>
+    <app-film-summary [film]="film"></app-film-summary>
 </mat-expansion-panel>
 
 <mat-expansion-panel>

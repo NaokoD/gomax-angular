@@ -3,7 +3,7 @@
 
     <div style="text-align: center;">
         <h4>{{seance.date_seance | date : 'dd/MM'}}</h4>
-        <button mat-raised-button [disabled]="seance.salle.nombreDePlace == 0" color="accent" [routerLink]="['tarif']"
+        <button mat-raised-button [disabled]="seance.salle.nombreDePlace == 0" color="accent" [routerLink]="['/tarif']"
             (click)="addSeanceToCommande(seance)">{{ seance.horaire.horaire  }}</button>
         <!-- <p> Nombre de places: {{ seance.salle.nombreDePlace}}</p> -->
     </div>

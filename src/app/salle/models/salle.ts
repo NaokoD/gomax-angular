@@ -6,6 +6,6 @@ export class Salle {
         public id: number,
         public plan: Plan,
         public numero: number,
-        public sieges: number[]
+        public nombreDePlace: number
     ){}
 }

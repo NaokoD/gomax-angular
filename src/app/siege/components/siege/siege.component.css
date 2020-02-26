@@ -8,4 +8,5 @@
   width: 30px;
   border-radius: 7px;
   /* transform: rotate(9deg); */
+  cursor: pointer;
 }
