@@ -2,27 +2,23 @@
 
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-/* * { margin:0px; padding:0px; } */
-
-* { 
-    margin:0; padding:0;
-    }
-    html, body { 
-    margin:0; padding:0; width:100%; height:100%; 
-    position: relative;
-    background-color: white;
-    }
-
-body {
-    color: black;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-/* main {
-    width:100%;
-    position:relative;
-	min-height:79%;
-  }   */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    color: black;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+
+}
 
 table {
     width: 100%;
@@ -30,37 +26,38 @@ table {
 
 .button-row button {
     margin: 10px;
-   
+
 }
 
-/* .footer {
-    position:fixed;
-} */
-
-
-    /* global { 
-    margin:0; padding:0; width:100%; height:100%;
-    position: relative;
-    } */
-    .header {
-    width : 100%;
-    position:absolute;
-    top:0; left:0; 
-    }
-
-    main {
-        width: 100%;
-        top:145px; left:0;
-        /*bottom:115px;*/
-        position: absolute;
-        overflow:auto;
-        }
-
-    .footer {
+.header {
     width: 100%;
-    /* height: 150px; */
-    position: absolute;
-    bottom:0; left:0;
-    }
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
+
+}
+
+main {
+    width: 100%;
+    top: 45px;
+    left: 0;
+    position: relative;
+    overflow: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.film-list {
+    margin-top: 50px;
+}
+
+.footer {
+    justify-content: center;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

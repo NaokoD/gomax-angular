@@ -19,6 +19,8 @@ export class SeanceListComponent implements OnInit {
   films: Film[];
   seances: Seance[];
   horaires: Horaire[];
+  salle: Salle[];
+
 
 
 
@@ -34,11 +36,106 @@ export class SeanceListComponent implements OnInit {
    */
   ngOnInit() {
     const id: number = this.route.snapshot.params.id;
-    this.loadSeancesByFilm(id);
+    /*   this.loadSeancesByFilm(id); */
+    /* this.loadNbPlacesRestantesBySeanceById(id); */
     /* this.loadSeances(); */
+
+    this.loadSeancesByFilmDuLundi(id);
+
   }
 
-  loadSeancesByFilm(id: number) {
+  idFilm: number = this.route.snapshot.params.id;
+
+
+  loadSeancesByFilmDuLundi(id: number) {
+
+    this.seanceService.getSeancesByFilmDuLundi(id)
+      .subscribe({
+        next: res => {
+          this.seances = res;
+          console.log(res)
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
+  }
+
+  loadSeancesByFilmDuMardi(id: number) {
+    this.seanceService.getSeancesByFilmDuMardi(id)
+      .subscribe({
+        next: res => {
+          this.seances = res;
+          console.log(res)
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
+  }
+
+  loadSeancesByFilmDuMercredi(id: number) {
+
+    this.seanceService.getSeancesByFilmDuMercredi(id)
+      .subscribe({
+        next: res => {
+          this.seances = res;
+          console.log(res)
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
+  }
+
+  loadSeancesByFilmDuJeudi(id: number) {
+    this.seanceService.getSeancesByFilmDuJeudi(id)
+      .subscribe({
+        next: res => {
+          this.seances = res;
+          console.log(res)
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
+  }
+
+  loadSeancesByFilmDuVendredi(id: number) {
+
+    this.seanceService.getSeancesByFilmDuVendredi(id)
+      .subscribe({
+        next: res => {
+          this.seances = res;
+          console.log(res)
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
+  }
+
+  loadSeancesByFilmDuSamedi(id: number) {
+    this.seanceService.getSeancesByFilmDuSamedi(id)
+      .subscribe({
+        next: res => {
+          this.seances = res;
+          console.log(res)
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
+  }
+
+  loadSeancesByFilmDuDimanche(id: number) {
+    this.seanceService.getSeancesByFilmDuDimanche(id)
+      .subscribe({
+        next: res => {
+          this.seances = res;
+          console.log(res)
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
+  }
+
+
+  /* loadSeancesByFilm(id: number) {
     this.seanceService.getSeancesByFilm(id)
       .subscribe({
         next: res => {
@@ -48,10 +145,10 @@ export class SeanceListComponent implements OnInit {
         error: e => console.log(e),
         complete: () => console.log('Complete')
       });
-  }
+  } */
 
-  loadSeances() {
-    this.seanceService.getSeances()
+  /* loadNbPlacesRestantesBySeanceById(id: number) {
+    this.seanceService.getSeancesByFilm(id)
       .subscribe({
         next: res => {
           this.seances = res;
@@ -60,6 +157,19 @@ export class SeanceListComponent implements OnInit {
         error: e => console.log(e),
         complete: () => console.log('Complete')
       });
-  }
+    console.log();
+  } */
+
+  /*   loadSeances() {
+      this.seanceService.getSeances()
+        .subscribe({
+          next: res => {
+            this.seances = res;
+            console.log(res)
+          },
+          error: e => console.log(e),
+          complete: () => console.log('Complete')
+        });
+    } */
 
 }

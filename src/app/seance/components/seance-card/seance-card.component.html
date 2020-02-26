@@ -1,7 +1,10 @@
-<div class="example-button-row"
+<div class="example-button-row {{ seance.date_seance | date : 'EEEE'}} "
     style="margin-top: 8px; margin-left: 20px; display: inline-block; justify-content: flex-start;">
-    <div id="{{ seance.date_seance | date : 'EEEE'}}">
-        <button mat-raised-button color="accent" [routerLink]="['tarif']" (click)="addSeanceToCommande(seance)">{{ seance.horaire.horaire }}</button>
-        <p> {{ seance.date_seance | date :'EEEE'}}</p>
+
+    <div style="text-align: center;">
+        <h4>{{seance.date_seance | date : 'dd/MM'}}</h4>
+        <button mat-raised-button [disabled]="seance.salle.nombreDePlace == 0" color="accent" [routerLink]="['tarif']"
+            (click)="addSeanceToCommande(seance)">{{ seance.horaire.horaire  }}</button>
+        <!-- <p> Nombre de places: {{ seance.salle.nombreDePlace}}</p> -->
     </div>
 </div>

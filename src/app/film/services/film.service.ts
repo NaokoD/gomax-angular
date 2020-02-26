@@ -8,7 +8,6 @@ import { map, filter, reduce } from 'rxjs/operators';
 
 
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -21,7 +20,11 @@ export class FilmService {
   }
 
   getFilms(): Observable<Film[]> {
-    return this.http.get<Film[]>(`${environment.apiBaseUrl}/films`);
+    return this.http.get<Film[]>(`${environment.apiBaseUrl}/films`)
   }
-  
+
+  postFilm(film: Film) {
+    return this.http.post<Film[]>(environment.apiBaseUrl + '/films', film);
+  }
+
 }

@@ -22,7 +22,8 @@ import {
         MatTableModule,
         MatListModule,
         MatExpansionModule,
-        MatChipsModule
+        MatChipsModule,
+        MatInputModule
     ],
     exports: [
         MatMenuModule,
@@ -38,7 +39,8 @@ import {
         MatListModule,
         MatChipsModule,
         MatTabsModule,
-        MatExpansionModule
+        MatExpansionModule,
+        MatInputModule
     ]
 })
 export class MaterialModule { }

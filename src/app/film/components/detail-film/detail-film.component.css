@@ -60,8 +60,21 @@ h1 {
     top: 105px;
 }
 
+.film-infos {
+    justify-content: flex-start;
+}
 
+span {
+    font-weight: normal;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.cardInfos {
+    width: 800px;
+}
 
 p {
     color: black;
+    font-weight: bold;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }

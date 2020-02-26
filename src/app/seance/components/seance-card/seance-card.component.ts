@@ -2,6 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Seance } from '../../models/seance';
 import { CommandeService } from 'src/app/services/commande.service';
 
+
+import { from } from 'rxjs';
+import { Salle } from 'src/app/salle/models/salle';
+
 @Component({
   selector: 'app-seance-card',
   templateUrl: './seance-card.component.html',
@@ -11,15 +15,17 @@ export class SeanceCardComponent implements OnInit {
   @Input()
   seance: Seance;
 
-
-
+  monday = 'monday';
   constructor(private commandeService: CommandeService) { }
 
+  dateNow = new Date();
+
+
   ngOnInit() {
+
   }
 
-
-  addSeanceToCommande(seance : Seance) {
+  addSeanceToCommande(seance: Seance) {
     this.commandeService.commande.seance = seance;
   }
 

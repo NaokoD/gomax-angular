@@ -1,4 +1,13 @@
-<app-seance-card *ngFor="let s of seances" [seance]=s>
+<div style="margin-top: 30px; margin-bottom: 15px;margin-left: 10px;">
+    <button mat-raised-button (click)="this.loadSeancesByFilmDuLundi(idFilm)">Lundi</button>
+    <button mat-raised-button (click)="this.loadSeancesByFilmDuMardi(idFilm)">Mardi</button>
+    <button mat-raised-button (click)="this.loadSeancesByFilmDuMercredi(idFilm)">Mercredi</button>
+    <button mat-raised-button (click)="this.loadSeancesByFilmDuJeudi(idFilm)">Jeudi</button>
+    <button mat-raised-button (click)="this.loadSeancesByFilmDuVendredi(idFilm)">Vendredi</button>
+    <button mat-raised-button (click)="this.loadSeancesByFilmDuSamedi(idFilm)">Samedi</button>
+    <button mat-raised-button (click)="this.loadSeancesByFilmDuDimanche(idFilm)">Dimanche</button>
+</div>
 
-
-</app-seance-card>
+<div>
+    <app-seance-card *ngFor="let s of seances" [seance]=s></app-seance-card>
+</div>

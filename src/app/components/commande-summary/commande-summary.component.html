@@ -1,4 +1,13 @@
-<h2>Commande Summary</h2>
+<h2>Récapitulatif de la commande</h2>
+
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>Votre commande s'élève à </span>
+        <span class="example-spacer"></span>
+        <span>{{totalCommande | currency}}</span>
+        <button mat-raised-button color="accent" (click)="payer()">Payer</button>
+    </mat-toolbar-row>
+</mat-toolbar>
 
 <mat-expansion-panel>
     <mat-expansion-panel-header>
@@ -9,14 +18,14 @@
 
 <mat-expansion-panel>
     <mat-expansion-panel-header>
-    Reservation
+    Places
     </mat-expansion-panel-header>
     <app-tarif-list></app-tarif-list>
 </mat-expansion-panel>
 
 <mat-expansion-panel>
     <mat-expansion-panel-header>
-    Snack
+    Snacks
     </mat-expansion-panel-header>
     <app-panier></app-panier>
 </mat-expansion-panel>

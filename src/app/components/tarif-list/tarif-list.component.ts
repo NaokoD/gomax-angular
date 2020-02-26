@@ -32,6 +32,7 @@ export class TarifListComponent implements OnInit {
 
   }
 
+  //Fonction d'ajout de tarifs
   add(id: number): void {
     for (const i of this.tarifs) {
       if (i.id === id) {
@@ -42,6 +43,7 @@ export class TarifListComponent implements OnInit {
     }
   }
 
+  //Fonction de suppression de tarifs
   drop(id: number): void {
     for (const i of this.tarifs) {
       if (i.id === id) {
@@ -52,8 +54,9 @@ export class TarifListComponent implements OnInit {
     }
   }
 
+  //Function pour récupérer le total
   getTotal(): number {
-    console.log(this.tarifs);
+    
     let somme = 0;
     for (const i of this.tarifs) {
       somme += i.montant * i.quantite;
@@ -61,6 +64,7 @@ export class TarifListComponent implements OnInit {
     return somme;
   }
 
+  //Fonction pour récupérer les différents tarifs en BDD
   loadTarifs(): void {
     this.tarifService.getTarifs()
       .subscribe({
@@ -72,11 +76,12 @@ export class TarifListComponent implements OnInit {
           for (const i of this.tarifs) {
             i.quantite = 0;
           }
-          console.log('Oberver got a complete notification');
+          
         }
       });
   }
 
+  //Fonction pour passer à la page suivante
   suivant() {
     const places: Tarif[] = [];
     for (const i of this.tarifs) {
@@ -84,10 +89,6 @@ export class TarifListComponent implements OnInit {
         places.push(i);
       }
     }
-    // this.commandeService.commande.seance = new Seance(1);
-    //this.idSeance;
-    console.log(this.commandeService.commande.seance);
     this.commandeService.commande.tarifs = places;
-    console.log(this.commandeService.commande.tarifs)
   }
 }

@@ -19,7 +19,8 @@ import { CommandeSummaryComponent } from './components/commande-summary/commande
 import { FilmSummaryComponent } from './film/components/film-summary/film-summary.component';
 import { PanierComponent } from './components/panier/panier.component';
 import { HoraireModule } from './horaire/horaire.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FilmFormComponent } from './film/components/film-form/film-form.component';
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommandeSummaryComponent,
     FilmSummaryComponent,
     PanierComponent,
-
+    FilmFormComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +49,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     SiegeModule,
     SalleModule,
     FilmModule,
-    HoraireModule
+    HoraireModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,6 +13,9 @@ import { CommandeSummaryComponent } from './components/commande-summary/commande
 import { SnackFormComponent } from './snack/components/snack-form/snack-form.component';
 import { HoraireListComponent } from './horaire/components/horaire-list/horaire-list.component';
 import { HoraireCardComponent } from './horaire/components/horaire-card/horaire-card.component';
+import { FilmFormComponent } from './film/components/film-form/film-form.component';
+import { SeanceDashboardComponent } from './seance/components/seance-dashboard/seance-dashboard.component';
+
 import { SalleListComponent } from './salle/components/salle-list/salle-list.component';
 
 
@@ -23,7 +26,7 @@ const routes: Routes = [
   { path: 'details/:id/tarif', component: TarifListComponent },
   { path: 'seances', component: SeanceListComponent },
   { path: 'salles', component: SalleListComponent },
-  // path: '', component: HomeComponent },
+  { path: '', component: FilmDashboardComponent },
   { path: 'snacks', loadChildren: './snack/snack.module#SnackModule' },
   { path: 'admin-snacks', component: SnackFormComponent },
   { path: 'siege', component: RowComponent },
@@ -34,7 +37,11 @@ const routes: Routes = [
   { path: 'summary', component: CommandeSummaryComponent },
   { path: 'horaires', component: HoraireListComponent },
   { path: 'seances/films/:id', component: SeanceListComponent },
-  { path: '', component: FilmDashboardComponent }
+  { path: 'film-form', component: FilmFormComponent },
+  { path: 'seances', component: SeanceDashboardComponent }
+
+
+
 ];
 
 @NgModule({

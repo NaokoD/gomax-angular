@@ -1,70 +1,44 @@
-<div class="container" style="margin-bottom: 20px; margin-top: 95px;">
+<div class="container" style="margin-bottom: 80px; margin-top: 95px;">
 
     <div class="example-button-row stickyBtn" style="margin-top: 15px;margin-left: 10px;">
         <button class="btnBack" mat-raised-button [routerLink]="['']">
             <mat-icon class="arrowBack">arrow_back</mat-icon>
         </button>
-
-        <mat-icon></mat-icon>
     </div>
 
     <div *ngIf="film">
         <h1>{{ film.Title }}</h1>
         <div class="film-infos">
             <div class="afficheFilm">
-
-                <img style="width: 300px" mat-card-image src="{{ film.Poster }}" alt="image film">
-
+                <mat-card>
+                    <img style="width: 300px" mat-card-image src="{{ film.Poster }}" alt="image film">
+                </mat-card>
             </div>
 
             <div class="list">
-                <mat-list>
-
-                    <mat-list-item>
-                        <p>Genre: {{ film.Genre }}</p>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <p>Durée: {{ film.Runtime }}</p>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <p>{{ film.Plot }}</p>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <p>Acteurs: {{ film.Actors }}</p>
-                    </mat-list-item>
-                </mat-list>
+                <mat-card class="cardInfos">
+                    <mat-list>
+                        <mat-list-item>
+                            <p>Genre: <span>{{ film.Genre }}</span></p>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <p>Durée: <span>{{ film.Runtime }}</span></p>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <p>Résumé: <span>{{ film.Plot }}</span></p>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <p>Acteurs: <span>{{ film.Actors }}</span></p>
+                        </mat-list-item>
+                    </mat-list>
+                </mat-card>
             </div>
         </div>
         <div>
 
-            <h1>Liste des séances</h1>
-            <mat-tab-group>
-                <mat-tab label="Lundi" id="Monday">
-                    <app-seance-list></app-seance-list>
-                </mat-tab>
-                <mat-tab label="Mardi" id="Tuesday">
-                    <app-seance-list></app-seance-list>
-                </mat-tab>
-                <mat-tab label="Mercredi" id="Wednesday">
-                    <app-seance-list></app-seance-list>
-                </mat-tab>
-                <mat-tab label="Jeudi" id="Thursday">
-                    <app-seance-list></app-seance-list>
-                </mat-tab>
-                <mat-tab label="Vendredi" id="Friday">
-                    <app-seance-list></app-seance-list>
-                </mat-tab>
-                <mat-tab label="Samedi" id="Saturday">
-                    <app-seance-list></app-seance-list>
-                </mat-tab>
-                <mat-tab label="Dimanche" id="Sunday">
-                    <app-seance-list></app-seance-list>
-                </mat-tab>
-            </mat-tab-group>
+            <h1>Séances de la semaine</h1>
 
-
-
-
+            <app-seance-list></app-seance-list>
         </div>
 
     </div>
