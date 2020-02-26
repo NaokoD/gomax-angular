@@ -19,6 +19,7 @@ import { CommandeSummaryComponent } from './components/commande-summary/commande
 import { FilmSummaryComponent } from './film/components/film-summary/film-summary.component';
 import { PanierComponent } from './components/panier/panier.component';
 import { HoraireModule } from './horaire/horaire.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { HoraireModule } from './horaire/horaire.module';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,

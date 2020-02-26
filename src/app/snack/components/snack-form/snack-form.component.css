@@ -1,7 +1,24 @@
-form {
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+} 
+
+#form-list {
     text-align: center;
 }
 
-.mat-form-field {
-    margin: 40px;
+#boutons {
+    margin-top: 10px;
+    text-align: center;
+    min-height: 50px;
 }
+
+button {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+  
+.example-full-width {
+    margin-left: 20px;
+}
+

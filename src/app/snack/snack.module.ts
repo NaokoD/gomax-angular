@@ -7,7 +7,7 @@ import { SnackListComponent } from './components/snack-list/snack-list.component
 import { SnackDashboardComponent } from './components/snack-dashboard/snack-dashboard.component';
 import { MaterialModule } from '../material.module';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { SnackFormComponent } from './components/snack-form/snack-form.component';
 
 @NgModule({
@@ -17,7 +17,8 @@ import { SnackFormComponent } from './components/snack-form/snack-form.component
     SnackRoutingModule,
     MaterialModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     SnackDashboardComponent

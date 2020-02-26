@@ -1,9 +1,8 @@
 import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 import { SnackService } from '../../services/snack.service';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { HttpClient, HttpEventType } from '@angular/common/http';
+import { FormGroup, FormControl, FormArray, Validators, NgForm, FormBuilder } from '@angular/forms';
 import { Snack } from '../../models/snack';
+
 
 
 @Component({
@@ -22,6 +21,10 @@ export class SnackFormComponent implements OnInit {
 
   formGroup: FormGroup[] = [];
 
+  snack: Snack
+  snacks: Snack[] = new Array();
+  //Array<Snack>.reset():any;
+
   constructor(private snackService: SnackService) { }
 
   ngOnInit() {
@@ -29,6 +32,11 @@ export class SnackFormComponent implements OnInit {
   }
 
   initForm() {
+    this.snacks[0] = new Snack(null, "", "", null, null);
+
+  }
+
+  initFormGroup() {
     this.snackForm = new FormGroup({
       name: new FormControl('', [Validators.required, Validators.minLength(3)]),
       image: new FormControl('', [Validators.required, Validators.minLength(2)]),
@@ -38,7 +46,7 @@ export class SnackFormComponent implements OnInit {
   }
 
   actionBtnPlusForm() {
-    this.initForm();
+    this.snacks.push(new Snack(null, "", "", null, null));
   }
 
   saveSnack() {
@@ -58,14 +66,14 @@ export class SnackFormComponent implements OnInit {
   }
 
   saveListeSnack() {
-    console.log(this.snacksForm.value);
-    const snacks: Snack[] = this.snacksForm.value;
 
-    this.submitSnacks.emit(snacks);
+    console.log(this.snacks);
 
-    this.snacksForm.reset();
+    this.submitSnacks.emit(this.snacks);
 
-    this.snackService.postListeSnacks(snacks).subscribe(
+    //this.snacks.reset();
+
+    this.snackService.postListeSnacks(this.snacks).subscribe(
       ss => {
         console.log('res', ss)
         this.submitSnacks.emit(ss);
@@ -73,3 +81,4 @@ export class SnackFormComponent implements OnInit {
     );
   }
 }
+
