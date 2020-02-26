@@ -39,16 +39,13 @@ export class SeanceListComponent implements OnInit {
     /*   this.loadSeancesByFilm(id); */
     /* this.loadNbPlacesRestantesBySeanceById(id); */
     /* this.loadSeances(); */
-
     this.loadSeancesByFilmDuLundi(id);
-
   }
 
   idFilm: number = this.route.snapshot.params.id;
 
 
   loadSeancesByFilmDuLundi(id: number) {
-
     this.seanceService.getSeancesByFilmDuLundi(id)
       .subscribe({
         next: res => {
