@@ -19,4 +19,5 @@ export class MajorationService {
   postMajoration(majoration: Majoration): Observable<Majoration> {
     return this.http.post<Majoration>(`${environment.apiBaseUrl}/majorations`, majoration);
   }
+
 }

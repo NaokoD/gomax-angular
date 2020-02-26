@@ -28,6 +28,11 @@ film : Film;
     for(const snack of this.commande.snacks){
       this.totalCommande += snack.price*snack.qte;
     }
+    if(this.commande.sieges.length > 3 ){
+      this.totalCommande = this.totalCommande * (1+0.015);
+    }else if (this.commande.sieges.length < 3 && this.commande.sieges.length > 0) {
+      this.totalCommande = this.totalCommande * (1+0.025);
+    }
   }
 
   payer(){

@@ -14,7 +14,7 @@ import { Seance } from 'src/app/seance/models/seance';
 export class TarifListComponent implements OnInit {
   tarifs: Tarif[];
   idSeance: number;
-  visible: boolean = true;
+  visible = true;
 
   displayedColumns: string[] = ['libelle', 'montant', 'quantite', 'total'];
 

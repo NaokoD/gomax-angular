@@ -12,14 +12,15 @@ import { Commande } from 'src/app/models/commande';
 export class PanierComponent implements OnInit {
   commande : Commande;
   displayedColumns: string[] = ['nom', 'quantite', 'price', 'montant'];
-  snacks : Snack[] = [];
-  sommePanier = 0;
+  snacks : Snack[];
+  sommePanier : number;
 
   constructor(private commandeService : CommandeService) {
     
   }
 
   ngOnInit() {
+    this.sommePanier = 0;
     this.snacks = this.commandeService.commande.snacks;
     this.totalPanier(this.snacks);
   }
