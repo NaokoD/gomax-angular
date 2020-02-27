@@ -5,19 +5,13 @@ import {Seance} from '../seance/models/seance';
 import {Client} from './client';
 
 export class Commande {
-  id: number;
-  client: Client;
-  seance: Seance;
-  tarifs: Tarif[];
-  createdOn: Date;
-  sieges: Siege[];
-  snacks: Snack[];
-  constructor(){
-    this.id = null;
-    this.client = null;
-    this.seance = null;
-    this.tarifs = null;
-    this.sieges = [];
-    this.snacks = null
-  }
+  constructor(
+    public id: number,
+    public client: Client,
+    public seance: Seance,
+    public tarifs: Tarif[],
+    public createdOn: Date,
+    public sieges?: Siege[],
+    public snacks?: Snack[]
+  ){ }
 }

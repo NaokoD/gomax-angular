@@ -6,6 +6,7 @@ import {HttpClient} from '@angular/common/http';
 import {Client} from '../models/client';
 import { Siege } from '../siege/models/siege';
 import { map, catchError } from 'rxjs/operators';
+import { Seance } from '../seance/models/seance';
 
 @Injectable({
   providedIn: 'root'
@@ -14,19 +15,27 @@ import { map, catchError } from 'rxjs/operators';
 export class CommandeService {
   commande: Commande;
   commandeCompleted: boolean = false;
-  siegesUsed : number[];
+  siegesUsed: Siege[];
 
   constructor(private http: HttpClient) {
-    this.commande = new Commande();
+    this.commande = new Commande(
+      null,
+      null,
+      null,
+      null,
+      null,
+      [],
+      null);
     this.commande.client = new Client(1);
-    console.log(this.commande + 'service');
+    //console.log(this.commande + 'service');
   }
 
-  save() {
+  save(){
     this.http.post<Commande>(`${environment.apiBaseUrl}/commandes`, this.commande)
       .subscribe({
         next: x => console.log('Saving'),
-        complete: () => console.log('Saved')
+        error: e => console.log(e),
+        complete: () => console.log("Commande Saved")
       });
   }
 
@@ -38,12 +47,13 @@ export class CommandeService {
     return this.http.get<Commande[]>(`${environment.apiBaseUrl}/commandes`);
   }
 
-  getCommandesByIdSeance(idSeance : number): Observable<Commande[]> {
+  getCommandesByIdSeance(idSeance: number): Observable<Commande[]> {
     return this.http.get<Commande[]>(`${environment.apiBaseUrl}/commandes?seanceId=${idSeance}`);
   }
 
-  getSiegesUsedByIdSeance(idSeance : number) : void{
-    let commandes : Commande[];
+  getSiegesUsedByIdSeance(idSeance: number): Observable<Siege[]> {
+    return this.http.get<Commande[]>(`${environment.apiBaseUrl}/sieges/seances/${idSeance}`);
+   /* let commandes : Commande[];
     this.getCommandesByIdSeance(idSeance)
     .subscribe({
       next: commandesMap => {
@@ -63,6 +73,6 @@ export class CommandeService {
         this.siegesUsed=sieges;
         console.log(this.siegesUsed);
       }
-    });
+    });*/
   }
 }

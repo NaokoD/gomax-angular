@@ -1,5 +1,6 @@
 h2 {
     text-align : center;
+    margin-bottom: 15px;
 }
 
 table {
@@ -17,5 +18,21 @@ tr.mat-footer-row {
 
 .example-button-row button,
 .example-button-row a {
-    width: 50%;
+    width: 25%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    position: relative;
+}
+
+.btnSuivant{
+    margin-left: 50%;
+}
+
+.tarif{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+table {
+    margin-bottom: 5%;
 }

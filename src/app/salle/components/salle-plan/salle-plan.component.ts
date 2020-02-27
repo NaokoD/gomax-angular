@@ -6,6 +6,8 @@ import { ActivatedRoute } from '@angular/router';
 import { CommandeService } from 'src/app/services/commande.service';
 import {Salle} from '../../models/salle';
 import { RowComponent } from '../row/row.component';
+import { MajorationService } from 'src/app/services/majoration.service';
+import { Majoration } from 'src/app/models/majoration';
 
 @Component({
   selector: 'app-salle-plan',
@@ -16,13 +18,30 @@ export class SallePlanComponent implements OnInit {
 plan: Plan;
 salle: Salle;
 visible: boolean = true;
+nbDeSiegesASelectionner : number;
+majorations : Majoration[];
+nbSieges: number;
 
-  constructor(private route: ActivatedRoute, private commandeService: CommandeService, private salleService: SalleService) {
+  constructor(private route: ActivatedRoute, private commandeService: CommandeService, private salleService: SalleService, private majorationService : MajorationService) {
    }
 
   ngOnInit() {
-    this.loadSallePlan(1);
-    console.log(this.commandeService.commande);
+    //console.log(this.commandeService.commande.seance);
+    if(this.commandeService.commande.seance !== null) {
+      this.loadSallePlan(this.commandeService.commande.seance.salle.id);
+      this.loadMajorations();
+      this.nbDeSiegesASelectionner = 0;
+      if(this.commandeService.commande.tarifs !== null || this.commandeService.commande.tarifs != []){
+        for(let tarif of this.commandeService.commande.tarifs){
+          this.nbDeSiegesASelectionner += tarif.quantite;
+        }
+      }
+      this.nbSieges = this.nbDeSiegesASelectionner;
+      //console.log(this.commandeService.commande);
+    } else {
+      this.loadSallePlan(1);
+      this.loadMajorations();
+    }
   }
 
   loadSallePlan(id: number): void {
@@ -49,5 +68,29 @@ visible: boolean = true;
           console.log(this.plan.row);
         }
       });
+  }
+
+  loadMajorations(): void{
+    this.majorationService.getMajorations()
+    .subscribe({
+      next: res => {
+        this.majorations = res;
+      },
+      error: e => console.log(e),
+      complete: () => console.log("Complete")
+    })
+  }
+
+  getMajorationByName(name : string): Majoration{
+    for(let majorarion of this.majorations){
+      if(majorarion.libelle === name){
+        return majorarion;
+      }
+    }
+    return null;
+  }
+
+  calculSieges(x : number){
+    this.nbDeSiegesASelectionner += x;
   }
 }
