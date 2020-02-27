@@ -12,20 +12,13 @@ export class SeanceService {
 
   constructor(private http: HttpClient) { }
 
-  /* getSeanceById(idFilm): Observable<Seance> {
-    return this.http.get<Seance>(`${environment.apiBaseUrl}/seances/${idFilm}`);
-  } */
 
   getSeances(): Observable<Seance[]> {
     return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances`);
   }
 
-  /* getSeancesByFilm(id: number): Observable<Seance[]> {
-    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances?idFilm=${id}`);
-  } */
-
   getNbPlacesRestantesBySeanceById(id: number): Observable<Seance[]> {
-    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances?idFilm=${id}/nbPlacesRestantes`);
+    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances/${id}/nbPlacesRestantes`);
   }
 
   getSeancesByFilmDuLundi(id: number): Observable<Seance[]> {

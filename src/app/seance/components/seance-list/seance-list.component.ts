@@ -4,10 +4,6 @@ import { SeanceService } from '../../services/seance.service';
 import { filter } from 'rxjs/operators';
 import { SeanceCardComponent } from '../seance-card/seance-card.component';
 import { ActivatedRoute, Router, Params } from '@angular/router';
-import { Horaire } from 'src/app/horaire/models/horaire';
-import { Salle } from 'src/app/salle/models/salle';
-import { Film } from 'src/app/film/models/film';
-
 
 @Component({
   selector: 'app-seance-list',
@@ -16,12 +12,8 @@ import { Film } from 'src/app/film/models/film';
 })
 export class SeanceListComponent implements OnInit {
 
-  films: Film[];
+
   seances: Seance[];
-  horaires: Horaire[];
-  salle: Salle[];
-
-
 
 
   @ViewChildren(SeanceCardComponent)
@@ -36,16 +28,10 @@ export class SeanceListComponent implements OnInit {
    */
   ngOnInit() {
     const id: number = this.route.snapshot.params.id;
-    /*   this.loadSeancesByFilm(id); */
-    /* this.loadNbPlacesRestantesBySeanceById(id); */
-    /* this.loadSeances(); */
-
-    this.loadSeancesByFilmDuLundi(id);
 
   }
 
   idFilm: number = this.route.snapshot.params.id;
-
 
   loadSeancesByFilmDuLundi(id: number) {
 
@@ -133,43 +119,5 @@ export class SeanceListComponent implements OnInit {
         complete: () => console.log('Complete')
       });
   }
-
-
-  /* loadSeancesByFilm(id: number) {
-    this.seanceService.getSeancesByFilm(id)
-      .subscribe({
-        next: res => {
-          this.seances = res;
-          console.log(res)
-        },
-        error: e => console.log(e),
-        complete: () => console.log('Complete')
-      });
-  } */
-
-  /* loadNbPlacesRestantesBySeanceById(id: number) {
-    this.seanceService.getSeancesByFilm(id)
-      .subscribe({
-        next: res => {
-          this.seances = res;
-          console.log(res)
-        },
-        error: e => console.log(e),
-        complete: () => console.log('Complete')
-      });
-    console.log();
-  } */
-
-  /*   loadSeances() {
-      this.seanceService.getSeances()
-        .subscribe({
-          next: res => {
-            this.seances = res;
-            console.log(res)
-          },
-          error: e => console.log(e),
-          complete: () => console.log('Complete')
-        });
-    } */
 
 }

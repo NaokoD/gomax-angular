@@ -5,6 +5,8 @@ import { CommandeService } from 'src/app/services/commande.service';
 
 import { from } from 'rxjs';
 import { Salle } from 'src/app/salle/models/salle';
+import { SeanceService } from '../../services/seance.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-seance-card',
@@ -14,19 +16,35 @@ import { Salle } from 'src/app/salle/models/salle';
 export class SeanceCardComponent implements OnInit {
   @Input()
   seance: Seance;
+  seances: Seance[];
 
-  monday = 'monday';
-  constructor(private commandeService: CommandeService) { }
+  constructor(private route: ActivatedRoute, private seanceService: SeanceService, private commandeService: CommandeService) { }
 
   dateNow = new Date();
+
 
 
   ngOnInit() {
 
   }
 
-  addSeanceToCommande(seance: Seance) {
-    this.commandeService.commande.seance = seance;
+  loadNbPlacesRestantesBySeanceById(id: number) {
+    this.seanceService.getNbPlacesRestantesBySeanceById(id)
+      .subscribe({
+        next: res => {
+          this.seances = res;
+          console.log(res)
+        },
+        error: e => console.log(e),
+        complete: () => console.log('Complete')
+      });
+
+  }
+
+
+
+  addSeanceToCommande(seances: Seance) {
+    this.commandeService.commande.seance = seances;
   }
 
 }

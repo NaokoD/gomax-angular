@@ -18,7 +18,6 @@ import { FilmModule } from './film/film.module';
 import { CommandeSummaryComponent } from './components/commande-summary/commande-summary.component';
 import { FilmSummaryComponent } from './film/components/film-summary/film-summary.component';
 import { PanierComponent } from './components/panier/panier.component';
-import { HoraireModule } from './horaire/horaire.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FilmFormComponent } from './film/components/film-form/film-form.component';
 
@@ -48,7 +47,6 @@ import { FilmFormComponent } from './film/components/film-form/film-form.compone
     SiegeModule,
     SalleModule,
     FilmModule,
-    HoraireModule,
     FormsModule,
     ReactiveFormsModule
   ],

@@ -11,8 +11,6 @@ import { SallePlanComponent } from './salle/components/salle-plan/salle-plan.com
 import { FilmSummaryComponent } from './film/components/film-summary/film-summary.component';
 import { CommandeSummaryComponent } from './components/commande-summary/commande-summary.component';
 import { SnackFormComponent } from './snack/components/snack-form/snack-form.component';
-import { HoraireListComponent } from './horaire/components/horaire-list/horaire-list.component';
-import { HoraireCardComponent } from './horaire/components/horaire-card/horaire-card.component';
 import { FilmFormComponent } from './film/components/film-form/film-form.component';
 import { SeanceDashboardComponent } from './seance/components/seance-dashboard/seance-dashboard.component';
 
@@ -35,7 +33,6 @@ const routes: Routes = [
   { path: 'tarif', component: TarifListComponent },
   { path: 'summary/:id', component: FilmSummaryComponent },
   { path: 'summary', component: CommandeSummaryComponent },
-  { path: 'horaires', component: HoraireListComponent },
   { path: 'seances/films/:id', component: SeanceListComponent },
   { path: 'film-form', component: FilmFormComponent },
   { path: 'seances', component: SeanceDashboardComponent }
