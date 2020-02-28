@@ -17,8 +17,8 @@ export class SeanceService {
     return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances`);
   }
 
-  getNbPlacesRestantesBySeanceById(id: number): Observable<Seance[]> {
-    return this.http.get<Seance[]>(`${environment.apiBaseUrl}/seances/${id}/nbPlacesRestantes`);
+  getNbPlacesRestantesBySeanceById(id: number): Observable<number> {
+    return this.http.get<number>(`${environment.apiBaseUrl}/seances/${id}/nbPlacesRestantes`);
   }
 
   getSeancesByFilmDuLundi(id: number): Observable<Seance[]> {
