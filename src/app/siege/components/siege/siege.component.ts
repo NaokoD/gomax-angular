@@ -14,6 +14,9 @@ export class SiegeComponent implements OnInit {
   @Input()
   nbSieges: number;
 
+  @Input()
+  rowId: string;
+  
   @Output()
   calculSiegesRestants = new EventEmitter();
 

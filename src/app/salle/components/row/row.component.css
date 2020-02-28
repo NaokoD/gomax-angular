@@ -1,23 +1,9 @@
 .row {
-    margin : 0 auto;
-    width: 100%;
+    margin : auto;
+    width: max-content;
+    max-height: 30px;
   }
 
 .rowId{
-  margin-right: 15%;
-}
-  
-#row{
-  margin: auto;
-}
-
-.rowName{
-  margin-left: 20px;
-  margin-right: 50px;
-  display: inline-block;
-  justify-content: center;
-}
-
-.rowName > h3 {
-  text-align: center;
+  margin-left: 15%;
 }

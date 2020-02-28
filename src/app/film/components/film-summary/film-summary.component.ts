@@ -12,6 +12,9 @@ export class FilmSummaryComponent implements OnInit {
   @Input()
   film : Film;
 
+  @Input()
+  dateSeance: Date
+
   constructor() { }
 
   ngOnInit() {

@@ -1,48 +1,378 @@
-
-<plan>
 <row>
   <id>A</id>
-  <element type='0' number='1' position='1'></element>
-  <element type='0' number='2' position='2'></element>
-  <element position='3'></element>
-  <element type='1' number='3' position='4'></element>
-  <element type='1' number='4' position='5'></element>
-  <element type='1' number='5' position='6'></element>
-  <element type='1' number='6' position='7'></element>
-  <element type='1' number='7' position='8'></element>
-  <element type='1' number='8' position='9'></element>
-  <element position='10'></element>
-  <element type='0' number='9' position='11'></element>
-  <element type='0' number='10' position='12'></element>
+  <siege>
+    <id>1</id>
+    <type>standard</type>
+    <position>1</position>
+  </siege>
+  <siege>
+    <id>2</id>
+    <type>standard</type>
+    <position>2</position>
+  </siege>
+  <siege>
+    <id></id>
+    <type>none</type>
+    <position>3</position>
+  </siege>
+  <siege>
+    <id>3</id>
+    <type>standard</type>
+    <position>4</position>
+  </siege>
+  <siege>
+    <id>4</id>
+    <type>standard</type>
+    <position>5</position>
+  </siege>
+  <siege>
+    <id>5</id>
+    <type>standard</type>
+    <position>6</position>
+  </siege>
+  <siege>
+    <id>6</id>
+    <type>standard</type>
+    <position>7</position>
+  </siege>
+  <siege>
+    <id>7</id>
+    <type>standard</type>
+    <position>8</position>
+  </siege>
+  <siege>
+    <id>8</id>
+    <type>standard</type>
+    <position>9</position>
+  </siege>
+  <siege>
+    <id></id>
+    <type>none</type>
+    <position>10</position>
+  </siege>
+  <siege>
+    <id>9</id>
+    <type>standard</type>
+    <position>11</position>
+  </siege>
+  <siege>
+    <id>10</id>
+    <type>standard</type>
+    <position>12</position>
+  </siege>
 </row>
-<row id="B">
+<row>
   <id>B</id>
-  <element type='0' number='1' position='1'></element>
-  <element type='0' number='2' position='2'></element>
-  <element position='3'></element>
-  <element type='0' number='3' position='4'></element>
-  <element type='0' number='4' position='5'></element>
-  <element type='0' number='5' position='6'></element>
-  <element type='0' number='6' position='7'></element>
-  <element type='0' number='7' position='8'></element>
-  <element type='0' number='8' position='9'></element>
-  <element position='10'></element>
-  <element type='0' number='9' position='11'></element>
-  <element type='0' number='10' position='12'></element>
+  <siege>
+    <id>10</id>
+    <type>standard</type>
+    <position>1</position>
+  </siege>
+  <siege>
+    <id>11</id>
+    <type>standard</type>
+    <position>2</position>
+  </siege>
+  <siege>
+    <id></id>
+    <type>none</type>
+    <position>3</position>
+  </siege>
+  <siege>
+    <id>12</id>
+    <type>standard</type>
+    <position>4</position>
+  </siege>
+  <siege>
+    <id>13</id>
+    <type>standard</type>
+    <position>5</position>
+  </siege>
+  <siege>
+    <id>14</id>
+    <type>standard</type>
+    <position>6</position>
+  </siege>
+  <siege>
+    <id>15</id>
+    <type>standard</type>
+    <position>7</position>
+  </siege>
+  <siege>
+    <id>16</id>
+    <type>standard</type>
+    <position>8</position>
+  </siege>
+  <siege>
+    <id>17</id>
+    <type>standard</type>
+    <position>9</position>
+  </siege>
+  <siege>
+    <id></id>
+    <type>none</type>
+    <position>10</position>
+  </siege>
+  <siege>
+    <id>18</id>
+    <type>standard</type>
+    <position>11</position>
+  </siege>
+  <siege>
+    <id>19</id>
+    <type>standard</type>
+    <position>12</position>
+  </siege>
 </row>
 <row>
   <id>C</id>
-  <element type='0' number='1' position='1'></element>
-  <element type='0' number='2' position='2'></element>
-  <element position='3'></element>
-  <element type='0' number='3' position='4'></element>
-  <element type='0' number='4' position='5'></element>
-  <element type='0' number='5' position='6'></element>
-  <element type='0' number='6' position='7'></element>
-  <element type='0' number='7' position='8'></element>
-  <element type='0' number='8' position='9'></element>
-  <element position='10'></element>
-  <element type='0' number='9' position='11'></element>
-  <element type='0' number='10' position='12'></element>
+  <siege>
+    <id>20</id>
+    <type>standard</type>
+    <position>1</position>
+  </siege>
+  <siege>
+    <id>21</id>
+    <type>standard</type>
+    <position>2</position>
+  </siege>
+  <siege>
+    <id></id>
+    <type>none</type>
+    <position>3</position>
+  </siege>
+  <siege>
+    <id>22</id>
+    <type>standard</type>
+    <position>4</position>
+  </siege>
+  <siege>
+    <id>23</id>
+    <type>standard</type>
+    <position>5</position>
+  </siege>
+  <siege>
+    <id>24</id>
+    <type>standard</type>
+    <position>6</position>
+  </siege>
+  <siege>
+    <id>25</id>
+    <type>standard</type>
+    <position>7</position>
+  </siege>
+  <siege>
+    <id>26</id>
+    <type>standard</type>
+    <position>8</position>
+  </siege>
+  <siege>
+    <id>27</id>
+    <type>standard</type>
+    <position>9</position>
+  </siege>
+  <siege>
+    <id></id>
+    <type>none</type>
+    <position>10</position>
+  </siege>
+  <siege>
+    <id>28</id>
+    <type>standard</type>
+    <position>11</position>
+  </siege>
+  <siege>
+    <id>29</id>
+    <type>standard</type>
+    <position>12</position>
+  </siege>
 </row>
-</plan>
+<row>
+  <id>D</id>
+  <siege>
+    <id>30</id>
+    <type>standard</type>
+    <position>1</position>
+  </siege>
+  <siege>
+    <id>31</id>
+    <type>standard</type>
+    <position>2</position>
+  </siege>
+  <siege>
+    <id></id>
+    <type>none</type>
+    <position>3</position>
+  </siege>
+  <siege>
+    <id>32</id>
+    <type>standard</type>
+    <position>4</position>
+  </siege>
+  <siege>
+    <id>33</id>
+    <type>standard</type>
+    <position>5</position>
+  </siege>
+  <siege>
+    <id>34</id>
+    <type>standard</type>
+    <position>6</position>
+  </siege>
+  <siege>
+    <id>35</id>
+    <type>standard</type>
+    <position>7</position>
+  </siege>
+  <siege>
+    <id>36</id>
+    <type>standard</type>
+    <position>8</position>
+  </siege>
+  <siege>
+    <id>37</id>
+    <type>standard</type>
+    <position>9</position>
+  </siege>
+  <siege>
+    <id></id>
+    <type>none</type>
+    <position>10</position>
+  </siege>
+  <siege>
+    <id>38</id>
+    <type>standard</type>
+    <position>11</position>
+  </siege>
+  <siege>
+    <id>39</id>
+    <type>standard</type>
+    <position>12</position>
+  </siege>
+</row>
+<row>
+  <id>E</id>
+  <siege>
+    <id>40</id>
+    <type>standard</type>
+    <position>1</position>
+  </siege>
+  <siege>
+    <id>41</id>
+    <type>standard</type>
+    <position>2</position>
+  </siege>
+  <siege>
+    <id></id>
+    <type>none</type>
+    <position>3</position>
+  </siege>
+  <siege>
+    <id>42</id>
+    <type>standard</type>
+    <position>4</position>
+  </siege>
+  <siege>
+    <id>43</id>
+    <type>standard</type>
+    <position>5</position>
+  </siege>
+  <siege>
+    <id>44</id>
+    <type>standard</type>
+    <position>6</position>
+  </siege>
+  <siege>
+    <id>45</id>
+    <type>standard</type>
+    <position>7</position>
+  </siege>
+  <siege>
+    <id>46</id>
+    <type>standard</type>
+    <position>8</position>
+  </siege>
+  <siege>
+    <id>47</id>
+    <type>standard</type>
+    <position>9</position>
+  </siege>
+  <siege>
+    <id></id>
+    <type>none</type>
+    <position>10</position>
+  </siege>
+  <siege>
+    <id>48</id>
+    <type>standard</type>
+    <position>11</position>
+  </siege>
+  <siege>
+    <id>49</id>
+    <type>standard</type>
+    <position>12</position>
+  </siege>
+</row>
+<row>
+  <id>F</id>
+  <siege>
+    <id>50</id>
+    <type>standard</type>
+    <position>1</position>
+  </siege>
+  <siege>
+    <id>51</id>
+    <type>handicapé</type>
+    <position>2</position>
+  </siege>
+  <siege>
+    <id></id>
+    <type>none</type>
+    <position>3</position>
+  </siege>
+  <siege>
+    <id>52</id>
+    <type>standard</type>
+    <position>4</position>
+  </siege>
+  <siege>
+    <id>53</id>
+    <type>standard</type>
+    <position>5</position>
+  </siege>
+  <siege>
+    <id>54</id>
+    <type>standard</type>
+    <position>6</position>
+  </siege>
+  <siege>
+    <id>55</id>
+    <type>standard</type>
+    <position>7</position>
+  </siege>
+  <siege>
+    <id>56</id>
+    <type>standard</type>
+    <position>8</position>
+  </siege>
+  <siege>
+    <id>57</id>
+    <type>standard</type>
+    <position>9</position>
+  </siege>
+  <siege>
+    <id></id>
+    <type>none</type>
+    <position>10</position>
+  </siege>
+  <siege>
+    <id>58</id>
+    <type>handicapé</type>
+    <position>11</position>
+  </siege>
+  <siege>
+    <id>59</id>
+    <type>standard</type>
+    <position>12</position>
+  </siege>
+</row>

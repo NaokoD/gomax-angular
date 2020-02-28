@@ -1,10 +1,14 @@
 .film-img {
-    width: 200px;
+    width: 75px;
+    align-self: center;
+    margin-left: 20%;
 }
 
 .film-card {
-    width: 300px;
-    text-align: center;
-    margin-left: 30px;
+    display: flex;
+}
 
+.title, .date {
+    align-self: center;
+    margin-left: 20%;
 }

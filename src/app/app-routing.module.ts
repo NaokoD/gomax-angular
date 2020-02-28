@@ -21,7 +21,7 @@ const routes: Routes = [
 
   { path: 'details/:id', component: DetailFilmComponent },
   { path: 'details/:id/plan/:idSeance', component: SallePlanComponent },
-  { path: 'tarif', component: TarifListComponent },
+  { path: 'tarifs', component: TarifListComponent },
   { path: 'seances', component: SeanceListComponent },
   { path: 'salles', component: SalleListComponent },
   { path: '', component: FilmDashboardComponent },

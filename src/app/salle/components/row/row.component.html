@@ -1,11 +1,5 @@
 <!-- <p>row-salle works!</p> -->
-<div id="row">
-  <div class="row">
-    <div class="rowName">
-      <h3>
-        {{row.id}}
-      </h3>
-    </div>
-    <app-siege *ngFor="let siege of row.siege" [siege]=siege [nbSieges]="nbSieges" (calculSiegesRestants)="modifyQuantiteSiegesRestantes($event)"></app-siege>
-  </div>
+<div class="row">
+  <app-siege *ngFor="let siege of row.siege" [siege]=siege [nbSieges]="nbSieges" [rowId]="row.id" (calculSiegesRestants)="modifyQuantiteSiegesRestantes($event)"></app-siege>
 </div>
+

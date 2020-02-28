@@ -1,12 +1,17 @@
 .siege {
-  /*background-color: black;*/
-  margin-left: 3px;
+  margin-left: 1px;
   display: inline-block;
-  /* fill : none;  */
-  /* display: block; */
-  height: 50px;
+  height: 40px;
   width: 30px;
   border-radius: 7px;
-  /* transform: rotate(9deg); */
   cursor: pointer;
+  font-size: 10px;
+  color: goldenrod;
+  text-align: center;
 }
+
+.corridor {
+  display: inline-block;
+  width: 30px;
+}
+
