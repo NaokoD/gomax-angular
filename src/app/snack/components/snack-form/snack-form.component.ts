@@ -71,14 +71,13 @@ export class SnackFormComponent implements OnInit {
 
     this.submitSnacks.emit(this.snacks);
 
-    //this.snacks.reset();
-
     this.snackService.postListeSnacks(this.snacks).subscribe(
       ss => {
         console.log('res', ss)
         this.submitSnacks.emit(ss);
       }
     );
+    this.snacks = new Array();
   }
 }
 
