@@ -2,11 +2,7 @@
     style="margin-top: 8px; margin-left: 20px; display: inline-block; justify-content: flex-start;">
     <div style="text-align: center;">
         <h4>{{seance.date_seance | date: 'dd/MM' }}</h4>
-<<<<<<< HEAD
-        <button mat-raised-button [disabled]="" color="accent" [routerLink]="['/tarifs']"
-=======
         <button mat-raised-button color="accent" [disabled]="nbDePlacesRestantes == 0" [routerLink]="['/tarif']"
->>>>>>> 39df740881d82093fbf969a3fab0553177d49913
             (click)="addSeanceToCommande(seance)">{{ seance.date_seance | date:"HH:mm" }}</button>
     </div>
 </div>
