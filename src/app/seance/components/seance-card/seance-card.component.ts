@@ -16,15 +16,16 @@ import { ActivatedRoute } from '@angular/router';
 export class SeanceCardComponent implements OnInit {
   @Input()
   seance: Seance;
-  seances: Seance[];
+
+  nbDePlacesRestantes: number;
 
   constructor(private route: ActivatedRoute, private seanceService: SeanceService, private commandeService: CommandeService) { }
 
-  dateNow = new Date();
-
-
 
   ngOnInit() {
+
+    const id: number = this.seance.id;
+    this.loadNbPlacesRestantesBySeanceById(id);
 
   }
 
@@ -32,11 +33,11 @@ export class SeanceCardComponent implements OnInit {
     this.seanceService.getNbPlacesRestantesBySeanceById(id)
       .subscribe({
         next: res => {
-          this.seances = res;
-          console.log(res)
+          this.nbDePlacesRestantes = res;
+          console.log('Nombre de places restantes:', res, 'id de la séance:', id)
         },
         error: e => console.log(e),
-        complete: () => console.log('Complete')
+
       });
 
   }

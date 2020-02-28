@@ -19,13 +19,10 @@ export class SeanceListComponent implements OnInit {
   @ViewChildren(SeanceCardComponent)
   seancesQuery: QueryList<SeanceCardComponent>;
 
-  // create attribute => <portee> <nom>:<type>
-  // Angular use constructor for DI
+
   constructor(private route: ActivatedRoute, private seanceService: SeanceService) { }
 
-  /**
-   * Description
-   */
+
   ngOnInit() {
 
   }
