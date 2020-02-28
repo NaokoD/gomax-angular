@@ -8,6 +8,7 @@
 img.mat-card-image {
   max-width: 300px; 
   max-height: 270px;
+  min-height: 270px;
 }  
 
 .button-row button {
