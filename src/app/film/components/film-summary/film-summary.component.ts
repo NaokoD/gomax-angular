@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { Film } from '../../models/film';
+import {Film} from '../../models/film';
 
 @Component({
   selector: 'app-film-summary',
@@ -10,10 +10,10 @@ export class FilmSummaryComponent implements OnInit {
   router: any;
 
   @Input()
-  film : Film;
+  film: Film;
 
   @Input()
-  dateSeance: Date
+  dateSeance: Date;
 
   constructor() { }
 

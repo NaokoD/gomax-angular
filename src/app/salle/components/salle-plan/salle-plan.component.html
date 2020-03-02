@@ -10,8 +10,9 @@
     </mat-toolbar-row>
 </mat-toolbar>
 <div class="plan">
-    <div class="salle" *ngIf="plan !== undefined">
-        <app-row *ngFor="let r of plan.row" [row]=r [nbSieges]="nbDeSiegesASelectionner" (calculSiegesRestantsASelectionner)="calculSieges($event)"></app-row>
+  <div class="salle" *ngIf="plan !== undefined && siegesUsed !== undefined">
+    <app-row *ngFor="let r of plan.row" [row]=r [nbSieges]="nbDeSiegesASelectionner" [siegesUsed]="siegesUsed"
+             (calculSiegesRestantsASelectionner)="calculSieges($event)"></app-row>
     </div>
     <div class="example-button-row">
         <button class="btnRetour" *ngIf="this.visible === true" mat-raised-button color="warn">Retour</button>

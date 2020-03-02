@@ -1,8 +1,7 @@
-import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
-import { SnackService } from '../../services/snack.service';
-import { FormGroup, FormControl, FormArray, Validators, NgForm, FormBuilder } from '@angular/forms';
-import { Snack } from '../../models/snack';
-
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {SnackService} from '../../services/snack.service';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {Snack} from '../../models/snack';
 
 
 @Component({
@@ -21,8 +20,8 @@ export class SnackFormComponent implements OnInit {
 
   formGroup: FormGroup[] = [];
 
-  snack: Snack
-  snacks: Snack[] = new Array();
+  snack: Snack;
+  snacks: Snack[] = [];
   //Array<Snack>.reset():any;
 
   constructor(private snackService: SnackService) { }
@@ -59,7 +58,7 @@ export class SnackFormComponent implements OnInit {
 
     this.snackService.postSnack(snack).subscribe(
       s => {
-        console.log('res', s)
+        console.log('res', s);
         this.submitSnack.emit(s);
       }
     );
@@ -73,11 +72,11 @@ export class SnackFormComponent implements OnInit {
 
     this.snackService.postListeSnacks(this.snacks).subscribe(
       ss => {
-        console.log('res', ss)
+        console.log('res', ss);
         this.submitSnacks.emit(ss);
       }
     );
-    this.snacks = new Array();
+    this.snacks = [];
   }
 }
 

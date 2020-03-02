@@ -4,9 +4,7 @@ import {Observable} from 'rxjs';
 import {environment} from 'src/environments/environment';
 import {HttpClient} from '@angular/common/http';
 import {Client} from '../models/client';
-import { Siege } from '../siege/models/siege';
-import { map, catchError } from 'rxjs/operators';
-import { Seance } from '../seance/models/seance';
+import {Siege} from '../siege/models/siege';
 
 @Injectable({
   providedIn: 'root'
@@ -14,8 +12,7 @@ import { Seance } from '../seance/models/seance';
 
 export class CommandeService {
   commande: Commande;
-  commandeCompleted: boolean = false;
-  siegesUsed: Siege[];
+  commandeCompleted = false;
 
   constructor(private http: HttpClient) {
     this.commande = new Commande(
@@ -27,15 +24,14 @@ export class CommandeService {
       [],
       null);
     this.commande.client = new Client(1);
-    //console.log(this.commande + 'service');
   }
 
-  save(){
+  save() {
     this.http.post<Commande>(`${environment.apiBaseUrl}/commandes`, this.commande)
       .subscribe({
-        next: x => console.log('Saving'),
+        next: () => console.log('Saving'),
         error: e => console.log(e),
-        complete: () => console.log("Commande Saved")
+        complete: () => console.log('Commande Saved')
       });
   }
 

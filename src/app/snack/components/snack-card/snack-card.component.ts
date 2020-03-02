@@ -1,5 +1,5 @@
-import { Component, OnInit, Input, ViewChild, ElementRef, Output, EventEmitter } from '@angular/core';
-import { Snack } from '../../models/snack';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Snack} from '../../models/snack';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { Snack } from '../../models/snack';
 })
 export class SnackCardComponent implements OnInit {
 
-  btnDisabled = false
+  btnDisabled = false;
 
   somme: number = 0;
 

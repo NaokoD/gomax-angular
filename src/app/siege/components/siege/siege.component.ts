@@ -1,6 +1,6 @@
-import {Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Siege} from '../../models/siege';
-import { CommandeService } from 'src/app/services/commande.service';
+import {CommandeService} from 'src/app/services/commande.service';
 
 @Component({
   selector: 'app-siege',
@@ -16,7 +16,10 @@ export class SiegeComponent implements OnInit {
 
   @Input()
   rowId: string;
-  
+
+  @Input()
+  siegesUsed: Siege[];
+
   @Output()
   calculSiegesRestants = new EventEmitter();
 
@@ -30,7 +33,7 @@ export class SiegeComponent implements OnInit {
   toggleAvailability(siege: Siege): void {
     const indexSiege: number = this.checkSelectedSiege(this.commandeService.commande.sieges, siege.id);
     if (siege.available === true) {
-      if(this.nbSieges > 0){
+      if (this.nbSieges > 0) {
         if (indexSiege === -1) {
           this.commandeService.commande.sieges.push(new Siege(siege.id));
           siege.available = null;
@@ -60,8 +63,8 @@ export class SiegeComponent implements OnInit {
   setAvailabilityForSeat() {
     if (this.siege.type !== 'none') {
       this.siege.available = true;
-      if (this.commandeService.commande.seance !== null || this.commandeService.siegesUsed !== []) {
-        for (const siegeUsedInSeance of this.commandeService.siegesUsed) {
+      if (this.commandeService.commande.seance !== null && this.siegesUsed !== []) {
+        for (const siegeUsedInSeance of this.siegesUsed) {
           if (siegeUsedInSeance.id === this.siege.id) {
             this.siege.available = false;
           }

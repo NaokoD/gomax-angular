@@ -3,8 +3,6 @@ import {Tarif} from 'src/app/models/tarif';
 import {TarifService} from 'src/app/services/tarif.service';
 import {ActivatedRoute} from '@angular/router';
 import {CommandeService} from 'src/app/services/commande.service';
-import {map} from 'rxjs/operators';
-import { Seance } from 'src/app/seance/models/seance';
 
 @Component({
   selector: 'app-tarif-list',
@@ -13,7 +11,6 @@ import { Seance } from 'src/app/seance/models/seance';
 })
 export class TarifListComponent implements OnInit {
   tarifs: Tarif[];
-  idSeance: number;
   visible = true;
 
   displayedColumns: string[] = ['libelle', 'montant', 'quantite', 'total'];
@@ -27,12 +24,11 @@ export class TarifListComponent implements OnInit {
       this.visible = false;
     } else {
       this.loadTarifs();
-      this.loadSiegesUsedBySeance();
     }
 
   }
 
-  //Fonction d'ajout de tarifs
+  // Fonction d'ajout de tarifs
   add(id: number): void {
     for (const i of this.tarifs) {
       if (i.id === id) {
@@ -43,7 +39,7 @@ export class TarifListComponent implements OnInit {
     }
   }
 
-  //Fonction de suppression de tarifs
+  // Fonction de suppression de tarifs
   drop(id: number): void {
     for (const i of this.tarifs) {
       if (i.id === id) {
@@ -54,7 +50,7 @@ export class TarifListComponent implements OnInit {
     }
   }
 
-  //Function pour récupérer le total
+  // Function pour récupérer le total
   getTotal(): number {
     let somme = 0;
     for (const i of this.tarifs) {
@@ -63,7 +59,7 @@ export class TarifListComponent implements OnInit {
     return somme;
   }
 
-  //Fonction pour récupérer les différents tarifs en BDD
+  // Fonction pour récupérer les différents tarifs en BDD
   loadTarifs(): void {
     this.tarifService.getTarifs()
       .subscribe({
@@ -75,22 +71,11 @@ export class TarifListComponent implements OnInit {
           for (const i of this.tarifs) {
             i.quantite = 0;
           }
-          
         }
       });
   }
 
-  loadSiegesUsedBySeance(): void {
-    this.commandeService.getSiegesUsedByIdSeance(this.commandeService.commande.seance.id)
-      .subscribe({
-        next: x => {
-          this.commandeService.siegesUsed = x;
-        },
-        error: e => console.log(e)
-      });
-  }
-
-  suivant() {
+  suivant(): void {
     const places: Tarif[] = [];
     for (const i of this.tarifs) {
       if (i.quantite > 0) {
